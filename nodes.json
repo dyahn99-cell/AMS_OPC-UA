@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "remotes": {
+    "AMS00": {
+      "read": {
+        "temperature": "ns=3;i=16844288",
+        "ex_p4_pqi": "ns=3;i=16846336",
+        "pressure": "ns=3;i=16844544",
+        "itv_value": "ns=3;i=16845312",
+        "p4_pdout": "ns=3;i=16848384",
+        "ex_di": "ns=3;i=16846592",
+        "forced_standby": "ns=3;i=16847360",
+        "itv_diag_data": "ns=3;i=16845568",
+        "vp_itv_nc": "ns=3;i=16847616",
+        "accumulated": "ns=3;i=16843776",
+        "ex_pqi": "ns=3;i=16845824",
+        "flow": "ns=3;i=16844032",
+        "pf3a_error": "ns=3;i=16844800",
+        "vp_itv_no": "ns=3;i=16847872",
+        "ex_itv_pqi": "ns=3;i=16846080",
+        "ex_p4_pdin": "ns=3;i=16846848",
+        "pf3a_status": "ns=3;i=16845056",
+        "p4_do": "ns=3;i=16848128",
+        "standby": "ns=3;i=16847104"
+      },
+      "write": {
+        "standby": "ns=3;i=16847104",
+        "forced_standby": "ns=3;i=16847360",
+        "air_nc": "ns=3;i=16847616",
+        "air_no": "ns=3;i=16847872",
+        "p4_do": "ns=3;i=16848128",
+        "p4_pdout": "ns=3;i=16848384"
+      }
+    },
+    "AMS01": {
+      "read": {
+        "temperature": "ns=3;i=16849152",
+        "ex_p4_pqi": "ns=3;i=16851200",
+        "pressure": "ns=3;i=16849408",
+        "itv_value": "ns=3;i=16850176",
+        "p4_pdout": "ns=3;i=16853248",
+        "ex_di": "ns=3;i=16851456",
+        "forced_standby": "ns=3;i=16852224",
+        "itv_diag_data": "ns=3;i=16850432",
+        "vp_itv_nc": "ns=3;i=16852480",
+        "accumulated": "ns=3;i=16848640",
+        "ex_pqi": "ns=3;i=16850688",
+        "flow": "ns=3;i=16848896",
+        "pf3a_error": "ns=3;i=16849664",
+        "vp_itv_no": "ns=3;i=16852736",
+        "ex_itv_pqi": "ns=3;i=16850944",
+        "ex_p4_pdin": "ns=3;i=16851712",
+        "pf3a_status": "ns=3;i=16849920",
+        "p4_do": "ns=3;i=16852992",
+        "standby": "ns=3;i=16851968"
+      },
+      "write": {
+        "standby": "ns=3;i=16851968",
+        "forced_standby": "ns=3;i=16852224",
+        "air_nc": "ns=3;i=16852480",
+        "air_no": "ns=3;i=16852736",
+        "p4_do": "ns=3;i=16852992",
+        "p4_pdout": "ns=3;i=16853248"
+      }
+    }
+  }
+}

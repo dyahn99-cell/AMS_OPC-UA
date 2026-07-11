@@ -1,0 +1,2 @@
+﻿"""AMS Dashboard backend package."""
+

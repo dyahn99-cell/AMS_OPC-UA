@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "worker": "node worker.js"
+  },
+  "dependencies": {
+    "node-opcua": "^2.157.0"
+  }
+}

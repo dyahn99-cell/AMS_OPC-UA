@@ -1,0 +1,746 @@
+[
+  {
+    "filename": "SMC-AMS-ITV-20221026-IODD1.1_1_.xml",
+    "vendor": "",
+    "device": "SMC-AMS-ITV-20221026-IODD1.1_1_",
+    "vendor_id": "",
+    "device_id": "",
+    "revision": "",
+    "parse_status": "metadata",
+    "process_data_in_fields": [
+      {
+        "name": "SSC1",
+        "subindex": 17,
+        "bit_offset": 0,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Standby reached",
+        "subindex": 16,
+        "bit_offset": 1,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Pressure setting incorrect",
+        "subindex": 15,
+        "bit_offset": 2,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Operating total time reached",
+        "subindex": 14,
+        "bit_offset": 3,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Zero Clear Fault",
+        "subindex": 13,
+        "bit_offset": 4,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Setting pressure range over-run",
+        "subindex": 12,
+        "bit_offset": 5,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Process variable range under-run",
+        "subindex": 11,
+        "bit_offset": 6,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Process variable range over-run",
+        "subindex": 10,
+        "bit_offset": 7,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Primary supply voltage under-run",
+        "subindex": 9,
+        "bit_offset": 8,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Primary supply voltage over-run",
+        "subindex": 8,
+        "bit_offset": 9,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Warning Flag",
+        "subindex": 7,
+        "bit_offset": 10,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Internal Communication Error",
+        "subindex": 6,
+        "bit_offset": 11,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Solenoid Valve Error",
+        "subindex": 5,
+        "bit_offset": 12,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Internal System Error",
+        "subindex": 4,
+        "bit_offset": 13,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "EEPROM Error",
+        "subindex": 3,
+        "bit_offset": 14,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Error Flag",
+        "subindex": 2,
+        "bit_offset": 15,
+        "bit_length": 1,
+        "data_type": "BooleanT"
+      },
+      {
+        "name": "Output Pressure Value",
+        "subindex": 1,
+        "bit_offset": 32,
+        "bit_length": 16,
+        "data_type": "UIntegerT"
+      }
+    ],
+    "process_data_in_bit_length": 48,
+    "process_data_in_byte_length": 6,
+    "process_data_out_bit_length": 32,
+    "process_data_out_byte_length": 4,
+    "id": "986dad19ee11",
+    "stored_filename": "986dad19ee11_SMC-AMS-ITV-20221026-IODD1.1_1_.xml",
+    "uploaded_at": "2026-06-26T18:38:36",
+    "pd_schema": 2
+  },
+  {
+    "filename": "SMC-PF3A701H-xx-L3x-xxx-20250206-IODD1.1.xml",
+    "vendor": "",
+    "device": "SMC-PF3A701H-xx-L3x-xxx-20250206-IODD1.1",
+    "vendor_id": "",
+    "device_id": "",
+    "revision": "",
+    "parse_status": "metadata",
+    "process_data_in_fields": [
+      {
+        "name": "OUT1",
+        "subindex": 6,
+        "bit_offset": 0,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "OUT1_ON"
+          },
+          {
+            "value": "false",
+            "name": "OUT1_OFF"
+          }
+        ]
+      },
+      {
+        "name": "OUT2",
+        "subindex": 5,
+        "bit_offset": 1,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "OUT2_ON"
+          },
+          {
+            "value": "false",
+            "name": "OUT2_OFF"
+          }
+        ]
+      },
+      {
+        "name": "HHH",
+        "subindex": 4,
+        "bit_offset": 8,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "HHH"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "Fixed output",
+        "subindex": 3,
+        "bit_offset": 14,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Fixed"
+          },
+          {
+            "value": "false",
+            "name": "Normal"
+          }
+        ]
+      },
+      {
+        "name": "Error",
+        "subindex": 2,
+        "bit_offset": 15,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "Flow",
+        "subindex": 1,
+        "bit_offset": 16,
+        "bit_length": 16,
+        "data_type": "IntegerT",
+        "value_range": {
+          "lower": 0,
+          "upper": 4200
+        },
+        "gradient": 0.25,
+        "offset": 0.0,
+        "unit_code": 1352,
+        "unit": "l/min",
+        "display_format": "Dec.0"
+      }
+    ],
+    "id": "6317fcc10156",
+    "stored_filename": "6317fcc10156_SMC-PF3A701H-xx-L3x-xxx-20250206-IODD1.1.xml",
+    "uploaded_at": "2026-06-25T12:58:14",
+    "process_data_in_bit_length": 32,
+    "process_data_in_byte_length": 4,
+    "pd_schema": 2
+  },
+  {
+    "filename": "SMC-PFUW711-L1x-xx-20260121-IODD1.1.xml",
+    "vendor": "",
+    "device": "SMC-PFUW711-L1x-xx-20260121-IODD1.1",
+    "vendor_id": "",
+    "device_id": "",
+    "revision": "",
+    "parse_status": "metadata",
+    "process_data_in_fields": [
+      {
+        "name": "OUT1 (AC)",
+        "subindex": 14,
+        "bit_offset": 0,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "ON"
+          },
+          {
+            "value": "false",
+            "name": "OFF"
+          }
+        ]
+      },
+      {
+        "name": "OUT2 (AC)",
+        "subindex": 13,
+        "bit_offset": 1,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "ON"
+          },
+          {
+            "value": "false",
+            "name": "OFF"
+          }
+        ]
+      },
+      {
+        "name": "OUT1 (Inst.)",
+        "subindex": 12,
+        "bit_offset": 2,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "ON"
+          },
+          {
+            "value": "false",
+            "name": "OFF"
+          }
+        ]
+      },
+      {
+        "name": "OUT2 (Inst.)",
+        "subindex": 11,
+        "bit_offset": 3,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "ON"
+          },
+          {
+            "value": "false",
+            "name": "OFF"
+          }
+        ]
+      },
+      {
+        "name": "ULS level",
+        "subindex": 10,
+        "bit_offset": 4,
+        "bit_length": 3,
+        "data_type": "UIntegerT",
+        "value_range": {
+          "lower": 0,
+          "upper": 4
+        }
+      },
+      {
+        "name": "Flow Unit",
+        "subindex": 9,
+        "bit_offset": 7,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "G"
+          },
+          {
+            "value": "false",
+            "name": "L"
+          }
+        ]
+      },
+      {
+        "name": "AC Max/AC Low",
+        "subindex": 8,
+        "bit_offset": 8,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "HHH/LLL",
+        "subindex": 7,
+        "bit_offset": 9,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "ULS meas. Error",
+        "subindex": 6,
+        "bit_offset": 12,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "Fixed output",
+        "subindex": 5,
+        "bit_offset": 13,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Fixed"
+          },
+          {
+            "value": "false",
+            "name": "Normal"
+          }
+        ]
+      },
+      {
+        "name": "Error",
+        "subindex": 4,
+        "bit_offset": 14,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "System Error",
+        "subindex": 3,
+        "bit_offset": 15,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "Flow",
+        "subindex": 2,
+        "bit_offset": 16,
+        "bit_length": 16,
+        "data_type": "IntegerT",
+        "value_range": {
+          "lower": -200,
+          "upper": 5600
+        },
+        "gradient": 0.025,
+        "unit_code": 1352,
+        "unit": "l/min",
+        "display_format": "Dec.1"
+      },
+      {
+        "name": "Accumulated",
+        "subindex": 1,
+        "bit_offset": 32,
+        "bit_length": 32,
+        "data_type": "UIntegerT",
+        "value_range": {
+          "lower": 0,
+          "upper": 999999999
+        },
+        "unit_code": 1038,
+        "unit": "l",
+        "display_format": "Dec.0"
+      }
+    ],
+    "id": "53512ee225ca",
+    "stored_filename": "53512ee225ca_SMC-PFUW711-L1x-xx-20260121-IODD1.1.xml",
+    "uploaded_at": "2026-06-23T21:10:33",
+    "process_data_in_bit_length": 64,
+    "process_data_in_byte_length": 8,
+    "pd_schema": 2
+  },
+  {
+    "filename": "SMC-PFUW711-L2x-xx-20260121-IODD1.1.xml",
+    "vendor": "",
+    "device": "SMC-PFUW711-L2x-xx-20260121-IODD1.1",
+    "vendor_id": "",
+    "device_id": "",
+    "revision": "",
+    "parse_status": "metadata",
+    "process_data_in_fields": [
+      {
+        "name": "OUT1 (AC)",
+        "subindex": 14,
+        "bit_offset": 0,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "ON"
+          },
+          {
+            "value": "false",
+            "name": "OFF"
+          }
+        ]
+      },
+      {
+        "name": "OUT2 (AC)",
+        "subindex": 13,
+        "bit_offset": 1,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "ON"
+          },
+          {
+            "value": "false",
+            "name": "OFF"
+          }
+        ]
+      },
+      {
+        "name": "OUT1 (Inst.)",
+        "subindex": 12,
+        "bit_offset": 2,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "ON"
+          },
+          {
+            "value": "false",
+            "name": "OFF"
+          }
+        ]
+      },
+      {
+        "name": "OUT2 (Inst.)",
+        "subindex": 11,
+        "bit_offset": 3,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "ON"
+          },
+          {
+            "value": "false",
+            "name": "OFF"
+          }
+        ]
+      },
+      {
+        "name": "ULS level",
+        "subindex": 10,
+        "bit_offset": 4,
+        "bit_length": 3,
+        "data_type": "UIntegerT",
+        "value_range": {
+          "lower": 0,
+          "upper": 4
+        }
+      },
+      {
+        "name": "Flow Unit",
+        "subindex": 9,
+        "bit_offset": 7,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "G"
+          },
+          {
+            "value": "false",
+            "name": "L"
+          }
+        ]
+      },
+      {
+        "name": "AC Max/AC Low",
+        "subindex": 8,
+        "bit_offset": 8,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "HHH/LLL",
+        "subindex": 7,
+        "bit_offset": 9,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "ULS meas. Error",
+        "subindex": 6,
+        "bit_offset": 12,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "Fixed output",
+        "subindex": 5,
+        "bit_offset": 13,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Fixed"
+          },
+          {
+            "value": "false",
+            "name": "Normal"
+          }
+        ]
+      },
+      {
+        "name": "Error",
+        "subindex": 4,
+        "bit_offset": 14,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "System Error",
+        "subindex": 3,
+        "bit_offset": 15,
+        "bit_length": 1,
+        "data_type": "BooleanT",
+        "single_values": [
+          {
+            "value": "true",
+            "name": "Error"
+          },
+          {
+            "value": "false",
+            "name": "No Error"
+          }
+        ]
+      },
+      {
+        "name": "Flow",
+        "subindex": 2,
+        "bit_offset": 16,
+        "bit_length": 16,
+        "data_type": "IntegerT",
+        "value_range": {
+          "lower": -200,
+          "upper": 5600
+        },
+        "gradient": 0.025,
+        "unit_code": 1352,
+        "unit": "l/min",
+        "display_format": "Dec.1"
+      },
+      {
+        "name": "Accumulated",
+        "subindex": 1,
+        "bit_offset": 32,
+        "bit_length": 32,
+        "data_type": "UIntegerT",
+        "value_range": {
+          "lower": 0,
+          "upper": 999999999
+        },
+        "unit_code": 1038,
+        "unit": "l",
+        "display_format": "Dec.0"
+      }
+    ],
+    "id": "0ae77749731a",
+    "stored_filename": "0ae77749731a_SMC-PFUW711-L2x-xx-20260121-IODD1.1.xml",
+    "uploaded_at": "2026-06-23T21:11:00",
+    "process_data_in_bit_length": 64,
+    "process_data_in_byte_length": 8,
+    "pd_schema": 2
+  }
+]

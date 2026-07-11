@@ -1,0 +1,3590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IODevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.io-link.com/IODD/2010/10" xsi:schemaLocation="http://www.io-link.com/IODD/2010/10 IODD1.1.xsd">
+  <DocumentInfo copyright="Copyright 2025, SMC Corporation" releaseDate="2025-02-06" version="V2.00" />
+  <ProfileHeader>
+    <ProfileIdentification>IO Device Profile</ProfileIdentification>
+    <ProfileRevision>1.1</ProfileRevision>
+    <ProfileName>Device Profile for IO Devices</ProfileName>
+    <ProfileSource>IO-Link Consortium</ProfileSource>
+    <ProfileClassID>Device</ProfileClassID>
+    <ISO15745Reference>
+      <ISO15745Part>1</ISO15745Part>
+      <ISO15745Edition>1</ISO15745Edition>
+      <ProfileTechnology>IODD</ProfileTechnology>
+    </ISO15745Reference>
+  </ProfileHeader>
+  <ProfileBody>
+    <DeviceIdentity vendorId="131" vendorName="SMC Corporation" deviceId="395">
+      <VendorText textId="TI_VendorText" />
+      <VendorUrl textId="TI_VendorUrl" />
+      <VendorLogo name="SMC-logo.png" />
+      <DeviceName textId="TI_Device_Name" />
+      <DeviceFamily textId="TI_DeviceFamily" />
+      <DeviceVariantCollection>
+        <DeviceVariant productId="PF3A701H-xx-L3x-xxx" deviceIcon="SMC-PF3A7H-icon.png" deviceSymbol="SMC-PF3A702H-pic.png">
+          <Name textId="TI_Device_PF3A701H-xx-L3x-xxx_Name" />
+          <Description textId="TI_Device_PF3A701H-xx-L3x-xxx_Description" />
+        </DeviceVariant>
+      </DeviceVariantCollection>
+    </DeviceIdentity>
+    <DeviceFunction>
+      <Features blockParameter="true" dataStorage="true">
+        <SupportedAccessLocks parameter="false" dataStorage="true" localParameterization="false" localUserInterface="true" />
+      </Features>
+      <VariableCollection>
+        <StdVariableRef id="V_DirectParameters_1" />
+        <StdVariableRef id="V_DirectParameters_2" />
+        <StdVariableRef id="V_SystemCommand">
+          <StdSingleValueRef value="128" />
+          <StdSingleValueRef value="129" />
+          <StdSingleValueRef value="130" />
+          <SingleValue value="170">
+            <Name textId="Std_V_469134" />
+          </SingleValue>
+          <SingleValue value="190">
+            <Name textId="Std_V_75943" />
+          </SingleValue>
+          <SingleValue value="240">
+            <Name textId="Std_V_277975" />
+          </SingleValue>
+          <SingleValue value="241">
+            <Name textId="Std_V_540037" />
+          </SingleValue>
+          <SingleValue value="242">
+            <Name textId="Std_V_883686" />
+          </SingleValue>
+          <SingleValue value="243">
+            <Name textId="Std_V_126923" />
+          </SingleValue>
+        </StdVariableRef>
+        <StdVariableRef id="V_DeviceAccessLocks">
+          <StdRecordItemRef subindex="2" defaultValue="0" />
+          <StdRecordItemRef subindex="4" defaultValue="0" />
+        </StdVariableRef>
+        <StdVariableRef id="V_VendorName" defaultValue="SMC Corporation" />
+        <StdVariableRef id="V_VendorText" defaultValue="www.smcworld.com" />
+        <StdVariableRef id="V_ProductName" />
+        <StdVariableRef id="V_ProductID" />
+        <StdVariableRef id="V_ProductText" />
+        <StdVariableRef id="V_SerialNumber" />
+        <StdVariableRef id="V_HardwareRevision" />
+        <StdVariableRef id="V_FirmwareRevision" />
+        <StdVariableRef id="V_ApplicationSpecificTag" defaultValue="********************************" fixedLengthRestriction="32" />
+        <StdVariableRef id="V_DeviceStatus" />
+        <StdVariableRef id="V_DetailedDeviceStatus" fixedLengthRestriction="14" />
+        <StdVariableRef id="V_ProcessDataInput" />
+        <Variable id="V_Device_test" accessRights="rw" index="241" excludedFromDataStorage="true" defaultValue="255">
+          <Datatype xsi:type="UIntegerT" bitLength="8" />
+          <Name textId="TI_V_N_Device_test" />
+        </Variable>
+        <Variable id="V_Unit" accessRights="rw" index="1000" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_LminL6811" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_cfmft37894" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_Unit" />
+          <Description textId="TI_V_D_Unitsetting" />
+        </Variable>
+        <Variable id="V_CoL" accessRights="rw" index="1010" excludedFromDataStorage="false" defaultValue="2">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_red9701" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_Grn4383" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_1SoG8700" />
+            </SingleValue>
+            <SingleValue value="3">
+              <Name textId="DT_1Sor4773" />
+            </SingleValue>
+            <SingleValue value="4">
+              <Name textId="DT_2SoG3490" />
+            </SingleValue>
+            <SingleValue value="5">
+              <Name textId="DT_2Sor1793" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_CoL" />
+          <Description textId="TI_V_D_Displaycolorsetting" />
+        </Variable>
+        <Variable id="V_NorP" accessRights="rw" index="1020" excludedFromDataStorage="false" defaultValue="1">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_nPn7521" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_PnP864" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_NorP" />
+          <Description textId="TI_V_D_SwitchingsettingofoutputNPNPNPspecifications" />
+        </Variable>
+        <Variable id="V_FUNC" accessRights="rw" index="1030" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_AoUt6355" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_in513" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_FUNC" />
+          <Description textId="TI_V_D_FUNCterminalswitching" />
+        </Variable>
+        <Variable id="V_FLU" accessRights="rw" index="1060" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_fbe9e145-b963-44ad-ae25-a2afc7d33236" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_f1a73a77-9c4a-4ca6-a90b-33f2bb5c97c5" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_fd565733-772e-4d01-a22c-5d5cfa693cd5" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_FLU" />
+          <Description textId="TI_V_D_ff0825b5-b703-4fc6-a669-a5b6aa44621a" />
+        </Variable>
+        <Variable id="V_rEF" accessRights="rw" index="1070" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_std4066" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_nor1619" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_rEF" />
+          <Description textId="TI_V_D_Referenceconditionsetting" />
+        </Variable>
+        <Variable id="V_OUT1_mode" accessRights="rw" index="1210" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="16" subindexAccessSupported="true">
+            <RecordItem subindex="1" bitOffset="8" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_HYS344" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_Wind4341" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_AC4535" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_PLS2055" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_Err9988" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_oFF8588" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name1306Outputmode" />
+              <Description textId="DT_RI_Description1306Outputmodesetting" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_1_P231" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_1_n2145" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name9190Reversedoutput" />
+              <Description textId="DT_RI_Description9190Reversedoutputsetting" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="0" />
+          <RecordItemInfo subindex="2" defaultValue="0" />
+          <Name textId="TI_V_N_OUT1_mode" />
+          <Description textId="TI_V_D_OUT1modesetting" />
+        </Variable>
+        <Variable id="V_OUT1_set_value" accessRights="rw" index="1220" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="96" subindexAccessSupported="true">
+            <RecordItem subindex="1" bitOffset="80" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="40" upperValue="6000" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name5931P_1n_1" />
+              <Description textId="DT_RI_Description5931P_1n_1" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="64" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="5960" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name4283H_1HYS" />
+              <Description textId="DT_RI_Description4283H_1HYS" />
+            </RecordItem>
+            <RecordItem subindex="3" bitOffset="48" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="40" upperValue="6000" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name2741P1Ln1L" />
+              <Description textId="DT_RI_Description2741P1Ln1L" />
+            </RecordItem>
+            <RecordItem subindex="4" bitOffset="32" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="40" upperValue="6000" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name2705P1Hn1H" />
+              <Description textId="DT_RI_Description2705P1Hn1H" />
+            </RecordItem>
+            <RecordItem subindex="5" bitOffset="16" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="2980" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name4434WH1Wind" />
+              <Description textId="DT_RI_Description4434WH1Wind" />
+            </RecordItem>
+            <RecordItem subindex="6" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="6000" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name5852dt1" />
+              <Description textId="DT_RI_Description5852dt1" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="2000" />
+          <RecordItemInfo subindex="2" defaultValue="200" />
+          <RecordItemInfo subindex="3" defaultValue="1200" />
+          <RecordItemInfo subindex="4" defaultValue="2400" />
+          <RecordItemInfo subindex="5" defaultValue="400" />
+          <RecordItemInfo subindex="6" defaultValue="0" />
+          <Name textId="TI_V_N_OUT1_set_value" />
+          <Description textId="TI_V_D_Inputofsetvalues" />
+        </Variable>
+        <Variable id="V_OUT1_AC_L" accessRights="rw" index="1300" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="32" subindexAccessSupported="false">
+            <RecordItem subindex="1" bitOffset="16" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="9999" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name4728Mantissa" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="8" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name5107Exponent" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="0" />
+          <RecordItemInfo subindex="2" defaultValue="0" />
+          <Name textId="TI_V_N_OUT1_AC_L" />
+          <Description textId="TI_V_D_OUT1_AC_Lsetting" />
+        </Variable>
+        <Variable id="V_OUT1_AC_ft3" accessRights="rw" index="1310" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="32" subindexAccessSupported="false">
+            <RecordItem subindex="1" bitOffset="16" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="9999" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name1721Mantissa" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="8" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name3461Exponent" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="0" />
+          <RecordItemInfo subindex="2" defaultValue="0" />
+          <Name textId="TI_V_N_OUT1_AC_ft3" />
+          <Description textId="TI_V_D_OUT1_AC_ft3setting" />
+        </Variable>
+        <Variable id="V_PLS1_conv_L" accessRights="rw" index="1320" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_101353" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_1001513" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_f7cd8cee-82e1-4664-b80b-593c2b72ad88" />
+            </SingleValue>
+            <SingleValue value="3">
+              <Name textId="DT_f62a7d9d-535a-406f-aa27-57d546130260" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="V_N_V_PLS1_conv_L" />
+          <Description textId="V_D_V_PLS1_conv_L" />
+        </Variable>
+        <Variable id="V_PLS1_conv_ft3" accessRights="rw" index="1330" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_f21127a0-2e51-4f5f-96d0-1197347dfb50" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_f2b5d20f-275d-4b15-8da3-cff499ca596b" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_f03fd6d4-00cd-4246-bf78-e26328a222e8" />
+            </SingleValue>
+            <SingleValue value="3">
+              <Name textId="DT_f388fd30-828b-4988-91ce-01ae7eb01da3" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="V_N_V_PLS1_conv_ft3" />
+          <Description textId="V_D_V_PLS1_conv_ft3" />
+        </Variable>
+        <Variable id="V_PLS1_Wid" accessRights="rw" index="1350" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_f03dd06b-c8d7-44b2-8ec7-e5d1df0537b0" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_fee1814b-074e-4a49-8520-8f8457b304e6" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_ffc2b86c-c700-4b4c-a0c7-588478461a09" />
+            </SingleValue>
+            <SingleValue value="3">
+              <Name textId="DT_ffb90eb3-e60b-4965-83c9-a88c6c267750" />
+            </SingleValue>
+            <SingleValue value="4">
+              <Name textId="DT_fcb4d4d7-a472-4b44-bd63-75ca1f51e8b8" />
+            </SingleValue>
+            <SingleValue value="5">
+              <Name textId="DT_f43de385-4294-450e-9b87-01514e1c8721" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_PLS1_Wid" />
+          <Description textId="TI_V_D_f75c200e-1639-49cc-9677-38477c94043c" />
+        </Variable>
+        <Variable id="V_OUT2_mdoe" accessRights="rw" index="1410" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="16" subindexAccessSupported="true">
+            <RecordItem subindex="1" bitOffset="8" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_HYS6694" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_Wind9065" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_AC3935" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_PLS8390" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_Err7612" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_oFF8936" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name4729Outputmode" />
+              <Description textId="DT_RI_Description4729Outputmodesetting" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_2_P6449" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_2_n367" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name6139Reversedmode" />
+              <Description textId="DT_RI_Description6139Reversedmodesetting" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="0" />
+          <RecordItemInfo subindex="2" defaultValue="0" />
+          <Name textId="TI_V_N_OUT2_mdoe" />
+          <Description textId="TI_V_D_OUT2_mdoesetting" />
+        </Variable>
+        <Variable id="V_OUT2_set_value" accessRights="rw" index="1420" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="96" subindexAccessSupported="true">
+            <RecordItem subindex="1" bitOffset="80" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="40" upperValue="6000" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name5714P_2n_2" />
+              <Description textId="DT_RI_Description5714P_2n_2" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="64" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="5960" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name2671H_2HYS" />
+              <Description textId="DT_RI_Description2671H_2HYS" />
+            </RecordItem>
+            <RecordItem subindex="3" bitOffset="48" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="40" upperValue="6000" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name3740P2Ln2L" />
+              <Description textId="DT_RI_Description3740P2Ln2L" />
+            </RecordItem>
+            <RecordItem subindex="4" bitOffset="32" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="40" upperValue="6000" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name2875P2Hn2H" />
+              <Description textId="DT_RI_Description2875P2Hn2H" />
+            </RecordItem>
+            <RecordItem subindex="5" bitOffset="16" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="2980" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name8408WH2Wind" />
+              <Description textId="DT_RI_Description8408WH2Wind" />
+            </RecordItem>
+            <RecordItem subindex="6" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="6000" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name7785dt2" />
+              <Description textId="DT_RI_Description7785dt2" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="2000" />
+          <RecordItemInfo subindex="2" defaultValue="200" />
+          <RecordItemInfo subindex="3" defaultValue="1200" />
+          <RecordItemInfo subindex="4" defaultValue="2400" />
+          <RecordItemInfo subindex="5" defaultValue="400" />
+          <RecordItemInfo subindex="6" defaultValue="0" />
+          <Name textId="TI_V_N_OUT2_set_value" />
+          <Description textId="TI_V_D_Inputofsetvalues" />
+        </Variable>
+        <Variable id="V_OUT2_AC_L" accessRights="rw" index="1500" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="32" subindexAccessSupported="false">
+            <RecordItem subindex="1" bitOffset="16" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="9999" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name2267Mantissa" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="8" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name6764Exronent" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="0" />
+          <RecordItemInfo subindex="2" defaultValue="0" />
+          <Name textId="TI_V_N_OUT2_AC_L" />
+          <Description textId="TI_V_D_OUT2_AC_Lsetting" />
+        </Variable>
+        <Variable id="V_OUT2_AC_ft3" accessRights="rw" index="1510" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="32" subindexAccessSupported="false">
+            <RecordItem subindex="1" bitOffset="16" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="9999" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name6526Mantissa" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="8" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name3112Exponent" />
+            </RecordItem>
+          </Datatype>
+          <Name textId="TI_V_N_OUT2_AC_ft3" />
+          <Description textId="TI_V_D_OUT2_AC_ft3setting" />
+        </Variable>
+        <Variable id="V_PLS2_conv_L" accessRights="rw" index="1520" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_108011" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_1001651" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_fa019ba6-2e72-4c49-8448-313288a5324a" />
+            </SingleValue>
+            <SingleValue value="3">
+              <Name textId="DT_f3d32c70-4696-4f8c-90de-80e11ecfaa27" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="V_N_V_PLS2_conv_L" />
+          <Description textId="V_D_V_PLS2_conv_L" />
+        </Variable>
+        <Variable id="V_PLS2_conv_ft3" accessRights="rw" index="1530" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_f7b65820-7cad-4618-8144-71a3a9e0a5b5" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_f6f9b1c9-cc5a-4194-a764-ba09f3549862" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_f65df0aa-a935-4e99-a023-655ca1ef4b84" />
+            </SingleValue>
+            <SingleValue value="3">
+              <Name textId="DT_fe82d92c-2ff7-4eae-8ab0-52ca7eaba664" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="V_N_V_PLS2_conv_ft3" />
+          <Description textId="V_D_V_PLS2_conv_ft3" />
+        </Variable>
+        <Variable id="V_PLS2_Wid" accessRights="rw" index="1550" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_f7e5a031-6d4d-4529-a9fc-18ce253fb2b1" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_f2c8ec33-85ee-4634-9499-6069fc891a07" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_f29ae423-c6ea-4e19-b347-bf41f71c1eee" />
+            </SingleValue>
+            <SingleValue value="3">
+              <Name textId="DT_f5386a38-bbaf-4b9e-87b1-a12e10ff0b59" />
+            </SingleValue>
+            <SingleValue value="4">
+              <Name textId="DT_f440dcce-7107-4e00-9a5a-8db07c4314d9" />
+            </SingleValue>
+            <SingleValue value="5">
+              <Name textId="DT_f84650ba-715c-4789-b4af-3ea52da789e5" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_PLS2_Wid" />
+          <Description textId="TI_V_D_f4273f5a-5555-47b4-8cab-f68b28236eb4" />
+        </Variable>
+        <Variable id="V_Add_dEC" accessRights="rw" index="1600" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_Add2334" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_dEC11740" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_dEC21669" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_Add_dEC" />
+          <Description textId="TI_V_D_Accumuratecountupordown" />
+        </Variable>
+        <Variable id="V_FiL" accessRights="rw" index="1800" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_107888" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_201848" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_508420" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_FiL" />
+          <Description textId="TI_V_D_Digitalfiltersetting" />
+        </Variable>
+        <Variable id="V_Sub" accessRights="rw" index="2000" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="16" subindexAccessSupported="true">
+            <RecordItem subindex="1" bitOffset="8" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_dEF5936" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_LinE7095" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_oFF2532" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name1186Subdisplayoption" />
+              <Description textId="DT_RI_Description1186Subdisplayoptionsetting" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_ff07415f-e412-4597-9af2-289b9babbb01" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_f0be0c86-34ec-4317-912e-35d5e15d81c2" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_f403cf01-bdc0-4b3a-b16f-6858bcfabfa8" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_fd45295f-4ce5-44f4-806d-2f4379307714" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_f9672e30-9ccb-4059-9ada-0783ef9a4db3" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_fdd2e4df-9a22-4e46-8986-9dbff0cf8fe4" />
+                </SingleValue>
+                <SingleValue value="6">
+                  <Name textId="DT_fba75125-f7ff-4ab8-ac9a-e4298f3973e6" />
+                </SingleValue>
+                <SingleValue value="7">
+                  <Name textId="DT_ffcc601a-c7d1-41a8-8dfc-5073df5f935c" />
+                </SingleValue>
+                <SingleValue value="8">
+                  <Name textId="DT_f42a7a05-bc03-4b30-bbef-545b8a07e94d" />
+                </SingleValue>
+                <SingleValue value="9">
+                  <Name textId="DT_f47fe8c2-d0d6-4fa5-9547-77b4885a0906" />
+                </SingleValue>
+                <SingleValue value="10">
+                  <Name textId="DT_f89579af-e471-44c7-b440-f6c2eea86092" />
+                </SingleValue>
+                <SingleValue value="11">
+                  <Name textId="DT_fc71a002-99b3-4be7-b0db-2d0f1830cd24" />
+                </SingleValue>
+                <SingleValue value="12">
+                  <Name textId="DT_f948bdf5-6de8-43d2-bf40-bbf01b66e132" />
+                </SingleValue>
+                <SingleValue value="13">
+                  <Name textId="DT_f9508135-5f19-4435-bc6c-645d4eb5045d" />
+                </SingleValue>
+                <SingleValue value="14">
+                  <Name textId="DT_f111aa8b-e5f3-420f-a841-dc7d5c624451" />
+                </SingleValue>
+                <SingleValue value="15">
+                  <Name textId="DT_f3943b4d-0317-4eec-8a75-86eb209ceac3" />
+                </SingleValue>
+                <SingleValue value="16">
+                  <Name textId="DT_f0b69054-210b-4692-a7c2-828feebce907" />
+                </SingleValue>
+                <SingleValue value="17">
+                  <Name textId="DT_f85c8543-409e-4573-bcb4-29df553e49a6" />
+                </SingleValue>
+                <SingleValue value="18">
+                  <Name textId="DT_f191c94b-e027-4d82-a289-59e05c9849a2" />
+                </SingleValue>
+                <SingleValue value="19">
+                  <Name textId="DT_fe52143f-08ba-48e4-9eb2-cec24a8c3016" />
+                </SingleValue>
+                <SingleValue value="20">
+                  <Name textId="DT_f4192124-4bd1-47b3-b3cd-46421fea8f56" />
+                </SingleValue>
+                <SingleValue value="21">
+                  <Name textId="DT_fa378422-9ed4-4580-bf25-188e461abfbd" />
+                </SingleValue>
+                <SingleValue value="22">
+                  <Name textId="DT_f16fbb55-4c07-45fa-8fc1-6e8d1f6d3bc4" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_f6f599e5-182e-4c3a-92b1-b7c0c021458d" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="0" />
+          <RecordItemInfo subindex="2" defaultValue="20" />
+          <Name textId="V_N_Sub" />
+          <Description textId="V_D_f2f7f539-1c0e-4037-9202-ca44c4a14a3d" />
+        </Variable>
+        <Variable id="V_rEv" accessRights="rw" index="2020" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_oFF4299" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_on1492" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_rEv" />
+          <Description textId="TI_V_D_Reverseddisplaysetting" />
+        </Variable>
+        <Variable id="V_CUt" accessRights="rw" index="2030" excludedFromDataStorage="false" defaultValue="1">
+          <Datatype xsi:type="IntegerT" bitLength="8">
+            <ValueRange lowerValue="0" upperValue="10" />
+          </Datatype>
+          <Name textId="TI_V_N_CUt" />
+          <Description textId="TI_V_D_Zerocutsetting" />
+        </Variable>
+        <Variable id="V_Ex_in" accessRights="rw" index="2040" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_rAC9111" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_rPd8644" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_Ex_in" />
+          <Description textId="TI_V_D_Externalinputsetting" />
+        </Variable>
+        <Variable id="V_AoUt" accessRights="rw" index="2100" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_158128" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_010891" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_AoUt" />
+          <Description textId="TI_V_D_AoUtsetting" />
+        </Variable>
+        <Variable id="V_FrEE" accessRights="rw" index="2110" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="24" subindexAccessSupported="true">
+            <RecordItem subindex="1" bitOffset="16" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_oFF2497" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_on6396" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name1827Mode" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="400" upperValue="4200" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name1231Settingvalue" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="0" />
+          <RecordItemInfo subindex="2" defaultValue="4000" />
+          <Name textId="TI_V_N_FrEE" />
+          <Description textId="TI_V_D_Analogfreerangesetting" />
+        </Variable>
+        <Variable id="V_SAVE" accessRights="rw" index="2200" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_oFF2447" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_20min325" />
+            </SingleValue>
+            <SingleValue value="2">
+              <Name textId="DT_50min697" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_SAVE" />
+          <Description textId="TI_V_D_Accumulatedvaluesave" />
+        </Variable>
+        <Variable id="V_diSP" accessRights="rw" index="2400" excludedFromDataStorage="false" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_on9240" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_oFF6727" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_diSP" />
+          <Description textId="TI_V_D_DisplayOFFsetting" />
+        </Variable>
+        <Variable id="V_Pin" accessRights="rw" index="2410" excludedFromDataStorage="false">
+          <Datatype xsi:type="RecordT" bitLength="24" subindexAccessSupported="true">
+            <RecordItem subindex="1" bitOffset="16" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_invalid2451" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_valid230" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name9821PINvalid" />
+              <Description textId="DT_RI_Description9821PINvalid" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="999" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name1214PINcode" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="0" />
+          <RecordItemInfo subindex="2" defaultValue="0" />
+          <Name textId="TI_V_N_Pin" />
+          <Description textId="TI_V_D_Securitycode" />
+        </Variable>
+        <Variable id="V_LinE" accessRights="rw" index="2420">
+          <Datatype xsi:type="RecordT" bitLength="72" subindexAccessSupported="true">
+            <RecordItem subindex="1" bitOffset="64" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_A8287" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_B5482" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_C5774" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_D3884" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_E3737" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_F1389" />
+                </SingleValue>
+                <SingleValue value="6">
+                  <Name textId="DT_G6631" />
+                </SingleValue>
+                <SingleValue value="7">
+                  <Name textId="DT_H2101" />
+                </SingleValue>
+                <SingleValue value="8">
+                  <Name textId="DT_i7753" />
+                </SingleValue>
+                <SingleValue value="9">
+                  <Name textId="DT_J9926" />
+                </SingleValue>
+                <SingleValue value="10">
+                  <Name textId="DT_K8308" />
+                </SingleValue>
+                <SingleValue value="11">
+                  <Name textId="DT_L3348" />
+                </SingleValue>
+                <SingleValue value="12">
+                  <Name textId="DT_M9264" />
+                </SingleValue>
+                <SingleValue value="13">
+                  <Name textId="DT_n4337" />
+                </SingleValue>
+                <SingleValue value="14">
+                  <Name textId="DT_o5468" />
+                </SingleValue>
+                <SingleValue value="15">
+                  <Name textId="DT_P546" />
+                </SingleValue>
+                <SingleValue value="16">
+                  <Name textId="DT_Q3639" />
+                </SingleValue>
+                <SingleValue value="17">
+                  <Name textId="DT_r5652" />
+                </SingleValue>
+                <SingleValue value="18">
+                  <Name textId="DT_S2158" />
+                </SingleValue>
+                <SingleValue value="19">
+                  <Name textId="DT_t5284" />
+                </SingleValue>
+                <SingleValue value="20">
+                  <Name textId="DT_U9738" />
+                </SingleValue>
+                <SingleValue value="21">
+                  <Name textId="DT_v8616" />
+                </SingleValue>
+                <SingleValue value="22">
+                  <Name textId="DT_W9775" />
+                </SingleValue>
+                <SingleValue value="23">
+                  <Name textId="DT_X8116" />
+                </SingleValue>
+                <SingleValue value="24">
+                  <Name textId="DT_Y1949" />
+                </SingleValue>
+                <SingleValue value="25">
+                  <Name textId="DT_Z1128" />
+                </SingleValue>
+                <SingleValue value="26">
+                  <Name textId="DT_08350" />
+                </SingleValue>
+                <SingleValue value="27">
+                  <Name textId="DT_11675" />
+                </SingleValue>
+                <SingleValue value="28">
+                  <Name textId="DT_24527" />
+                </SingleValue>
+                <SingleValue value="29">
+                  <Name textId="DT_34262" />
+                </SingleValue>
+                <SingleValue value="30">
+                  <Name textId="DT_48293" />
+                </SingleValue>
+                <SingleValue value="31">
+                  <Name textId="DT_52499" />
+                </SingleValue>
+                <SingleValue value="32">
+                  <Name textId="DT_61056" />
+                </SingleValue>
+                <SingleValue value="33">
+                  <Name textId="DT_76034" />
+                </SingleValue>
+                <SingleValue value="34">
+                  <Name textId="DT_86128" />
+                </SingleValue>
+                <SingleValue value="35">
+                  <Name textId="DT_94520" />
+                </SingleValue>
+                <SingleValue value="36">
+                  <Name textId="DT__1544" />
+                </SingleValue>
+                <SingleValue value="37">
+                  <Name textId="DT_5603" />
+                </SingleValue>
+                <SingleValue value="38">
+                  <Name textId="DT_2764" />
+                </SingleValue>
+                <SingleValue value="39">
+                  <Name textId="DT_8266" />
+                </SingleValue>
+                <SingleValue value="40">
+                  <Name textId="DT_5031" />
+                </SingleValue>
+                <SingleValue value="41">
+                  <Name textId="DT_k3187" />
+                </SingleValue>
+                <SingleValue value="42">
+                  <Name textId="DT_m9429" />
+                </SingleValue>
+                <SingleValue value="43">
+                  <Name textId="DT_N3569" />
+                </SingleValue>
+                <SingleValue value="44">
+                  <Name textId="DT_R4045" />
+                </SingleValue>
+                <SingleValue value="45">
+                  <Name textId="DT_V9089" />
+                </SingleValue>
+                <SingleValue value="46">
+                  <Name textId="DT_w4624" />
+                </SingleValue>
+                <SingleValue value="47">
+                  <Name textId="DT_Space8617" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name66621digit11seg" />
+              <Description textId="DT_RI_Description66621digit11seg" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="56" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_A9015" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_B3245" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_C5521" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_D5257" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_E5351" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_F1533" />
+                </SingleValue>
+                <SingleValue value="6">
+                  <Name textId="DT_G6105" />
+                </SingleValue>
+                <SingleValue value="7">
+                  <Name textId="DT_H5675" />
+                </SingleValue>
+                <SingleValue value="8">
+                  <Name textId="DT_i1526" />
+                </SingleValue>
+                <SingleValue value="9">
+                  <Name textId="DT_J5392" />
+                </SingleValue>
+                <SingleValue value="10">
+                  <Name textId="DT_K4731" />
+                </SingleValue>
+                <SingleValue value="11">
+                  <Name textId="DT_L2808" />
+                </SingleValue>
+                <SingleValue value="12">
+                  <Name textId="DT_M4198" />
+                </SingleValue>
+                <SingleValue value="13">
+                  <Name textId="DT_n9275" />
+                </SingleValue>
+                <SingleValue value="14">
+                  <Name textId="DT_o1846" />
+                </SingleValue>
+                <SingleValue value="15">
+                  <Name textId="DT_P6885" />
+                </SingleValue>
+                <SingleValue value="17">
+                  <Name textId="DT_r9180" />
+                </SingleValue>
+                <SingleValue value="18">
+                  <Name textId="DT_S1435" />
+                </SingleValue>
+                <SingleValue value="19">
+                  <Name textId="DT_t2434" />
+                </SingleValue>
+                <SingleValue value="20">
+                  <Name textId="DT_U9396" />
+                </SingleValue>
+                <SingleValue value="21">
+                  <Name textId="DT_v6765" />
+                </SingleValue>
+                <SingleValue value="22">
+                  <Name textId="DT_W580" />
+                </SingleValue>
+                <SingleValue value="24">
+                  <Name textId="DT_Y9847" />
+                </SingleValue>
+                <SingleValue value="26">
+                  <Name textId="DT_09154" />
+                </SingleValue>
+                <SingleValue value="27">
+                  <Name textId="DT_19380" />
+                </SingleValue>
+                <SingleValue value="28">
+                  <Name textId="DT_21776" />
+                </SingleValue>
+                <SingleValue value="29">
+                  <Name textId="DT_39394" />
+                </SingleValue>
+                <SingleValue value="30">
+                  <Name textId="DT_43982" />
+                </SingleValue>
+                <SingleValue value="31">
+                  <Name textId="DT_56650" />
+                </SingleValue>
+                <SingleValue value="32">
+                  <Name textId="DT_64170" />
+                </SingleValue>
+                <SingleValue value="33">
+                  <Name textId="DT_76051" />
+                </SingleValue>
+                <SingleValue value="34">
+                  <Name textId="DT_83146" />
+                </SingleValue>
+                <SingleValue value="35">
+                  <Name textId="DT_94570" />
+                </SingleValue>
+                <SingleValue value="36">
+                  <Name textId="DT__1694" />
+                </SingleValue>
+                <SingleValue value="37">
+                  <Name textId="DT_9444" />
+                </SingleValue>
+                <SingleValue value="38">
+                  <Name textId="DT_6342" />
+                </SingleValue>
+                <SingleValue value="47">
+                  <Name textId="DT_Space6185" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name78182digit7seg" />
+              <Description textId="DT_RI_Description78182digit7seg" />
+            </RecordItem>
+            <RecordItem subindex="3" bitOffset="48" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_A4497" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_B8169" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_C9890" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_D5723" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_E5850" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_F2488" />
+                </SingleValue>
+                <SingleValue value="6">
+                  <Name textId="DT_G9710" />
+                </SingleValue>
+                <SingleValue value="7">
+                  <Name textId="DT_H7428" />
+                </SingleValue>
+                <SingleValue value="8">
+                  <Name textId="DT_i9672" />
+                </SingleValue>
+                <SingleValue value="9">
+                  <Name textId="DT_J2167" />
+                </SingleValue>
+                <SingleValue value="10">
+                  <Name textId="DT_K4868" />
+                </SingleValue>
+                <SingleValue value="11">
+                  <Name textId="DT_L1633" />
+                </SingleValue>
+                <SingleValue value="12">
+                  <Name textId="DT_M6843" />
+                </SingleValue>
+                <SingleValue value="13">
+                  <Name textId="DT_n4919" />
+                </SingleValue>
+                <SingleValue value="14">
+                  <Name textId="DT_o4099" />
+                </SingleValue>
+                <SingleValue value="15">
+                  <Name textId="DT_P9784" />
+                </SingleValue>
+                <SingleValue value="17">
+                  <Name textId="DT_r1972" />
+                </SingleValue>
+                <SingleValue value="18">
+                  <Name textId="DT_S5111" />
+                </SingleValue>
+                <SingleValue value="19">
+                  <Name textId="DT_t1650" />
+                </SingleValue>
+                <SingleValue value="20">
+                  <Name textId="DT_U2202" />
+                </SingleValue>
+                <SingleValue value="21">
+                  <Name textId="DT_v3168" />
+                </SingleValue>
+                <SingleValue value="22">
+                  <Name textId="DT_W8702" />
+                </SingleValue>
+                <SingleValue value="24">
+                  <Name textId="DT_Y2729" />
+                </SingleValue>
+                <SingleValue value="26">
+                  <Name textId="DT_07593" />
+                </SingleValue>
+                <SingleValue value="27">
+                  <Name textId="DT_13393" />
+                </SingleValue>
+                <SingleValue value="28">
+                  <Name textId="DT_24524" />
+                </SingleValue>
+                <SingleValue value="29">
+                  <Name textId="DT_35109" />
+                </SingleValue>
+                <SingleValue value="30">
+                  <Name textId="DT_41747" />
+                </SingleValue>
+                <SingleValue value="31">
+                  <Name textId="DT_57414" />
+                </SingleValue>
+                <SingleValue value="32">
+                  <Name textId="DT_63364" />
+                </SingleValue>
+                <SingleValue value="33">
+                  <Name textId="DT_77752" />
+                </SingleValue>
+                <SingleValue value="34">
+                  <Name textId="DT_8747" />
+                </SingleValue>
+                <SingleValue value="35">
+                  <Name textId="DT_95267" />
+                </SingleValue>
+                <SingleValue value="36">
+                  <Name textId="DT__4432" />
+                </SingleValue>
+                <SingleValue value="37">
+                  <Name textId="DT_4809" />
+                </SingleValue>
+                <SingleValue value="38">
+                  <Name textId="DT_5002" />
+                </SingleValue>
+                <SingleValue value="47">
+                  <Name textId="DT_Space2427" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name96553digit7seg" />
+              <Description textId="DT_RI_Description96553digit7seg" />
+            </RecordItem>
+            <RecordItem subindex="4" bitOffset="40" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_A2071" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_B4872" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_C4117" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_D8671" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_E4371" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_F4565" />
+                </SingleValue>
+                <SingleValue value="6">
+                  <Name textId="DT_G6709" />
+                </SingleValue>
+                <SingleValue value="7">
+                  <Name textId="DT_H4022" />
+                </SingleValue>
+                <SingleValue value="8">
+                  <Name textId="DT_i2853" />
+                </SingleValue>
+                <SingleValue value="9">
+                  <Name textId="DT_J7538" />
+                </SingleValue>
+                <SingleValue value="10">
+                  <Name textId="DT_K9287" />
+                </SingleValue>
+                <SingleValue value="11">
+                  <Name textId="DT_L9989" />
+                </SingleValue>
+                <SingleValue value="12">
+                  <Name textId="DT_M7311" />
+                </SingleValue>
+                <SingleValue value="13">
+                  <Name textId="DT_n2912" />
+                </SingleValue>
+                <SingleValue value="14">
+                  <Name textId="DT_o3912" />
+                </SingleValue>
+                <SingleValue value="15">
+                  <Name textId="DT_P8366" />
+                </SingleValue>
+                <SingleValue value="17">
+                  <Name textId="DT_r9294" />
+                </SingleValue>
+                <SingleValue value="18">
+                  <Name textId="DT_S4024" />
+                </SingleValue>
+                <SingleValue value="19">
+                  <Name textId="DT_t1926" />
+                </SingleValue>
+                <SingleValue value="20">
+                  <Name textId="DT_U1987" />
+                </SingleValue>
+                <SingleValue value="21">
+                  <Name textId="DT_v6078" />
+                </SingleValue>
+                <SingleValue value="22">
+                  <Name textId="DT_W6861" />
+                </SingleValue>
+                <SingleValue value="24">
+                  <Name textId="DT_Y4989" />
+                </SingleValue>
+                <SingleValue value="26">
+                  <Name textId="DT_06902" />
+                </SingleValue>
+                <SingleValue value="27">
+                  <Name textId="DT_11655" />
+                </SingleValue>
+                <SingleValue value="28">
+                  <Name textId="DT_24979" />
+                </SingleValue>
+                <SingleValue value="29">
+                  <Name textId="DT_35912" />
+                </SingleValue>
+                <SingleValue value="30">
+                  <Name textId="DT_44220" />
+                </SingleValue>
+                <SingleValue value="31">
+                  <Name textId="DT_5924" />
+                </SingleValue>
+                <SingleValue value="32">
+                  <Name textId="DT_69447" />
+                </SingleValue>
+                <SingleValue value="33">
+                  <Name textId="DT_73163" />
+                </SingleValue>
+                <SingleValue value="34">
+                  <Name textId="DT_86604" />
+                </SingleValue>
+                <SingleValue value="35">
+                  <Name textId="DT_92729" />
+                </SingleValue>
+                <SingleValue value="36">
+                  <Name textId="DT__7052" />
+                </SingleValue>
+                <SingleValue value="37">
+                  <Name textId="DT_659" />
+                </SingleValue>
+                <SingleValue value="38">
+                  <Name textId="DT_7230" />
+                </SingleValue>
+                <SingleValue value="47">
+                  <Name textId="DT_Space5434" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name19644digit7seg" />
+            </RecordItem>
+            <RecordItem subindex="5" bitOffset="32" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_A3681" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_B9272" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_C3643" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_D348" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_E9469" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_F4895" />
+                </SingleValue>
+                <SingleValue value="6">
+                  <Name textId="DT_G3414" />
+                </SingleValue>
+                <SingleValue value="7">
+                  <Name textId="DT_H2226" />
+                </SingleValue>
+                <SingleValue value="8">
+                  <Name textId="DT_i5351" />
+                </SingleValue>
+                <SingleValue value="9">
+                  <Name textId="DT_J3842" />
+                </SingleValue>
+                <SingleValue value="10">
+                  <Name textId="DT_K6242" />
+                </SingleValue>
+                <SingleValue value="11">
+                  <Name textId="DT_L6303" />
+                </SingleValue>
+                <SingleValue value="12">
+                  <Name textId="DT_M3167" />
+                </SingleValue>
+                <SingleValue value="13">
+                  <Name textId="DT_n621" />
+                </SingleValue>
+                <SingleValue value="14">
+                  <Name textId="DT_o7160" />
+                </SingleValue>
+                <SingleValue value="15">
+                  <Name textId="DT_P7254" />
+                </SingleValue>
+                <SingleValue value="17">
+                  <Name textId="DT_r9201" />
+                </SingleValue>
+                <SingleValue value="18">
+                  <Name textId="DT_S9676" />
+                </SingleValue>
+                <SingleValue value="19">
+                  <Name textId="DT_t6117" />
+                </SingleValue>
+                <SingleValue value="20">
+                  <Name textId="DT_U458" />
+                </SingleValue>
+                <SingleValue value="21">
+                  <Name textId="DT_v2569" />
+                </SingleValue>
+                <SingleValue value="22">
+                  <Name textId="DT_W3253" />
+                </SingleValue>
+                <SingleValue value="24">
+                  <Name textId="DT_Y8330" />
+                </SingleValue>
+                <SingleValue value="26">
+                  <Name textId="DT_0692" />
+                </SingleValue>
+                <SingleValue value="27">
+                  <Name textId="DT_1113" />
+                </SingleValue>
+                <SingleValue value="28">
+                  <Name textId="DT_2240" />
+                </SingleValue>
+                <SingleValue value="29">
+                  <Name textId="DT_35764" />
+                </SingleValue>
+                <SingleValue value="30">
+                  <Name textId="DT_45467" />
+                </SingleValue>
+                <SingleValue value="31">
+                  <Name textId="DT_52073" />
+                </SingleValue>
+                <SingleValue value="32">
+                  <Name textId="DT_68885" />
+                </SingleValue>
+                <SingleValue value="33">
+                  <Name textId="DT_76296" />
+                </SingleValue>
+                <SingleValue value="34">
+                  <Name textId="DT_84995" />
+                </SingleValue>
+                <SingleValue value="35">
+                  <Name textId="DT_99577" />
+                </SingleValue>
+                <SingleValue value="36">
+                  <Name textId="DT__7540" />
+                </SingleValue>
+                <SingleValue value="37">
+                  <Name textId="DT_6913" />
+                </SingleValue>
+                <SingleValue value="38">
+                  <Name textId="DT_595" />
+                </SingleValue>
+                <SingleValue value="47">
+                  <Name textId="DT_Space8850" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name19095digit7seg" />
+              <Description textId="DT_RI_Description19095digit7seg" />
+            </RecordItem>
+            <RecordItem subindex="6" bitOffset="24" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_A8351" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_B7563" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_C8727" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_D2410" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_E1915" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_F5978" />
+                </SingleValue>
+                <SingleValue value="6">
+                  <Name textId="DT_G7633" />
+                </SingleValue>
+                <SingleValue value="7">
+                  <Name textId="DT_H7138" />
+                </SingleValue>
+                <SingleValue value="8">
+                  <Name textId="DT_i2970" />
+                </SingleValue>
+                <SingleValue value="9">
+                  <Name textId="DT_J2607" />
+                </SingleValue>
+                <SingleValue value="10">
+                  <Name textId="DT_K7029" />
+                </SingleValue>
+                <SingleValue value="11">
+                  <Name textId="DT_L3568" />
+                </SingleValue>
+                <SingleValue value="12">
+                  <Name textId="DT_M9527" />
+                </SingleValue>
+                <SingleValue value="13">
+                  <Name textId="DT_n7952" />
+                </SingleValue>
+                <SingleValue value="14">
+                  <Name textId="DT_o847" />
+                </SingleValue>
+                <SingleValue value="15">
+                  <Name textId="DT_P385" />
+                </SingleValue>
+                <SingleValue value="16">
+                  <Name textId="DT_Q5419" />
+                </SingleValue>
+                <SingleValue value="17">
+                  <Name textId="DT_r6235" />
+                </SingleValue>
+                <SingleValue value="18">
+                  <Name textId="DT_S3656" />
+                </SingleValue>
+                <SingleValue value="19">
+                  <Name textId="DT_t9567" />
+                </SingleValue>
+                <SingleValue value="20">
+                  <Name textId="DT_U7403" />
+                </SingleValue>
+                <SingleValue value="21">
+                  <Name textId="DT_v5055" />
+                </SingleValue>
+                <SingleValue value="22">
+                  <Name textId="DT_W6577" />
+                </SingleValue>
+                <SingleValue value="23">
+                  <Name textId="DT_X9769" />
+                </SingleValue>
+                <SingleValue value="24">
+                  <Name textId="DT_Y585" />
+                </SingleValue>
+                <SingleValue value="25">
+                  <Name textId="DT_Z7812" />
+                </SingleValue>
+                <SingleValue value="26">
+                  <Name textId="DT_06794" />
+                </SingleValue>
+                <SingleValue value="27">
+                  <Name textId="DT_13498" />
+                </SingleValue>
+                <SingleValue value="28">
+                  <Name textId="DT_24116" />
+                </SingleValue>
+                <SingleValue value="29">
+                  <Name textId="DT_31494" />
+                </SingleValue>
+                <SingleValue value="30">
+                  <Name textId="DT_44063" />
+                </SingleValue>
+                <SingleValue value="31">
+                  <Name textId="DT_56990" />
+                </SingleValue>
+                <SingleValue value="32">
+                  <Name textId="DT_68018" />
+                </SingleValue>
+                <SingleValue value="33">
+                  <Name textId="DT_72209" />
+                </SingleValue>
+                <SingleValue value="34">
+                  <Name textId="DT_88715" />
+                </SingleValue>
+                <SingleValue value="35">
+                  <Name textId="DT_91115" />
+                </SingleValue>
+                <SingleValue value="36">
+                  <Name textId="DT__6295" />
+                </SingleValue>
+                <SingleValue value="37">
+                  <Name textId="DT_1241" />
+                </SingleValue>
+                <SingleValue value="38">
+                  <Name textId="DT_3220" />
+                </SingleValue>
+                <SingleValue value="39">
+                  <Name textId="DT_5233" />
+                </SingleValue>
+                <SingleValue value="40">
+                  <Name textId="DT_2786" />
+                </SingleValue>
+                <SingleValue value="41">
+                  <Name textId="DT_k5421" />
+                </SingleValue>
+                <SingleValue value="42">
+                  <Name textId="DT_m8306" />
+                </SingleValue>
+                <SingleValue value="43">
+                  <Name textId="DT_N2380" />
+                </SingleValue>
+                <SingleValue value="44">
+                  <Name textId="DT_R4327" />
+                </SingleValue>
+                <SingleValue value="45">
+                  <Name textId="DT_V1733" />
+                </SingleValue>
+                <SingleValue value="46">
+                  <Name textId="DT_w8922" />
+                </SingleValue>
+                <SingleValue value="47">
+                  <Name textId="DT_Space1917" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name99246digit11seg" />
+              <Description textId="DT_RI_Description99246digit11seg" />
+            </RecordItem>
+            <RecordItem subindex="7" bitOffset="16" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_A6704" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_B3965" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_C6633" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_D8844" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_E5940" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_F4771" />
+                </SingleValue>
+                <SingleValue value="6">
+                  <Name textId="DT_G3196" />
+                </SingleValue>
+                <SingleValue value="7">
+                  <Name textId="DT_H7226" />
+                </SingleValue>
+                <SingleValue value="8">
+                  <Name textId="DT_i4977" />
+                </SingleValue>
+                <SingleValue value="9">
+                  <Name textId="DT_J8268" />
+                </SingleValue>
+                <SingleValue value="10">
+                  <Name textId="DT_K7905" />
+                </SingleValue>
+                <SingleValue value="11">
+                  <Name textId="DT_L8574" />
+                </SingleValue>
+                <SingleValue value="12">
+                  <Name textId="DT_M4882" />
+                </SingleValue>
+                <SingleValue value="13">
+                  <Name textId="DT_n7154" />
+                </SingleValue>
+                <SingleValue value="14">
+                  <Name textId="DT_o9398" />
+                </SingleValue>
+                <SingleValue value="15">
+                  <Name textId="DT_P4052" />
+                </SingleValue>
+                <SingleValue value="17">
+                  <Name textId="DT_r6880" />
+                </SingleValue>
+                <SingleValue value="18">
+                  <Name textId="DT_S5630" />
+                </SingleValue>
+                <SingleValue value="19">
+                  <Name textId="DT_t8789" />
+                </SingleValue>
+                <SingleValue value="20">
+                  <Name textId="DT_U6723" />
+                </SingleValue>
+                <SingleValue value="21">
+                  <Name textId="DT_v1868" />
+                </SingleValue>
+                <SingleValue value="22">
+                  <Name textId="DT_W1207" />
+                </SingleValue>
+                <SingleValue value="24">
+                  <Name textId="DT_Y4898" />
+                </SingleValue>
+                <SingleValue value="26">
+                  <Name textId="DT_09810" />
+                </SingleValue>
+                <SingleValue value="27">
+                  <Name textId="DT_14039" />
+                </SingleValue>
+                <SingleValue value="28">
+                  <Name textId="DT_23087" />
+                </SingleValue>
+                <SingleValue value="29">
+                  <Name textId="DT_37650" />
+                </SingleValue>
+                <SingleValue value="30">
+                  <Name textId="DT_44680" />
+                </SingleValue>
+                <SingleValue value="31">
+                  <Name textId="DT_57234" />
+                </SingleValue>
+                <SingleValue value="32">
+                  <Name textId="DT_66183" />
+                </SingleValue>
+                <SingleValue value="33">
+                  <Name textId="DT_74651" />
+                </SingleValue>
+                <SingleValue value="34">
+                  <Name textId="DT_87993" />
+                </SingleValue>
+                <SingleValue value="35">
+                  <Name textId="DT_96724" />
+                </SingleValue>
+                <SingleValue value="36">
+                  <Name textId="DT__2377" />
+                </SingleValue>
+                <SingleValue value="37">
+                  <Name textId="DT_6224" />
+                </SingleValue>
+                <SingleValue value="38">
+                  <Name textId="DT_3570" />
+                </SingleValue>
+                <SingleValue value="47">
+                  <Name textId="DT_Space6817" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name99717digit7seg" />
+              <Description textId="DT_RI_Description99717digit7seg" />
+            </RecordItem>
+            <RecordItem subindex="8" bitOffset="8" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_A7258" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_B3439" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_C3241" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_D4306" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_E1218" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_F855" />
+                </SingleValue>
+                <SingleValue value="6">
+                  <Name textId="DT_G3905" />
+                </SingleValue>
+                <SingleValue value="7">
+                  <Name textId="DT_H9180" />
+                </SingleValue>
+                <SingleValue value="8">
+                  <Name textId="DT_i3933" />
+                </SingleValue>
+                <SingleValue value="9">
+                  <Name textId="DT_J9142" />
+                </SingleValue>
+                <SingleValue value="10">
+                  <Name textId="DT_K7992" />
+                </SingleValue>
+                <SingleValue value="11">
+                  <Name textId="DT_L227" />
+                </SingleValue>
+                <SingleValue value="12">
+                  <Name textId="DT_M5992" />
+                </SingleValue>
+                <SingleValue value="13">
+                  <Name textId="DT_n5614" />
+                </SingleValue>
+                <SingleValue value="14">
+                  <Name textId="DT_o52" />
+                </SingleValue>
+                <SingleValue value="15">
+                  <Name textId="DT_P3625" />
+                </SingleValue>
+                <SingleValue value="17">
+                  <Name textId="DT_r5930" />
+                </SingleValue>
+                <SingleValue value="18">
+                  <Name textId="DT_S6995" />
+                </SingleValue>
+                <SingleValue value="19">
+                  <Name textId="DT_t5976" />
+                </SingleValue>
+                <SingleValue value="20">
+                  <Name textId="DT_U9003" />
+                </SingleValue>
+                <SingleValue value="21">
+                  <Name textId="DT_v6198" />
+                </SingleValue>
+                <SingleValue value="22">
+                  <Name textId="DT_W229" />
+                </SingleValue>
+                <SingleValue value="24">
+                  <Name textId="DT_Y2765" />
+                </SingleValue>
+                <SingleValue value="26">
+                  <Name textId="DT_09827" />
+                </SingleValue>
+                <SingleValue value="27">
+                  <Name textId="DT_13477" />
+                </SingleValue>
+                <SingleValue value="28">
+                  <Name textId="DT_23213" />
+                </SingleValue>
+                <SingleValue value="29">
+                  <Name textId="DT_37309" />
+                </SingleValue>
+                <SingleValue value="30">
+                  <Name textId="DT_42585" />
+                </SingleValue>
+                <SingleValue value="31">
+                  <Name textId="DT_53160" />
+                </SingleValue>
+                <SingleValue value="32">
+                  <Name textId="DT_68893" />
+                </SingleValue>
+                <SingleValue value="33">
+                  <Name textId="DT_71628" />
+                </SingleValue>
+                <SingleValue value="34">
+                  <Name textId="DT_83225" />
+                </SingleValue>
+                <SingleValue value="35">
+                  <Name textId="DT_95728" />
+                </SingleValue>
+                <SingleValue value="36">
+                  <Name textId="DT__9853" />
+                </SingleValue>
+                <SingleValue value="37">
+                  <Name textId="DT_5063" />
+                </SingleValue>
+                <SingleValue value="38">
+                  <Name textId="DT_5807" />
+                </SingleValue>
+                <SingleValue value="47">
+                  <Name textId="DT_Space7966" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name46318digit7seg" />
+              <Description textId="DT_RI_Description46318digit7seg" />
+            </RecordItem>
+            <RecordItem subindex="9" bitOffset="0" accessRightRestriction="rw">
+              <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                <SingleValue value="0">
+                  <Name textId="DT_A8411" />
+                </SingleValue>
+                <SingleValue value="1">
+                  <Name textId="DT_B165" />
+                </SingleValue>
+                <SingleValue value="2">
+                  <Name textId="DT_C2027" />
+                </SingleValue>
+                <SingleValue value="3">
+                  <Name textId="DT_D7029" />
+                </SingleValue>
+                <SingleValue value="4">
+                  <Name textId="DT_E5369" />
+                </SingleValue>
+                <SingleValue value="5">
+                  <Name textId="DT_F5563" />
+                </SingleValue>
+                <SingleValue value="6">
+                  <Name textId="DT_G740" />
+                </SingleValue>
+                <SingleValue value="7">
+                  <Name textId="DT_H2394" />
+                </SingleValue>
+                <SingleValue value="8">
+                  <Name textId="DT_i3162" />
+                </SingleValue>
+                <SingleValue value="9">
+                  <Name textId="DT_J1724" />
+                </SingleValue>
+                <SingleValue value="10">
+                  <Name textId="DT_K9201" />
+                </SingleValue>
+                <SingleValue value="11">
+                  <Name textId="DT_L8898" />
+                </SingleValue>
+                <SingleValue value="12">
+                  <Name textId="DT_M4698" />
+                </SingleValue>
+                <SingleValue value="13">
+                  <Name textId="DT_n3911" />
+                </SingleValue>
+                <SingleValue value="14">
+                  <Name textId="DT_o483" />
+                </SingleValue>
+                <SingleValue value="15">
+                  <Name textId="DT_P9247" />
+                </SingleValue>
+                <SingleValue value="17">
+                  <Name textId="DT_r5786" />
+                </SingleValue>
+                <SingleValue value="18">
+                  <Name textId="DT_S9949" />
+                </SingleValue>
+                <SingleValue value="19">
+                  <Name textId="DT_t4702" />
+                </SingleValue>
+                <SingleValue value="20">
+                  <Name textId="DT_U5512" />
+                </SingleValue>
+                <SingleValue value="21">
+                  <Name textId="DT_v6936" />
+                </SingleValue>
+                <SingleValue value="22">
+                  <Name textId="DT_W670" />
+                </SingleValue>
+                <SingleValue value="24">
+                  <Name textId="DT_Y4134" />
+                </SingleValue>
+                <SingleValue value="26">
+                  <Name textId="DT_09900" />
+                </SingleValue>
+                <SingleValue value="27">
+                  <Name textId="DT_14322" />
+                </SingleValue>
+                <SingleValue value="28">
+                  <Name textId="DT_24516" />
+                </SingleValue>
+                <SingleValue value="29">
+                  <Name textId="DT_38678" />
+                </SingleValue>
+                <SingleValue value="30">
+                  <Name textId="DT_43233" />
+                </SingleValue>
+                <SingleValue value="31">
+                  <Name textId="DT_59182" />
+                </SingleValue>
+                <SingleValue value="32">
+                  <Name textId="DT_67490" />
+                </SingleValue>
+                <SingleValue value="33">
+                  <Name textId="DT_77254" />
+                </SingleValue>
+                <SingleValue value="34">
+                  <Name textId="DT_81577" />
+                </SingleValue>
+                <SingleValue value="35">
+                  <Name textId="DT_93067" />
+                </SingleValue>
+                <SingleValue value="36">
+                  <Name textId="DT__3967" />
+                </SingleValue>
+                <SingleValue value="37">
+                  <Name textId="DT_290" />
+                </SingleValue>
+                <SingleValue value="38">
+                  <Name textId="DT_8040" />
+                </SingleValue>
+                <SingleValue value="47">
+                  <Name textId="DT_Space7459" />
+                </SingleValue>
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name72189digit7seg" />
+              <Description textId="DT_RI_Description72189digit7seg" />
+            </RecordItem>
+          </Datatype>
+          <RecordItemInfo subindex="1" defaultValue="0" />
+          <RecordItemInfo subindex="2" defaultValue="0" />
+          <RecordItemInfo subindex="3" defaultValue="0" />
+          <RecordItemInfo subindex="4" defaultValue="0" />
+          <RecordItemInfo subindex="5" defaultValue="0" />
+          <RecordItemInfo subindex="6" defaultValue="0" />
+          <RecordItemInfo subindex="7" defaultValue="0" />
+          <RecordItemInfo subindex="8" defaultValue="0" />
+          <RecordItemInfo subindex="9" defaultValue="0" />
+          <Name textId="TI_V_N_LinE" />
+          <Description textId="TI_V_D_Linenamecharacter" />
+        </Variable>
+        <Variable id="V_OUT_TEST" accessRights="wo" index="7000">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_Normal2291" />
+            </SingleValue>
+            <SingleValue value="1">
+              <Name textId="DT_Fixed3483" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_OUT_TEST" />
+          <Description textId="TI_V_D_Outputtest" />
+        </Variable>
+        <Variable id="V_Toggle" accessRights="wo" index="7010">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <SingleValue value="0">
+              <Name textId="DT_Flow1869" />
+            </SingleValue>
+            <SingleValue value="16">
+              <Name textId="DT_OUT12548" />
+            </SingleValue>
+            <SingleValue value="17">
+              <Name textId="DT_OUT22147" />
+            </SingleValue>
+            <SingleValue value="80">
+              <Name textId="DT_A_OUT6247" />
+            </SingleValue>
+            <SingleValue value="224">
+              <Name textId="DT_DIAG891" />
+            </SingleValue>
+            <SingleValue value="255">
+              <Name textId="DT_Err6373" />
+            </SingleValue>
+          </Datatype>
+          <Name textId="TI_V_N_Toggle" />
+          <Description textId="TI_V_D_Toggleoutputcommand" />
+        </Variable>
+        <Variable id="V_AoUt_val" accessRights="ro" index="7100" excludedFromDataStorage="false">
+          <Datatype xsi:type="UIntegerT" bitLength="16">
+            <ValueRange lowerValue="0" upperValue="300" />
+          </Datatype>
+          <Name textId="V_N_AoUt_val" />
+          <Description textId="V_D_Analogoutputvalue" />
+        </Variable>
+        <Variable id="V_PD_a" accessRights="ro" index="8000">
+          <Datatype xsi:type="Float32T" />
+          <Name textId="TI_V_N_PD_a" />
+          <Description textId="TI_V_D_Processdataa" />
+        </Variable>
+        <Variable id="V_PD_b" accessRights="ro" index="8010">
+          <Datatype xsi:type="Float32T" />
+          <Name textId="TI_V_N_PD_b" />
+          <Description textId="TI_V_D_Processdatab" />
+        </Variable>
+        <Variable id="V_Hi" accessRights="ro" index="8020">
+          <Datatype xsi:type="IntegerT" bitLength="16">
+            <ValueRange lowerValue="0" upperValue="4200" />
+          </Datatype>
+          <Name textId="TI_V_N_Hi" />
+          <Description textId="TI_V_D_Peakvalue" />
+        </Variable>
+        <Variable id="V_Lo" accessRights="ro" index="8030">
+          <Datatype xsi:type="IntegerT" bitLength="16">
+            <ValueRange lowerValue="0" upperValue="4200" />
+          </Datatype>
+          <Name textId="TI_V_N_Lo" />
+          <Description textId="TI_V_D_Bottomvalue" />
+        </Variable>
+        <Variable id="V_PD_AC" accessRights="ro" index="8040">
+          <Datatype xsi:type="RecordT" bitLength="32" subindexAccessSupported="false">
+            <RecordItem subindex="1" bitOffset="16" accessRightRestriction="ro">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="9999" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name7235Mantissa" />
+            </RecordItem>
+            <RecordItem subindex="2" bitOffset="0" accessRightRestriction="ro">
+              <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                <ValueRange lowerValue="0" upperValue="8" />
+              </SimpleDatatype>
+              <Name textId="DT_RI_Name3706Exponent" />
+            </RecordItem>
+          </Datatype>
+          <Name textId="TI_V_N_PD_AC" />
+          <Description textId="TI_V_D_ProcessdataAccumulate" />
+        </Variable>
+        <Variable id="V_Device_test2" accessRights="rw" index="16000" excludedFromDataStorage="true" defaultValue="255">
+          <Datatype xsi:type="UIntegerT" bitLength="8" />
+          <Name textId="TI_V_N_Device_test2" />
+          <Description textId="TI_V_D_testevent" />
+        </Variable>
+      </VariableCollection>
+      <ProcessDataCollection>
+        <ProcessData id="PD_ProcessData_IN">
+          <ProcessDataIn id="ProcessData_IN" bitLength="32">
+            <Datatype xsi:type="RecordT" bitLength="32" subindexAccessSupported="false">
+              <RecordItem subindex="1" bitOffset="16" accessRightRestriction="ro">
+                <SimpleDatatype xsi:type="IntegerT" bitLength="16">
+                  <ValueRange lowerValue="0" upperValue="4200" />
+                </SimpleDatatype>
+                <Name textId="DT_f342c364-e622-4cbd-8790-1ef74032a487" />
+              </RecordItem>
+              <RecordItem subindex="2" bitOffset="15" accessRightRestriction="ro">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="true">
+                    <Name textId="DT_fb59f057-65cf-46d4-834e-0593f64f67a5" />
+                  </SingleValue>
+                  <SingleValue value="false">
+                    <Name textId="DT_f42b38ac-0d1d-41ce-b727-4f009b20eea6" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="DT_f4fb2d3a-7199-4ce0-9d13-70418945ac82" />
+              </RecordItem>
+              <RecordItem subindex="3" bitOffset="14" accessRightRestriction="ro">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="true">
+                    <Name textId="DT_f8c47394-a623-47f9-8e0b-1bc757c1ebdc" />
+                  </SingleValue>
+                  <SingleValue value="false">
+                    <Name textId="DT_f4e68d2c-d62c-4162-a228-fd1aed42b4a7" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="DT_fcfd908b-2928-4c88-9bfa-e30080b5d87d" />
+              </RecordItem>
+              <RecordItem subindex="4" bitOffset="8" accessRightRestriction="ro">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="true">
+                    <Name textId="DT_f1a3d1cb-35b7-4cfb-9fb4-2f83dc4d1cca" />
+                  </SingleValue>
+                  <SingleValue value="false">
+                    <Name textId="DT_f96863e6-6ae0-412e-8ce4-6a6854ec81c9" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="DT_fa3fb801-fc3a-47dd-a601-0770898e024b" />
+              </RecordItem>
+              <RecordItem subindex="5" bitOffset="1" accessRightRestriction="ro">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="true">
+                    <Name textId="DT_f5584861-371b-4c3d-bb77-4715bf4d5921" />
+                  </SingleValue>
+                  <SingleValue value="false">
+                    <Name textId="DT_f0c17ace-7780-43e5-9c27-cee4a41a8b3b" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="DT_f254b95f-f867-4413-a091-cf8fc7a35b18" />
+              </RecordItem>
+              <RecordItem subindex="6" bitOffset="0" accessRightRestriction="ro">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="true">
+                    <Name textId="DT_f8a3be63-2467-4ea9-ba53-b67539d902af" />
+                  </SingleValue>
+                  <SingleValue value="false">
+                    <Name textId="DT_f71f69b1-1956-4838-bab8-bc7be3a4e232" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="DT_f43a5add-e481-4838-952a-72ad03bc7b46" />
+              </RecordItem>
+            </Datatype>
+            <Name textId="PD_IN_f6cbefbe-e9eb-43c7-9b8d-f0e52d9d983e" />
+          </ProcessDataIn>
+        </ProcessData>
+      </ProcessDataCollection>
+      <ErrorTypeCollection>
+        <StdErrorTypeRef code="128" additionalCode="0" />
+        <StdErrorTypeRef code="128" additionalCode="17" />
+        <StdErrorTypeRef code="128" additionalCode="18" />
+        <StdErrorTypeRef code="128" additionalCode="34" />
+        <StdErrorTypeRef code="128" additionalCode="35" />
+        <StdErrorTypeRef code="128" additionalCode="48" />
+        <StdErrorTypeRef code="128" additionalCode="49" />
+        <StdErrorTypeRef code="128" additionalCode="50" />
+        <StdErrorTypeRef code="128" additionalCode="51" />
+        <StdErrorTypeRef code="128" additionalCode="52" />
+        <StdErrorTypeRef code="128" additionalCode="53" />
+        <StdErrorTypeRef code="128" additionalCode="54" />
+        <StdErrorTypeRef code="128" additionalCode="64" />
+        <ErrorType code="129" additionalCode="1">
+          <Name textId="Error_Name_48098" />
+        </ErrorType>
+        <ErrorType code="129" additionalCode="2">
+          <Name textId="Error_Name_20619" />
+        </ErrorType>
+        <ErrorType code="129" additionalCode="240">
+          <Name textId="Error_Name_62368" />
+        </ErrorType>
+      </ErrorTypeCollection>
+      <EventCollection>
+        <StdEventRef code="0" />
+        <StdEventRef code="35856" />
+        <Event code="36000" type="Warning">
+          <Name textId="Event_Name_46007" />
+        </Event>
+        <Event code="36001" type="Warning">
+          <Name textId="Event_Name_25020" />
+        </Event>
+        <Event code="36048" type="Error">
+          <Name textId="Event_Name_28587" />
+          <Description textId="Event_Description_28587" />
+        </Event>
+        <Event code="36049" type="Error">
+          <Name textId="Event_Name_60958" />
+          <Description textId="Event_Description_60958" />
+        </Event>
+        <Event code="36097" type="Error">
+          <Name textId="Event_Name_18561" />
+          <Description textId="Event_Description_18561" />
+        </Event>
+        <Event code="36098" type="Error">
+          <Name textId="Event_Name_68849" />
+          <Description textId="Event_Description_68849" />
+        </Event>
+        <Event code="36099" type="Error">
+          <Name textId="Event_Name_4437" />
+          <Description textId="Event_Description_4437" />
+        </Event>
+        <Event code="36100" type="Error">
+          <Name textId="Event_Name_15882" />
+          <Description textId="Event_Description_15882" />
+        </Event>
+        <Event code="36101" type="Error">
+          <Name textId="Event_Name_1684" />
+          <Description textId="Event_Description_1684" />
+        </Event>
+        <Event code="36102" type="Error">
+          <Name textId="Event_Name_38261" />
+          <Description textId="Event_Description_38261" />
+        </Event>
+        <Event code="36104" type="Error">
+          <Name textId="Event_Name_69531" />
+          <Description textId="Event_Description_69531" />
+        </Event>
+        <Event code="36224" type="Warning">
+          <Name textId="Event_Name_66961" />
+        </Event>
+      </EventCollection>
+      <UserInterface>
+        <ProcessDataRefCollection>
+          <ProcessDataRef processDataId="ProcessData_IN">
+            <ProcessDataRecordItemInfo subindex="1" />
+            <ProcessDataRecordItemInfo subindex="2" />
+            <ProcessDataRecordItemInfo subindex="3" />
+            <ProcessDataRecordItemInfo subindex="4" />
+            <ProcessDataRecordItemInfo subindex="5" />
+            <ProcessDataRecordItemInfo subindex="6" />
+          </ProcessDataRef>
+        </ProcessDataRefCollection>
+        <MenuCollection>
+          <Menu id="M_ALL_PeakBottom_1352">
+            <Name textId="TI_M_Name_M_ALL_PeakBottom_1352" />
+            <VariableRef variableId="V_Hi" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <VariableRef variableId="V_Lo" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_ALL_PeakBottom_1357">
+            <Name textId="TI_M_Name_M_ALL_PeakBottom_1357" />
+            <VariableRef variableId="V_Hi" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <VariableRef variableId="V_Lo" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_DeviceInfo">
+            <Name textId="TI_M_Name_M_DeviceInfo" />
+            <VariableRef variableId="V_PD_a" accessRightRestriction="ro" />
+            <VariableRef variableId="V_PD_b" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_Diagnosis">
+            <Name textId="TI_M_Name_M_Diagnosis" />
+            <VariableRef variableId="V_DeviceStatus" accessRightRestriction="ro" />
+            <VariableRef variableId="V_DetailedDeviceStatus" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_ME_SP_F0">
+            <Name textId="TI_M_Name_M_ME_SP_F0" />
+            <VariableRef variableId="V_FLU" accessRightRestriction="rw" />
+            <VariableRef variableId="V_rEF" accessRightRestriction="rw" />
+            <VariableRef variableId="V_Unit" accessRightRestriction="rw" />
+            <VariableRef variableId="V_NorP" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_F1">
+            <Name textId="TI_M_Name_M_ME_SP_F1" />
+            <RecordItemRef variableId="V_OUT1_mode" subindex="1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_mode" subindex="2" accessRightRestriction="rw" />
+            <VariableRef variableId="V_Add_dEC" accessRightRestriction="rw" />
+            <VariableRef variableId="V_PLS1_Wid" accessRightRestriction="rw" />
+            <VariableRef variableId="V_CoL" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_F10">
+            <Name textId="TI_M_Name_M_ME_SP_F10" />
+            <RecordItemRef variableId="V_Sub" subindex="1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_Sub" subindex="2" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_LinE" subindex="1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_LinE" subindex="2" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_LinE" subindex="3" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_LinE" subindex="4" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_LinE" subindex="5" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_LinE" subindex="6" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_LinE" subindex="7" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_LinE" subindex="8" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_LinE" subindex="9" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_F13">
+            <Name textId="TI_M_Name_M_ME_SP_F13" />
+            <VariableRef variableId="V_rEv" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_F14">
+            <Name textId="TI_M_Name_M_ME_SP_F14" />
+            <VariableRef variableId="V_CUt" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_F2">
+            <Name textId="TI_M_Name_M_ME_SP_F2" />
+            <RecordItemRef variableId="V_OUT2_mdoe" subindex="1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_mdoe" subindex="2" accessRightRestriction="rw" />
+            <VariableRef variableId="V_Add_dEC" accessRightRestriction="rw" />
+            <VariableRef variableId="V_PLS2_Wid" accessRightRestriction="rw" />
+            <VariableRef variableId="V_CoL" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_F3">
+            <Name textId="TI_M_Name_M_ME_SP_F3" />
+            <VariableRef variableId="V_FiL" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_F30">
+            <Name textId="TI_M_Name_M_ME_SP_F30" />
+            <VariableRef variableId="V_SAVE" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_F5">
+            <Name textId="TI_M_Name_M_ME_SP_F5" />
+            <VariableRef variableId="V_FUNC" accessRightRestriction="rw" />
+            <VariableRef variableId="V_Ex_in" accessRightRestriction="rw" />
+            <VariableRef variableId="V_AoUt" accessRightRestriction="rw" />
+            <MenuRef menuId="M_ME_SP_Free_range_value_1352">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_Free_range_value_1357">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+          </Menu>
+          <Menu id="M_ME_SP_F80">
+            <Name textId="TI_M_Name_M_ME_SP_F80" />
+            <VariableRef variableId="V_diSP" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_F81">
+            <Name textId="TI_M_Name_M_ME_SP_F81" />
+            <RecordItemRef variableId="V_Pin" subindex="1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_Pin" subindex="2" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_Free_range_value_1352">
+            <Name textId="TI_M_Name_M_ME_SP_Free_range_value_1352" />
+            <RecordItemRef variableId="V_FrEE" subindex="1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_FrEE" subindex="2" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_Free_range_value_1357">
+            <Name textId="TI_M_Name_M_ME_SP_Free_range_value_1357" />
+            <RecordItemRef variableId="V_FrEE" subindex="1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_FrEE" subindex="2" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_Ident">
+            <Name textId="TI_M_Name_M_ME_SP_Ident" />
+            <VariableRef variableId="V_VendorName" />
+            <VariableRef variableId="V_VendorText" />
+            <VariableRef variableId="V_ProductName" />
+            <VariableRef variableId="V_ProductID" />
+            <VariableRef variableId="V_ProductText" />
+            <VariableRef variableId="V_SerialNumber" />
+            <VariableRef variableId="V_HardwareRevision" />
+            <VariableRef variableId="V_FirmwareRevision" />
+            <VariableRef variableId="V_ApplicationSpecificTag" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT1">
+            <Name textId="TI_M_Name_M_ME_SP_OUT1" />
+            <MenuRef menuId="M_ME_SP_OUT1_value_1352">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_OUT1_value_1357">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_OUT1_AC_1038">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_OUT1_AC_1043">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_OUT1_PLS_1038">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_OUT1_PLS_1043">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+          </Menu>
+          <Menu id="M_ME_SP_OUT1_AC_1038">
+            <Name textId="TI_M_Name_M_ME_SP_OUT1_AC_1038" />
+            <RecordItemRef variableId="V_OUT1_AC_L" subindex="1" unitCode="1038" displayFormat="Dec" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_AC_L" subindex="2" displayFormat="Dec" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT1_AC_1043">
+            <Name textId="TI_M_Name_M_ME_SP_OUT1_AC_1043" />
+            <RecordItemRef variableId="V_OUT1_AC_ft3" subindex="1" unitCode="1043" displayFormat="Dec" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_AC_ft3" subindex="2" displayFormat="Dec" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT1_PLS_1038">
+            <Name textId="TI_M_Name_M_ME_SP_OUT1_PLS_1038" />
+            <VariableRef variableId="V_PLS1_conv_L" unitCode="1038" displayFormat="Dec.0" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT1_PLS_1043">
+            <Name textId="TI_M_Name_M_ME_SP_OUT1_PLS_1043" />
+            <VariableRef variableId="V_PLS1_conv_ft3" unitCode="1043" displayFormat="Dec.0" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT1_value_1352">
+            <Name textId="TI_M_Name_M_ME_SP_OUT1_value_1352" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="1" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="2" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="3" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="4" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="5" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="6" gradient="0.01" offset="0" unitCode="1054" displayFormat="Dec.2" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT1_value_1357">
+            <Name textId="TI_M_Name_M_ME_SP_OUT1_value_1357" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="1" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="2" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="3" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="4" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="5" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="6" gradient="0.01" offset="0" unitCode="1054" displayFormat="Dec.2" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT2">
+            <Name textId="TI_M_Name_M_ME_SP_OUT2" />
+            <MenuRef menuId="M_ME_SP_OUT2_value_1352">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_OUT2_value_1357">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_OUT2_AC_1038">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_OUT2_AC_1043">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_OUT2_PLS_1038">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_ME_SP_OUT2_PLS_1043">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+          </Menu>
+          <Menu id="M_ME_SP_OUT2_AC_1038">
+            <Name textId="TI_M_Name_M_ME_SP_OUT2_AC_1038" />
+            <RecordItemRef variableId="V_OUT2_AC_L" subindex="1" unitCode="1038" displayFormat="Dec" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_AC_L" subindex="2" displayFormat="Dec" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT2_AC_1043">
+            <Name textId="TI_M_Name_M_ME_SP_OUT2_AC_1043" />
+            <RecordItemRef variableId="V_OUT2_AC_ft3" subindex="1" unitCode="1043" displayFormat="Dec" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_AC_ft3" subindex="2" displayFormat="Dec" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT2_PLS_1038">
+            <Name textId="TI_M_Name_M_ME_SP_OUT2_PLS_1038" />
+            <VariableRef variableId="V_PLS2_conv_L" unitCode="1038" displayFormat="Dec.0" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT2_PLS_1043">
+            <Name textId="TI_M_Name_M_ME_SP_OUT2_PLS_1043" />
+            <VariableRef variableId="V_PLS2_conv_ft3" unitCode="1043" displayFormat="Dec.0" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT2_value_1352">
+            <Name textId="TI_M_Name_M_ME_SP_OUT2_value_1352" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="1" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="2" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="3" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="4" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="5" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="6" gradient="0.01" offset="0" unitCode="1054" displayFormat="Dec.2" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_OUT2_value_1357">
+            <Name textId="TI_M_Name_M_ME_SP_OUT2_value_1357" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="1" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="2" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="3" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="4" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="5" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="6" gradient="0.01" offset="0" unitCode="1054" displayFormat="Dec.2" accessRightRestriction="rw" />
+          </Menu>
+          <Menu id="M_ME_SP_Param">
+            <Name textId="TI_M_Name_M_ME_SP_Param" />
+            <MenuRef menuId="M_ME_SP_OUT1" />
+            <MenuRef menuId="M_ME_SP_OUT2" />
+            <MenuRef menuId="M_ME_SP_F0" />
+            <MenuRef menuId="M_ME_SP_F1" />
+            <MenuRef menuId="M_ME_SP_F2" />
+            <MenuRef menuId="M_ME_SP_F3" />
+            <MenuRef menuId="M_ME_SP_F5" />
+            <MenuRef menuId="M_ME_SP_F10" />
+            <MenuRef menuId="M_ME_SP_F13" />
+            <MenuRef menuId="M_ME_SP_F14" />
+            <MenuRef menuId="M_ME_SP_F30" />
+            <MenuRef menuId="M_ME_SP_F80" />
+            <MenuRef menuId="M_ME_SP_F81" />
+            <MenuRef menuId="M_ME_SP_PeakBottom" />
+            <MenuRef menuId="M_ME_SP_Setup" />
+            <MenuRef menuId="M_DeviceInfo" />
+          </Menu>
+          <Menu id="M_ME_SP_PeakBottom">
+            <Name textId="TI_M_Name_M_ME_SP_PeakBottom" />
+            <MenuRef menuId="M_ALL_PeakBottom_1352">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_ALL_PeakBottom_1357">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+          </Menu>
+          <Menu id="M_ME_SP_Setup">
+            <Name textId="TI_M_Name_M_ME_SP_Setup" />
+            <RecordItemRef variableId="V_DeviceAccessLocks" subindex="2" accessRightRestriction="rw" />
+            <RecordItemRef variableId="V_DeviceAccessLocks" subindex="4" accessRightRestriction="rw" />
+            <VariableRef variableId="V_SystemCommand" accessRightRestriction="wo">
+              <Button buttonValue="128" />
+            </VariableRef>
+            <VariableRef variableId="V_SystemCommand" accessRightRestriction="wo">
+              <Button buttonValue="129" />
+            </VariableRef>
+            <VariableRef variableId="V_SystemCommand" accessRightRestriction="wo">
+              <Button buttonValue="130" />
+            </VariableRef>
+            <VariableRef variableId="V_SystemCommand" accessRightRestriction="wo">
+              <Button buttonValue="170" />
+            </VariableRef>
+            <VariableRef variableId="V_SystemCommand" accessRightRestriction="wo">
+              <Button buttonValue="190" />
+            </VariableRef>
+          </Menu>
+          <Menu id="M_Moniter">
+            <Name textId="TI_M_Name_M_Moniter" />
+            <MenuRef menuId="M_OB_Moniter_1352">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_Monitor_1357">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_Monitor_AC_1038">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_Monitor_AC_1043">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_Monitor_AOUT_1240" />
+            <MenuRef menuId="M_Output_check" />
+          </Menu>
+          <Menu id="M_OB_F0">
+            <Name textId="TI_M_Name_M_OB_F0" />
+            <VariableRef variableId="V_FLU" accessRightRestriction="ro" />
+            <VariableRef variableId="V_rEF" accessRightRestriction="ro" />
+            <VariableRef variableId="V_Unit" accessRightRestriction="ro" />
+            <VariableRef variableId="V_NorP" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_F1">
+            <Name textId="TI_M_Name_M_OB_F1" />
+            <RecordItemRef variableId="V_OUT1_mode" subindex="1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_mode" subindex="2" accessRightRestriction="ro" />
+            <VariableRef variableId="V_Add_dEC" accessRightRestriction="ro" />
+            <VariableRef variableId="V_PLS1_Wid" accessRightRestriction="ro" />
+            <VariableRef variableId="V_CoL" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_F10">
+            <Name textId="TI_M_Name_M_OB_F10" />
+            <RecordItemRef variableId="V_Sub" subindex="1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_Sub" subindex="2" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_LinE" subindex="1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_LinE" subindex="2" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_LinE" subindex="3" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_LinE" subindex="4" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_LinE" subindex="5" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_LinE" subindex="6" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_LinE" subindex="7" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_LinE" subindex="8" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_LinE" subindex="9" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_F13">
+            <Name textId="TI_M_Name_M_OB_F13" />
+            <VariableRef variableId="V_rEv" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_F14">
+            <Name textId="TI_M_Name_M_OB_F14" />
+            <VariableRef variableId="V_CUt" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_F2">
+            <Name textId="TI_M_Name_M_OB_F2" />
+            <RecordItemRef variableId="V_OUT2_mdoe" subindex="1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_mdoe" subindex="2" accessRightRestriction="ro" />
+            <VariableRef variableId="V_Add_dEC" accessRightRestriction="ro" />
+            <VariableRef variableId="V_PLS2_Wid" accessRightRestriction="ro" />
+            <VariableRef variableId="V_CoL" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_F3">
+            <Name textId="TI_M_Name_M_OB_F3" />
+            <VariableRef variableId="V_FiL" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_F30">
+            <Name textId="TI_M_Name_M_OB_F30" />
+            <VariableRef variableId="V_SAVE" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_F5">
+            <Name textId="TI_M_Name_M_OB_F5" />
+            <VariableRef variableId="V_FUNC" accessRightRestriction="ro" />
+            <VariableRef variableId="V_Ex_in" accessRightRestriction="ro" />
+            <VariableRef variableId="V_AoUt" accessRightRestriction="ro" />
+            <MenuRef menuId="M_OB_Free_range_value_1352">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_Free_range_value_1357">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+          </Menu>
+          <Menu id="M_OB_F80">
+            <Name textId="TI_M_Name_M_OB_F80" />
+            <VariableRef variableId="V_diSP" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_Free_range_value_1352">
+            <Name textId="Iffa033f4-f468-40d4-bdb1-0ad5ae13abcc" />
+            <RecordItemRef variableId="V_FrEE" subindex="1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_FrEE" subindex="2" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_Free_range_value_1357">
+            <Name textId="TI_M_Name_M_OB_Free_range_value_1357" />
+            <RecordItemRef variableId="V_FrEE" subindex="1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_FrEE" subindex="2" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_Ident">
+            <Name textId="TI_M_Name_M_OB_Ident" />
+            <VariableRef variableId="V_VendorName" accessRightRestriction="ro" />
+            <VariableRef variableId="V_VendorText" accessRightRestriction="ro" />
+            <VariableRef variableId="V_ProductName" accessRightRestriction="ro" />
+            <VariableRef variableId="V_ProductID" accessRightRestriction="ro" />
+            <VariableRef variableId="V_ProductText" accessRightRestriction="ro" />
+            <VariableRef variableId="V_SerialNumber" accessRightRestriction="ro" />
+            <VariableRef variableId="V_HardwareRevision" accessRightRestriction="ro" />
+            <VariableRef variableId="V_FirmwareRevision" accessRightRestriction="ro" />
+            <VariableRef variableId="V_ApplicationSpecificTag" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_Moniter_1352">
+            <Name textId="TI_M_Name_M_OB_Moniter_1352" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="1" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="2" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="3" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="4" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="5" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="6" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_Monitor_1357">
+            <Name textId="TI_M_Name_M_OB_Monitor_1357" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="1" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="2" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="3" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="4" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="5" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="6" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_Monitor_AC_1038">
+            <Name textId="TI_M_Name_M_OB_Monitor_AC_1038" />
+            <RecordItemRef variableId="V_PD_AC" subindex="1" unitCode="1038" displayFormat="Dec" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_PD_AC" subindex="2" displayFormat="Dec" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_Monitor_AC_1043">
+            <Name textId="TI_M_Name_M_OB_Monitor_AC_1043" />
+            <RecordItemRef variableId="V_PD_AC" subindex="1" unitCode="1043" displayFormat="Dec" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_PD_AC" subindex="2" displayFormat="Dec" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_Monitor_AOUT_1240">
+            <Name textId="TI_M_Name_M_OB_Monitor_AOUT_1240" />
+            <VariableRef variableId="V_AoUt_val" gradient="0.1" offset="0" unitCode="1240" displayFormat="Dec.1" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT1">
+            <Name textId="TI_M_Name_M_OB_OUT1" />
+            <MenuRef menuId="M_OB_OUT1_value_1352">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_OUT1_value_1357">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_OUT1_AC_1038">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_OUT1_AC_1043">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_OUT1_PLS_1038">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_OUT1_PLS_1043">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+          </Menu>
+          <Menu id="M_OB_OUT1_AC_1038">
+            <Name textId="TI_M_Name_M_OB_OUT1_AC_1038" />
+            <RecordItemRef variableId="V_OUT1_AC_L" subindex="1" unitCode="1038" displayFormat="Dec" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_AC_L" subindex="2" displayFormat="Dec" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT1_AC_1043">
+            <Name textId="TI_M_Name_M_OB_OUT1_AC_1043" />
+            <RecordItemRef variableId="V_OUT1_AC_ft3" subindex="1" unitCode="1043" displayFormat="Dec" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_AC_ft3" subindex="2" displayFormat="Dec" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT1_PLS_1038">
+            <Name textId="TI_M_Name_M_OB_OUT1_PLS_1038" />
+            <VariableRef variableId="V_PLS1_conv_L" unitCode="1038" displayFormat="Dec.0" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT1_PLS_1043">
+            <Name textId="TI_M_Name_M_OB_OUT1_PLS_1043" />
+            <VariableRef variableId="V_PLS1_conv_ft3" unitCode="1043" displayFormat="Dec.0" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT1_value_1352">
+            <Name textId="TI_M_Name_M_OB_OUT1_value_1352" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="1" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="2" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="3" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="4" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="5" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="6" gradient="0.01" offset="0" unitCode="1054" displayFormat="Dec.2" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT1_value_1357">
+            <Name textId="TI_M_Name_M_OB_OUT1_value_1357" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="1" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="2" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="3" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="4" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="5" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_set_value" subindex="6" gradient="0.01" offset="0" unitCode="1054" displayFormat="Dec.2" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT2">
+            <Name textId="TI_M_Name_M_OB_OUT2" />
+            <MenuRef menuId="M_OB_OUT2_value_1352">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_OUT2_value_1357">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_OUT2_AC_1038">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_OUT2_AC_1043">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_OUT2_PLS_1038">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_OB_OUT2_PLS_1043">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+          </Menu>
+          <Menu id="M_OB_OUT2_AC_1038">
+            <Name textId="TI_M_Name_M_OB_OUT2_AC_1038" />
+            <RecordItemRef variableId="V_OUT2_AC_L" subindex="1" unitCode="1038" displayFormat="Dec" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT1_AC_L" subindex="2" displayFormat="Dec" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT2_AC_1043">
+            <Name textId="TI_M_Name_M_OB_OUT2_AC_1043" />
+            <RecordItemRef variableId="V_OUT2_AC_ft3" subindex="1" unitCode="1043" displayFormat="Dec" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_AC_ft3" subindex="2" displayFormat="Dec" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT2_PLS_1038">
+            <Name textId="TI_M_Name_M_OB_OUT2_PLS_1038" />
+            <VariableRef variableId="V_PLS2_conv_L" unitCode="1038" displayFormat="Dec.0" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT2_PLS_1043">
+            <Name textId="TI_M_Name_M_OB_OUT2_PLS_1043" />
+            <VariableRef variableId="V_PLS2_conv_ft3" unitCode="1043" displayFormat="Dec.0" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT2_value_1352">
+            <Name textId="TI_M_Name_M_OB_OUT2_value_1352" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="1" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="2" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="3" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="4" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="5" gradient="0.25" offset="0" unitCode="1352" displayFormat="Dec.0" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="6" gradient="0.01" offset="0" unitCode="1054" displayFormat="Dec.2" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_OUT2_value_1357">
+            <Name textId="TI_M_Name_M_OB_OUT2_value_1357" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="1" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="2" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="3" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="4" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="5" gradient="0.0088275" offset="0" unitCode="1357" displayFormat="Dec.1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_OUT2_set_value" subindex="6" gradient="0.01" offset="0" unitCode="1054" displayFormat="Dec.2" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OB_Param">
+            <Name textId="TI_M_Name_M_OB_Param" />
+            <MenuRef menuId="M_OB_OUT1" />
+            <MenuRef menuId="M_OB_OUT2" />
+            <MenuRef menuId="M_OB_F0" />
+            <MenuRef menuId="M_OB_F1" />
+            <MenuRef menuId="M_OB_F2" />
+            <MenuRef menuId="M_OB_F3" />
+            <MenuRef menuId="M_OB_F5" />
+            <MenuRef menuId="M_OB_F10" />
+            <MenuRef menuId="M_OB_F13" />
+            <MenuRef menuId="M_OB_F14" />
+            <MenuRef menuId="M_OB_F30" />
+            <MenuRef menuId="M_OB_F80" />
+            <MenuRef menuId="M_OB_PeakBottom" />
+            <MenuRef menuId="M_DeviceInfo" />
+          </Menu>
+          <Menu id="M_OB_PeakBottom">
+            <Name textId="TI_M_Name_M_OB_PeakBottom" />
+            <MenuRef menuId="M_ALL_PeakBottom_1352">
+              <Condition variableId="V_Unit" value="0" />
+            </MenuRef>
+            <MenuRef menuId="M_ALL_PeakBottom_1357">
+              <Condition variableId="V_Unit" value="1" />
+            </MenuRef>
+          </Menu>
+          <Menu id="M_Output_check">
+            <Name textId="TI_M_Name_M_Output_check" />
+            <VariableRef variableId="V_OUT_TEST" accessRightRestriction="wo">
+              <Button buttonValue="0">
+                <Description textId="BT_D_0_Normal" />
+              </Button>
+            </VariableRef>
+            <VariableRef variableId="V_OUT_TEST" accessRightRestriction="wo">
+              <Button buttonValue="1">
+                <Description textId="BT_D_1_Fixed" />
+              </Button>
+            </VariableRef>
+            <VariableRef variableId="V_Toggle" accessRightRestriction="wo">
+              <Button buttonValue="0">
+                <Description textId="BT_D_0_Flow" />
+              </Button>
+            </VariableRef>
+            <VariableRef variableId="V_Toggle" accessRightRestriction="wo">
+              <Button buttonValue="16">
+                <Description textId="BT_D_16_OUT1" />
+              </Button>
+            </VariableRef>
+            <VariableRef variableId="V_Toggle" accessRightRestriction="wo">
+              <Button buttonValue="17">
+                <Description textId="BT_D_17_OUT2" />
+              </Button>
+            </VariableRef>
+            <VariableRef variableId="V_Toggle" accessRightRestriction="wo">
+              <Button buttonValue="80">
+                <Description textId="BT_D_80_A_OUT" />
+              </Button>
+            </VariableRef>
+            <VariableRef variableId="V_Toggle" accessRightRestriction="wo">
+              <Button buttonValue="224">
+                <Description textId="BT_D_224_DIAG" />
+              </Button>
+            </VariableRef>
+            <VariableRef variableId="V_Toggle" accessRightRestriction="wo">
+              <Button buttonValue="255">
+                <Description textId="BT_D_255_Err" />
+              </Button>
+            </VariableRef>
+          </Menu>
+        </MenuCollection>
+        <ObserverRoleMenuSet>
+          <IdentificationMenu menuId="M_OB_Ident" />
+          <ParameterMenu menuId="M_OB_Param" />
+          <ObservationMenu menuId="M_Moniter" />
+          <DiagnosisMenu menuId="M_Diagnosis" />
+        </ObserverRoleMenuSet>
+        <MaintenanceRoleMenuSet>
+          <IdentificationMenu menuId="M_ME_SP_Ident" />
+          <ParameterMenu menuId="M_ME_SP_Param" />
+          <ObservationMenu menuId="M_Moniter" />
+          <DiagnosisMenu menuId="M_Diagnosis" />
+        </MaintenanceRoleMenuSet>
+        <SpecialistRoleMenuSet>
+          <IdentificationMenu menuId="M_ME_SP_Ident" />
+          <ParameterMenu menuId="M_ME_SP_Param" />
+          <ObservationMenu menuId="M_Moniter" />
+          <DiagnosisMenu menuId="M_Diagnosis" />
+        </SpecialistRoleMenuSet>
+      </UserInterface>
+    </DeviceFunction>
+  </ProfileBody>
+  <CommNetworkProfile xsi:type="IOLinkCommNetworkProfileT" iolinkRevision="V1.1">
+    <TransportLayers>
+      <PhysicalLayer bitrate="COM2" minCycleTime="3300" sioSupported="true" mSequenceCapability="41">
+        <Connection xsi:type="M12-4ConnectionT">
+          <ProductRef productId="PF3A701H-xx-L3x-xxx" />
+          <Wire1 />
+          <Wire2 color="WH" function="Other" />
+          <Wire3 />
+          <Wire4 />
+        </Connection>
+      </PhysicalLayer>
+    </TransportLayers>
+    <Test>
+      <Config1 index="241" testValue="0xFF" />
+      <Config2 index="16000" testValue="0xFF" />
+      <Config3 index="24" testValue="0x30,0x31,0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39,0x41,0x42,0x43,0x44,0x45,0x46,0x30,0x31,0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39,0x41,0x42,0x43,0x44,0x45,0x46" />
+      <Config7 index="2">
+        <EventTrigger appearValue="240" disappearValue="241" />
+        <EventTrigger appearValue="242" disappearValue="243" />
+      </Config7>
+    </Test>
+  </CommNetworkProfile>
+  <ExternalTextCollection>
+    <PrimaryLanguage xml:lang="en">
+      <Text id="TI_VendorText" value="www.smcworld.com" />
+      <Text id="TI_Device_Name" value="PF3A701H-xx-L3x-xxx" />
+      <Text id="TI_DeviceFamily" value="PF3A7H" />
+      <Text id="TI_VendorUrl" value="https://www.smcworld.com" />
+      <Text id="TI_Device_PF3A701H-xx-L3x-xxx_Name" value="PF3A701H-xx-L3x-xxx" />
+      <Text id="TI_Device_PF3A701H-xx-L3x-xxx_Description" value="Flow rate measuring range: 10..1000L/min" />
+      <Text id="Std_V_469134" value="Peak/Bottom clear" />
+      <Text id="Std_V_75943" value="Accumu reset" />
+      <Text id="Std_V_277975" value="test event A appears" />
+      <Text id="Std_V_540037" value="test event A disappears" />
+      <Text id="Std_V_883686" value="test event B appears" />
+      <Text id="Std_V_126923" value="test event B disappears" />
+      <Text id="TI_V_N_Device_test" value="Device_test" />
+      <Text id="TI_V_N_Unit" value="Unit" />
+      <Text id="TI_V_D_Unitsetting" value="Unit setting" />
+      <Text id="DT_LminL6811" value="L/min(L)" />
+      <Text id="DT_cfmft37894" value="cfm(ft3)" />
+      <Text id="TI_V_N_CoL" value="CoL" />
+      <Text id="TI_V_D_Displaycolorsetting" value="Display color setting" />
+      <Text id="DT_red9701" value="red" />
+      <Text id="DT_Grn4383" value="Grn" />
+      <Text id="DT_1SoG8700" value="1SoG" />
+      <Text id="DT_1Sor4773" value="1Sor" />
+      <Text id="DT_2SoG3490" value="2SoG" />
+      <Text id="DT_2Sor1793" value="2Sor" />
+      <Text id="TI_V_N_NorP" value="NorP" />
+      <Text id="TI_V_D_SwitchingsettingofoutputNPNPNPspecifications" value="Switching setting of output NPN/PNP specifications" />
+      <Text id="DT_nPn7521" value="nPn" />
+      <Text id="DT_PnP864" value="PnP" />
+      <Text id="TI_V_N_FUNC" value="FUNC" />
+      <Text id="TI_V_D_FUNCterminalswitching" value="FUNC terminal switching" />
+      <Text id="DT_AoUt6355" value="AoUt" />
+      <Text id="DT_in513" value="in" />
+      <Text id="TI_V_N_FLU" value="FLU" />
+      <Text id="TI_V_D_ff0825b5-b703-4fc6-a669-a5b6aa44621a" value="Fluid settings" />
+      <Text id="DT_fbe9e145-b963-44ad-ae25-a2afc7d33236" value="Air" />
+      <Text id="DT_f1a73a77-9c4a-4ca6-a90b-33f2bb5c97c5" value="Ar" />
+      <Text id="DT_fd565733-772e-4d01-a22c-5d5cfa693cd5" value="CO2" />
+      <Text id="TI_V_N_rEF" value="rEF" />
+      <Text id="TI_V_D_Referenceconditionsetting" value="Reference condition setting" />
+      <Text id="DT_std4066" value="std" />
+      <Text id="DT_nor1619" value="nor" />
+      <Text id="TI_V_N_OUT1_mode" value="OUT1_mode" />
+      <Text id="TI_V_D_OUT1modesetting" value="OUT1 mode setting" />
+      <Text id="DT_RI_Name1306Outputmode" value="Output mode" />
+      <Text id="DT_RI_Description1306Outputmodesetting" value="Output mode setting" />
+      <Text id="DT_HYS344" value="HYS" />
+      <Text id="DT_Wind4341" value="Wind" />
+      <Text id="DT_AC4535" value="AC" />
+      <Text id="DT_PLS2055" value="PLS" />
+      <Text id="DT_Err9988" value="Err" />
+      <Text id="DT_oFF8588" value="oFF" />
+      <Text id="DT_RI_Name9190Reversedoutput" value="Reversed output" />
+      <Text id="DT_RI_Description9190Reversedoutputsetting" value="Reversed output setting" />
+      <Text id="DT_1_P231" value="1_P" />
+      <Text id="DT_1_n2145" value="1_n" />
+      <Text id="TI_V_N_OUT1_set_value" value="OUT1_set_value" />
+      <Text id="TI_V_D_Inputofsetvalues" value="Input of set values" />
+      <Text id="DT_RI_Name5931P_1n_1" value="P_1/n_1" />
+      <Text id="DT_RI_Description5931P_1n_1" value="P_1/n_1" />
+      <Text id="DT_RI_Name4283H_1HYS" value="H_1(HYS)" />
+      <Text id="DT_RI_Description4283H_1HYS" value="H_1(HYS)" />
+      <Text id="DT_RI_Name2741P1Ln1L" value="P1L/n1L" />
+      <Text id="DT_RI_Description2741P1Ln1L" value="P1L/n1L" />
+      <Text id="DT_RI_Name2705P1Hn1H" value="P1H/n1H" />
+      <Text id="DT_RI_Description2705P1Hn1H" value="P1H/n1H" />
+      <Text id="DT_RI_Name4434WH1Wind" value="WH1(Wind)" />
+      <Text id="DT_RI_Description4434WH1Wind" value="WH1(Wind)" />
+      <Text id="DT_RI_Name5852dt1" value="dt1" />
+      <Text id="DT_RI_Description5852dt1" value="dt1" />
+      <Text id="TI_V_N_OUT1_AC_L" value="OUT1_AC_L" />
+      <Text id="TI_V_D_OUT1_AC_Lsetting" value="OUT1_AC_L setting" />
+      <Text id="DT_RI_Name4728Mantissa" value="Mantissa" />
+      <Text id="DT_RI_Name5107Exponent" value="Exponent" />
+      <Text id="TI_V_N_OUT1_AC_ft3" value="OUT1_AC_ft3" />
+      <Text id="TI_V_D_OUT1_AC_ft3setting" value="OUT1_AC_ft3 setting" />
+      <Text id="DT_RI_Name1721Mantissa" value="Mantissa" />
+      <Text id="DT_RI_Name3461Exponent" value="Exponent" />
+      <Text id="V_N_V_PLS1_conv_L" value="PLS1_conv_L" />
+      <Text id="V_D_V_PLS1_conv_L" value="PLS output1 converted value (L)" />
+      <Text id="DT_101353" value="10L/pulse" />
+      <Text id="DT_1001513" value="100L/pulse" />
+      <Text id="DT_f7cd8cee-82e1-4664-b80b-593c2b72ad88" value="50L/pulse" />
+      <Text id="DT_f62a7d9d-535a-406f-aa27-57d546130260" value="500L/pulse" />
+      <Text id="V_N_V_PLS1_conv_ft3" value="PLS1_conv_ft3" />
+      <Text id="V_D_V_PLS1_conv_ft3" value="PLS output1 converted value (ft3)" />
+      <Text id="DT_f21127a0-2e51-4f5f-96d0-1197347dfb50" value="0.1 ft3/pulse" />
+      <Text id="DT_f2b5d20f-275d-4b15-8da3-cff499ca596b" value="1 ft3/pulse" />
+      <Text id="DT_f03fd6d4-00cd-4246-bf78-e26328a222e8" value="0.5 ft3/pulse" />
+      <Text id="DT_f388fd30-828b-4988-91ce-01ae7eb01da3" value="5 ft3/pulse" />
+      <Text id="TI_V_N_PLS1_Wid" value="PLS1_Wid" />
+      <Text id="TI_V_D_f75c200e-1639-49cc-9677-38477c94043c" value="PLS output1 pulse width" />
+      <Text id="DT_f03dd06b-c8d7-44b2-8ec7-e5d1df0537b0" value="50ms" />
+      <Text id="DT_fee1814b-074e-4a49-8520-8f8457b304e6" value="60ms" />
+      <Text id="DT_ffc2b86c-c700-4b4c-a0c7-588478461a09" value="70ms" />
+      <Text id="DT_ffb90eb3-e60b-4965-83c9-a88c6c267750" value="80ms" />
+      <Text id="DT_fcb4d4d7-a472-4b44-bd63-75ca1f51e8b8" value="90ms" />
+      <Text id="DT_f43de385-4294-450e-9b87-01514e1c8721" value="100ms" />
+      <Text id="TI_V_N_OUT2_mdoe" value="OUT2_mdoe" />
+      <Text id="TI_V_D_OUT2_mdoesetting" value="OUT2_mdoe setting" />
+      <Text id="DT_RI_Name4729Outputmode" value="Output mode" />
+      <Text id="DT_RI_Description4729Outputmodesetting" value="Output mode setting" />
+      <Text id="DT_HYS6694" value="HYS" />
+      <Text id="DT_Wind9065" value="Wind" />
+      <Text id="DT_AC3935" value="AC" />
+      <Text id="DT_PLS8390" value="PLS" />
+      <Text id="DT_Err7612" value="Err" />
+      <Text id="DT_oFF8936" value="oFF" />
+      <Text id="DT_RI_Name6139Reversedmode" value="Reversed mode" />
+      <Text id="DT_RI_Description6139Reversedmodesetting" value="Reversed mode setting" />
+      <Text id="DT_2_P6449" value="2_P" />
+      <Text id="DT_2_n367" value="2_n" />
+      <Text id="TI_V_N_OUT2_set_value" value="OUT2_set_value" />
+      <Text id="DT_RI_Name5714P_2n_2" value="P_2/n_2" />
+      <Text id="DT_RI_Description5714P_2n_2" value="P_2/n_2" />
+      <Text id="DT_RI_Name2671H_2HYS" value="H_2(HYS)" />
+      <Text id="DT_RI_Description2671H_2HYS" value="H_2(HYS)" />
+      <Text id="DT_RI_Name3740P2Ln2L" value="P2L/n2L" />
+      <Text id="DT_RI_Description3740P2Ln2L" value="P2L/n2L" />
+      <Text id="DT_RI_Name2875P2Hn2H" value="P2H/n2H" />
+      <Text id="DT_RI_Description2875P2Hn2H" value="P2H/n2H" />
+      <Text id="DT_RI_Name8408WH2Wind" value="WH2(Wind)" />
+      <Text id="DT_RI_Description8408WH2Wind" value="WH2(Wind)" />
+      <Text id="DT_RI_Name7785dt2" value="dt2" />
+      <Text id="DT_RI_Description7785dt2" value="dt2" />
+      <Text id="TI_V_N_OUT2_AC_L" value="OUT2_AC_L" />
+      <Text id="TI_V_D_OUT2_AC_Lsetting" value="OUT2_AC_L setting" />
+      <Text id="DT_RI_Name2267Mantissa" value="Mantissa" />
+      <Text id="DT_RI_Name6764Exronent" value="Exronent" />
+      <Text id="TI_V_N_OUT2_AC_ft3" value="OUT2_AC_ft3" />
+      <Text id="TI_V_D_OUT2_AC_ft3setting" value="OUT2_AC_ft3 setting" />
+      <Text id="DT_RI_Name6526Mantissa" value="Mantissa" />
+      <Text id="DT_RI_Name3112Exponent" value="Exponent" />
+      <Text id="V_N_V_PLS2_conv_L" value="PLS2_conv_L" />
+      <Text id="V_D_V_PLS2_conv_L" value="PLS output2 converted value (L)" />
+      <Text id="DT_108011" value="10L/pulse" />
+      <Text id="DT_1001651" value="100L/pulse" />
+      <Text id="DT_fa019ba6-2e72-4c49-8448-313288a5324a" value="50L/pulse" />
+      <Text id="DT_f3d32c70-4696-4f8c-90de-80e11ecfaa27" value="500L/pulse" />
+      <Text id="V_N_V_PLS2_conv_ft3" value="PLS2_conv_ft3" />
+      <Text id="V_D_V_PLS2_conv_ft3" value="PLS output2 converted value (ft3)" />
+      <Text id="DT_f7b65820-7cad-4618-8144-71a3a9e0a5b5" value="0.1 ft3/pulse" />
+      <Text id="DT_f6f9b1c9-cc5a-4194-a764-ba09f3549862" value="1 ft3/pulse" />
+      <Text id="DT_f65df0aa-a935-4e99-a023-655ca1ef4b84" value="0.5 ft3/pulse" />
+      <Text id="DT_fe82d92c-2ff7-4eae-8ab0-52ca7eaba664" value="5 ft3/pulse" />
+      <Text id="TI_V_N_PLS2_Wid" value="PLS2_Wid" />
+      <Text id="TI_V_D_f4273f5a-5555-47b4-8cab-f68b28236eb4" value="PLS output2 pulse width" />
+      <Text id="DT_f7e5a031-6d4d-4529-a9fc-18ce253fb2b1" value="50ms" />
+      <Text id="DT_f2c8ec33-85ee-4634-9499-6069fc891a07" value="60ms" />
+      <Text id="DT_f29ae423-c6ea-4e19-b347-bf41f71c1eee" value="70ms" />
+      <Text id="DT_f5386a38-bbaf-4b9e-87b1-a12e10ff0b59" value="80ms" />
+      <Text id="DT_f440dcce-7107-4e00-9a5a-8db07c4314d9" value="90ms" />
+      <Text id="DT_f84650ba-715c-4789-b4af-3ea52da789e5" value="100ms" />
+      <Text id="TI_V_N_Add_dEC" value="Add_dEC" />
+      <Text id="TI_V_D_Accumuratecountupordown" value="Accumurate count up or down" />
+      <Text id="DT_Add2334" value="Add" />
+      <Text id="DT_dEC11740" value="dEC1" />
+      <Text id="DT_dEC21669" value="dEC2" />
+      <Text id="TI_V_N_FiL" value="FiL" />
+      <Text id="TI_V_D_Digitalfiltersetting" value="Digital filter setting" />
+      <Text id="DT_107888" value="1.0" />
+      <Text id="DT_201848" value="2.0" />
+      <Text id="DT_508420" value="5.0" />
+      <Text id="V_N_Sub" value="Sub" />
+      <Text id="V_D_f2f7f539-1c0e-4037-9202-ca44c4a14a3d" value="Sub display setting" />
+      <Text id="DT_RI_Name1186Subdisplayoption" value="Sub display option" />
+      <Text id="DT_RI_Description1186Subdisplayoptionsetting" value="Sub display option setting" />
+      <Text id="DT_dEF5936" value="dEF" />
+      <Text id="DT_LinE7095" value="LinE" />
+      <Text id="DT_oFF2532" value="oFF" />
+      <Text id="DT_f6f599e5-182e-4c3a-92b1-b7c0c021458d" value="Sub display indication" />
+      <Text id="DT_ff07415f-e412-4597-9af2-289b9babbb01" value="P_1/n_1" />
+      <Text id="DT_f0be0c86-34ec-4317-912e-35d5e15d81c2" value="H_1" />
+      <Text id="DT_f403cf01-bdc0-4b3a-b16f-6858bcfabfa8" value="P1L/n1L" />
+      <Text id="DT_fd45295f-4ce5-44f4-806d-2f4379307714" value="P1H/n1H" />
+      <Text id="DT_f9672e30-9ccb-4059-9ada-0783ef9a4db3" value="WH1" />
+      <Text id="DT_fdd2e4df-9a22-4e46-8986-9dbff0cf8fe4" value="AC(OUT1)" />
+      <Text id="DT_fba75125-f7ff-4ab8-ac9a-e4298f3973e6" value="PLS(OUT1)" />
+      <Text id="DT_ffcc601a-c7d1-41a8-8dfc-5073df5f935c" value="Err(OUT1)" />
+      <Text id="DT_f42a7a05-bc03-4b30-bbef-545b8a07e94d" value="oFF(OUT1)" />
+      <Text id="DT_f47fe8c2-d0d6-4fa5-9547-77b4885a0906" value="P_2/n_2" />
+      <Text id="DT_f89579af-e471-44c7-b440-f6c2eea86092" value="H_2" />
+      <Text id="DT_fc71a002-99b3-4be7-b0db-2d0f1830cd24" value="P2L/n2L" />
+      <Text id="DT_f948bdf5-6de8-43d2-bf40-bbf01b66e132" value="P2H/n2H" />
+      <Text id="DT_f9508135-5f19-4435-bc6c-645d4eb5045d" value="WH2" />
+      <Text id="DT_f111aa8b-e5f3-420f-a841-dc7d5c624451" value="AC(OUT2)" />
+      <Text id="DT_f3943b4d-0317-4eec-8a75-86eb209ceac3" value="PLS(OUT2)" />
+      <Text id="DT_f0b69054-210b-4692-a7c2-828feebce907" value="Err(OUT2)" />
+      <Text id="DT_f85c8543-409e-4573-bcb4-29df553e49a6" value="oFF(OUT2)" />
+      <Text id="DT_f191c94b-e027-4d82-a289-59e05c9849a2" value="Bottom" />
+      <Text id="DT_fe52143f-08ba-48e4-9eb2-cec24a8c3016" value="Peak" />
+      <Text id="DT_f4192124-4bd1-47b3-b3cd-46421fea8f56" value="Accumulated" />
+      <Text id="DT_fa378422-9ed4-4580-bf25-188e461abfbd" value="SIO/SDCI" />
+      <Text id="DT_f16fbb55-4c07-45fa-8fc1-6e8d1f6d3bc4" value="LinE/oFF" />
+      <Text id="TI_V_N_rEv" value="rEv" />
+      <Text id="TI_V_D_Reverseddisplaysetting" value="Reversed display setting" />
+      <Text id="DT_oFF4299" value="oFF" />
+      <Text id="DT_on1492" value="on" />
+      <Text id="TI_V_N_CUt" value="CUt" />
+      <Text id="TI_V_D_Zerocutsetting" value="Zero cut setting" />
+      <Text id="TI_V_N_Ex_in" value="Ex_in" />
+      <Text id="TI_V_D_Externalinputsetting" value="External input setting" />
+      <Text id="DT_rAC9111" value="rAC" />
+      <Text id="DT_rPd8644" value="rPd" />
+      <Text id="TI_V_N_AoUt" value="AoUt" />
+      <Text id="TI_V_D_AoUtsetting" value="AoUt setting" />
+      <Text id="DT_158128" value="1-5" />
+      <Text id="DT_010891" value="0-10" />
+      <Text id="TI_V_N_FrEE" value="FrEE" />
+      <Text id="TI_V_D_Analogfreerangesetting" value="Analog free range setting" />
+      <Text id="DT_RI_Name1827Mode" value="Mode" />
+      <Text id="DT_oFF2497" value="oFF" />
+      <Text id="DT_on6396" value="on" />
+      <Text id="DT_RI_Name1231Settingvalue" value="Setting value" />
+      <Text id="TI_V_N_SAVE" value="SAVE" />
+      <Text id="TI_V_D_Accumulatedvaluesave" value="Accumulated value save" />
+      <Text id="DT_oFF2447" value="oFF" />
+      <Text id="DT_20min325" value="2.0min" />
+      <Text id="DT_50min697" value="5.0min" />
+      <Text id="TI_V_N_diSP" value="diSP" />
+      <Text id="TI_V_D_DisplayOFFsetting" value="Display OFF setting" />
+      <Text id="DT_on9240" value="on" />
+      <Text id="DT_oFF6727" value="oFF" />
+      <Text id="TI_V_N_Pin" value="Pin" />
+      <Text id="TI_V_D_Securitycode" value="Security code" />
+      <Text id="DT_RI_Name9821PINvalid" value="PIN valid" />
+      <Text id="DT_RI_Description9821PINvalid" value="PIN valid" />
+      <Text id="DT_invalid2451" value="invalid" />
+      <Text id="DT_valid230" value="valid" />
+      <Text id="DT_RI_Name1214PINcode" value="PIN code" />
+      <Text id="TI_V_N_LinE" value="LinE" />
+      <Text id="TI_V_D_Linenamecharacter" value="Line name character" />
+      <Text id="DT_RI_Name66621digit11seg" value="1digit(11seg)" />
+      <Text id="DT_RI_Description66621digit11seg" value="1digit(11seg)" />
+      <Text id="DT_A8287" value="A" />
+      <Text id="DT_B5482" value="B" />
+      <Text id="DT_C5774" value="C" />
+      <Text id="DT_D3884" value="D" />
+      <Text id="DT_E3737" value="E" />
+      <Text id="DT_F1389" value="F" />
+      <Text id="DT_G6631" value="G" />
+      <Text id="DT_H2101" value="H" />
+      <Text id="DT_i7753" value="i" />
+      <Text id="DT_J9926" value="J" />
+      <Text id="DT_K8308" value="K" />
+      <Text id="DT_L3348" value="L" />
+      <Text id="DT_M9264" value="M" />
+      <Text id="DT_n4337" value="n" />
+      <Text id="DT_o5468" value="o" />
+      <Text id="DT_P546" value="P" />
+      <Text id="DT_Q3639" value="Q" />
+      <Text id="DT_r5652" value="r" />
+      <Text id="DT_S2158" value="S" />
+      <Text id="DT_t5284" value="t" />
+      <Text id="DT_U9738" value="U" />
+      <Text id="DT_v8616" value="v" />
+      <Text id="DT_W9775" value="W" />
+      <Text id="DT_X8116" value="X" />
+      <Text id="DT_Y1949" value="Y" />
+      <Text id="DT_Z1128" value="Z" />
+      <Text id="DT_08350" value="0" />
+      <Text id="DT_11675" value="1" />
+      <Text id="DT_24527" value="2" />
+      <Text id="DT_34262" value="3" />
+      <Text id="DT_48293" value="4" />
+      <Text id="DT_52499" value="5" />
+      <Text id="DT_61056" value="6" />
+      <Text id="DT_76034" value="7" />
+      <Text id="DT_86128" value="8" />
+      <Text id="DT_94520" value="9" />
+      <Text id="DT__1544" value="_" />
+      <Text id="DT_5603" value="-" />
+      <Text id="DT_2764" value="^" />
+      <Text id="DT_8266" value="/" />
+      <Text id="DT_5031" value="*" />
+      <Text id="DT_k3187" value="k" />
+      <Text id="DT_m9429" value="m" />
+      <Text id="DT_N3569" value="N" />
+      <Text id="DT_R4045" value="R" />
+      <Text id="DT_V9089" value="V" />
+      <Text id="DT_w4624" value="w" />
+      <Text id="DT_Space8617" value="Space" />
+      <Text id="DT_RI_Name78182digit7seg" value="2digit(7seg)" />
+      <Text id="DT_RI_Description78182digit7seg" value="2digit(7seg)" />
+      <Text id="DT_A9015" value="A" />
+      <Text id="DT_B3245" value="B" />
+      <Text id="DT_C5521" value="C" />
+      <Text id="DT_D5257" value="D" />
+      <Text id="DT_E5351" value="E" />
+      <Text id="DT_F1533" value="F" />
+      <Text id="DT_G6105" value="G" />
+      <Text id="DT_H5675" value="H" />
+      <Text id="DT_i1526" value="i" />
+      <Text id="DT_J5392" value="J" />
+      <Text id="DT_K4731" value="K" />
+      <Text id="DT_L2808" value="L" />
+      <Text id="DT_M4198" value="M" />
+      <Text id="DT_n9275" value="n" />
+      <Text id="DT_o1846" value="o" />
+      <Text id="DT_P6885" value="P" />
+      <Text id="DT_r9180" value="r" />
+      <Text id="DT_S1435" value="S" />
+      <Text id="DT_t2434" value="t" />
+      <Text id="DT_U9396" value="U" />
+      <Text id="DT_v6765" value="v" />
+      <Text id="DT_W580" value="W" />
+      <Text id="DT_Y9847" value="Y" />
+      <Text id="DT_09154" value="0" />
+      <Text id="DT_19380" value="1" />
+      <Text id="DT_21776" value="2" />
+      <Text id="DT_39394" value="3" />
+      <Text id="DT_43982" value="4" />
+      <Text id="DT_56650" value="5" />
+      <Text id="DT_64170" value="6" />
+      <Text id="DT_76051" value="7" />
+      <Text id="DT_83146" value="8" />
+      <Text id="DT_94570" value="9" />
+      <Text id="DT__1694" value="_" />
+      <Text id="DT_9444" value="-" />
+      <Text id="DT_6342" value="^" />
+      <Text id="DT_Space6185" value="Space" />
+      <Text id="DT_RI_Name96553digit7seg" value="3digit(7seg)" />
+      <Text id="DT_RI_Description96553digit7seg" value="3digit(7seg)" />
+      <Text id="DT_A4497" value="A" />
+      <Text id="DT_B8169" value="B" />
+      <Text id="DT_C9890" value="C" />
+      <Text id="DT_D5723" value="D" />
+      <Text id="DT_E5850" value="E" />
+      <Text id="DT_F2488" value="F" />
+      <Text id="DT_G9710" value="G" />
+      <Text id="DT_H7428" value="H" />
+      <Text id="DT_i9672" value="i" />
+      <Text id="DT_J2167" value="J" />
+      <Text id="DT_K4868" value="K" />
+      <Text id="DT_L1633" value="L" />
+      <Text id="DT_M6843" value="M" />
+      <Text id="DT_n4919" value="n" />
+      <Text id="DT_o4099" value="o" />
+      <Text id="DT_P9784" value="P" />
+      <Text id="DT_r1972" value="r" />
+      <Text id="DT_S5111" value="S" />
+      <Text id="DT_t1650" value="t" />
+      <Text id="DT_U2202" value="U" />
+      <Text id="DT_v3168" value="v" />
+      <Text id="DT_W8702" value="W" />
+      <Text id="DT_Y2729" value="Y" />
+      <Text id="DT_07593" value="0" />
+      <Text id="DT_13393" value="1" />
+      <Text id="DT_24524" value="2" />
+      <Text id="DT_35109" value="3" />
+      <Text id="DT_41747" value="4" />
+      <Text id="DT_57414" value="5" />
+      <Text id="DT_63364" value="6" />
+      <Text id="DT_77752" value="7" />
+      <Text id="DT_8747" value="8" />
+      <Text id="DT_95267" value="9" />
+      <Text id="DT__4432" value="_" />
+      <Text id="DT_4809" value="-" />
+      <Text id="DT_5002" value="^" />
+      <Text id="DT_Space2427" value="Space" />
+      <Text id="DT_RI_Name19644digit7seg" value="4digit(7seg)" />
+      <Text id="DT_A2071" value="A" />
+      <Text id="DT_B4872" value="B" />
+      <Text id="DT_C4117" value="C" />
+      <Text id="DT_D8671" value="D" />
+      <Text id="DT_E4371" value="E" />
+      <Text id="DT_F4565" value="F" />
+      <Text id="DT_G6709" value="G" />
+      <Text id="DT_H4022" value="H" />
+      <Text id="DT_i2853" value="i" />
+      <Text id="DT_J7538" value="J" />
+      <Text id="DT_K9287" value="K" />
+      <Text id="DT_L9989" value="L" />
+      <Text id="DT_M7311" value="M" />
+      <Text id="DT_n2912" value="n" />
+      <Text id="DT_o3912" value="o" />
+      <Text id="DT_P8366" value="P" />
+      <Text id="DT_r9294" value="r" />
+      <Text id="DT_S4024" value="S" />
+      <Text id="DT_t1926" value="t" />
+      <Text id="DT_U1987" value="U" />
+      <Text id="DT_v6078" value="v" />
+      <Text id="DT_W6861" value="W" />
+      <Text id="DT_Y4989" value="Y" />
+      <Text id="DT_06902" value="0" />
+      <Text id="DT_11655" value="1" />
+      <Text id="DT_24979" value="2" />
+      <Text id="DT_35912" value="3" />
+      <Text id="DT_44220" value="4" />
+      <Text id="DT_5924" value="5" />
+      <Text id="DT_69447" value="6" />
+      <Text id="DT_73163" value="7" />
+      <Text id="DT_86604" value="8" />
+      <Text id="DT_92729" value="9" />
+      <Text id="DT__7052" value="_" />
+      <Text id="DT_659" value="-" />
+      <Text id="DT_7230" value="^" />
+      <Text id="DT_Space5434" value="Space" />
+      <Text id="DT_RI_Name19095digit7seg" value="5digit(7seg)" />
+      <Text id="DT_RI_Description19095digit7seg" value="5digit(7seg)" />
+      <Text id="DT_A3681" value="A" />
+      <Text id="DT_B9272" value="B" />
+      <Text id="DT_C3643" value="C" />
+      <Text id="DT_D348" value="D" />
+      <Text id="DT_E9469" value="E" />
+      <Text id="DT_F4895" value="F" />
+      <Text id="DT_G3414" value="G" />
+      <Text id="DT_H2226" value="H" />
+      <Text id="DT_i5351" value="i" />
+      <Text id="DT_J3842" value="J" />
+      <Text id="DT_K6242" value="K" />
+      <Text id="DT_L6303" value="L" />
+      <Text id="DT_M3167" value="M" />
+      <Text id="DT_n621" value="n" />
+      <Text id="DT_o7160" value="o" />
+      <Text id="DT_P7254" value="P" />
+      <Text id="DT_r9201" value="r" />
+      <Text id="DT_S9676" value="S" />
+      <Text id="DT_t6117" value="t" />
+      <Text id="DT_U458" value="U" />
+      <Text id="DT_v2569" value="v" />
+      <Text id="DT_W3253" value="W" />
+      <Text id="DT_Y8330" value="Y" />
+      <Text id="DT_0692" value="0" />
+      <Text id="DT_1113" value="1" />
+      <Text id="DT_2240" value="2" />
+      <Text id="DT_35764" value="3" />
+      <Text id="DT_45467" value="4" />
+      <Text id="DT_52073" value="5" />
+      <Text id="DT_68885" value="6" />
+      <Text id="DT_76296" value="7" />
+      <Text id="DT_84995" value="8" />
+      <Text id="DT_99577" value="9" />
+      <Text id="DT__7540" value="_" />
+      <Text id="DT_6913" value="-" />
+      <Text id="DT_595" value="^" />
+      <Text id="DT_Space8850" value="Space" />
+      <Text id="DT_RI_Name99246digit11seg" value="6digit(11seg)" />
+      <Text id="DT_RI_Description99246digit11seg" value="6digit(11seg)" />
+      <Text id="DT_A8351" value="A" />
+      <Text id="DT_B7563" value="B" />
+      <Text id="DT_C8727" value="C" />
+      <Text id="DT_D2410" value="D" />
+      <Text id="DT_E1915" value="E" />
+      <Text id="DT_F5978" value="F" />
+      <Text id="DT_G7633" value="G" />
+      <Text id="DT_H7138" value="H" />
+      <Text id="DT_i2970" value="i" />
+      <Text id="DT_J2607" value="J" />
+      <Text id="DT_K7029" value="K" />
+      <Text id="DT_L3568" value="L" />
+      <Text id="DT_M9527" value="M" />
+      <Text id="DT_n7952" value="n" />
+      <Text id="DT_o847" value="o" />
+      <Text id="DT_P385" value="P" />
+      <Text id="DT_Q5419" value="Q" />
+      <Text id="DT_r6235" value="r" />
+      <Text id="DT_S3656" value="S" />
+      <Text id="DT_t9567" value="t" />
+      <Text id="DT_U7403" value="U" />
+      <Text id="DT_v5055" value="v" />
+      <Text id="DT_W6577" value="W" />
+      <Text id="DT_X9769" value="X" />
+      <Text id="DT_Y585" value="Y" />
+      <Text id="DT_Z7812" value="Z" />
+      <Text id="DT_06794" value="0" />
+      <Text id="DT_13498" value="1" />
+      <Text id="DT_24116" value="2" />
+      <Text id="DT_31494" value="3" />
+      <Text id="DT_44063" value="4" />
+      <Text id="DT_56990" value="5" />
+      <Text id="DT_68018" value="6" />
+      <Text id="DT_72209" value="7" />
+      <Text id="DT_88715" value="8" />
+      <Text id="DT_91115" value="9" />
+      <Text id="DT__6295" value="_" />
+      <Text id="DT_1241" value="-" />
+      <Text id="DT_3220" value="^" />
+      <Text id="DT_5233" value="/" />
+      <Text id="DT_2786" value="*" />
+      <Text id="DT_k5421" value="k" />
+      <Text id="DT_m8306" value="m" />
+      <Text id="DT_N2380" value="N" />
+      <Text id="DT_R4327" value="R" />
+      <Text id="DT_V1733" value="V" />
+      <Text id="DT_w8922" value="w" />
+      <Text id="DT_Space1917" value="Space" />
+      <Text id="DT_RI_Name99717digit7seg" value="7digit(7seg)" />
+      <Text id="DT_RI_Description99717digit7seg" value="7digit(7seg)" />
+      <Text id="DT_A6704" value="A" />
+      <Text id="DT_B3965" value="B" />
+      <Text id="DT_C6633" value="C" />
+      <Text id="DT_D8844" value="D" />
+      <Text id="DT_E5940" value="E" />
+      <Text id="DT_F4771" value="F" />
+      <Text id="DT_G3196" value="G" />
+      <Text id="DT_H7226" value="H" />
+      <Text id="DT_i4977" value="i" />
+      <Text id="DT_J8268" value="J" />
+      <Text id="DT_K7905" value="K" />
+      <Text id="DT_L8574" value="L" />
+      <Text id="DT_M4882" value="M" />
+      <Text id="DT_n7154" value="n" />
+      <Text id="DT_o9398" value="o" />
+      <Text id="DT_P4052" value="P" />
+      <Text id="DT_r6880" value="r" />
+      <Text id="DT_S5630" value="S" />
+      <Text id="DT_t8789" value="t" />
+      <Text id="DT_U6723" value="U" />
+      <Text id="DT_v1868" value="v" />
+      <Text id="DT_W1207" value="W" />
+      <Text id="DT_Y4898" value="Y" />
+      <Text id="DT_09810" value="0" />
+      <Text id="DT_14039" value="1" />
+      <Text id="DT_23087" value="2" />
+      <Text id="DT_37650" value="3" />
+      <Text id="DT_44680" value="4" />
+      <Text id="DT_57234" value="5" />
+      <Text id="DT_66183" value="6" />
+      <Text id="DT_74651" value="7" />
+      <Text id="DT_87993" value="8" />
+      <Text id="DT_96724" value="9" />
+      <Text id="DT__2377" value="_" />
+      <Text id="DT_6224" value="-" />
+      <Text id="DT_3570" value="^" />
+      <Text id="DT_Space6817" value="Space" />
+      <Text id="DT_RI_Name46318digit7seg" value="8digit(7seg)" />
+      <Text id="DT_RI_Description46318digit7seg" value="8digit(7seg)" />
+      <Text id="DT_A7258" value="A" />
+      <Text id="DT_B3439" value="B" />
+      <Text id="DT_C3241" value="C" />
+      <Text id="DT_D4306" value="D" />
+      <Text id="DT_E1218" value="E" />
+      <Text id="DT_F855" value="F" />
+      <Text id="DT_G3905" value="G" />
+      <Text id="DT_H9180" value="H" />
+      <Text id="DT_i3933" value="i" />
+      <Text id="DT_J9142" value="J" />
+      <Text id="DT_K7992" value="K" />
+      <Text id="DT_L227" value="L" />
+      <Text id="DT_M5992" value="M" />
+      <Text id="DT_n5614" value="n" />
+      <Text id="DT_o52" value="o" />
+      <Text id="DT_P3625" value="P" />
+      <Text id="DT_r5930" value="r" />
+      <Text id="DT_S6995" value="S" />
+      <Text id="DT_t5976" value="t" />
+      <Text id="DT_U9003" value="U" />
+      <Text id="DT_v6198" value="v" />
+      <Text id="DT_W229" value="W" />
+      <Text id="DT_Y2765" value="Y" />
+      <Text id="DT_09827" value="0" />
+      <Text id="DT_13477" value="1" />
+      <Text id="DT_23213" value="2" />
+      <Text id="DT_37309" value="3" />
+      <Text id="DT_42585" value="4" />
+      <Text id="DT_53160" value="5" />
+      <Text id="DT_68893" value="6" />
+      <Text id="DT_71628" value="7" />
+      <Text id="DT_83225" value="8" />
+      <Text id="DT_95728" value="9" />
+      <Text id="DT__9853" value="_" />
+      <Text id="DT_5063" value="-" />
+      <Text id="DT_5807" value="^" />
+      <Text id="DT_Space7966" value="Space" />
+      <Text id="DT_RI_Name72189digit7seg" value="9digit(7seg)" />
+      <Text id="DT_RI_Description72189digit7seg" value="9digit(7seg)" />
+      <Text id="DT_A8411" value="A" />
+      <Text id="DT_B165" value="B" />
+      <Text id="DT_C2027" value="C" />
+      <Text id="DT_D7029" value="D" />
+      <Text id="DT_E5369" value="E" />
+      <Text id="DT_F5563" value="F" />
+      <Text id="DT_G740" value="G" />
+      <Text id="DT_H2394" value="H" />
+      <Text id="DT_i3162" value="i" />
+      <Text id="DT_J1724" value="J" />
+      <Text id="DT_K9201" value="K" />
+      <Text id="DT_L8898" value="L" />
+      <Text id="DT_M4698" value="M" />
+      <Text id="DT_n3911" value="n" />
+      <Text id="DT_o483" value="o" />
+      <Text id="DT_P9247" value="P" />
+      <Text id="DT_r5786" value="r" />
+      <Text id="DT_S9949" value="S" />
+      <Text id="DT_t4702" value="t" />
+      <Text id="DT_U5512" value="U" />
+      <Text id="DT_v6936" value="v" />
+      <Text id="DT_W670" value="W" />
+      <Text id="DT_Y4134" value="Y" />
+      <Text id="DT_09900" value="0" />
+      <Text id="DT_14322" value="1" />
+      <Text id="DT_24516" value="2" />
+      <Text id="DT_38678" value="3" />
+      <Text id="DT_43233" value="4" />
+      <Text id="DT_59182" value="5" />
+      <Text id="DT_67490" value="6" />
+      <Text id="DT_77254" value="7" />
+      <Text id="DT_81577" value="8" />
+      <Text id="DT_93067" value="9" />
+      <Text id="DT__3967" value="_" />
+      <Text id="DT_290" value="-" />
+      <Text id="DT_8040" value="^" />
+      <Text id="DT_Space7459" value="Space" />
+      <Text id="TI_V_N_OUT_TEST" value="OUT_TEST" />
+      <Text id="TI_V_D_Outputtest" value="Output test" />
+      <Text id="DT_Normal2291" value="Normal" />
+      <Text id="DT_Fixed3483" value="Fixed" />
+      <Text id="TI_V_N_Toggle" value="Toggle" />
+      <Text id="TI_V_D_Toggleoutputcommand" value="Toggle output command" />
+      <Text id="DT_Flow1869" value="Flow" />
+      <Text id="DT_OUT12548" value="OUT1" />
+      <Text id="DT_OUT22147" value="OUT2" />
+      <Text id="DT_A_OUT6247" value="A_OUT" />
+      <Text id="DT_DIAG891" value="DIAG" />
+      <Text id="DT_Err6373" value="Err" />
+      <Text id="V_N_AoUt_val" value="AoUt_val" />
+      <Text id="V_D_Analogoutputvalue" value="Analog output value" />
+      <Text id="TI_V_N_PD_a" value="PD_a" />
+      <Text id="TI_V_D_Processdataa" value="Process data (a)" />
+      <Text id="TI_V_N_PD_b" value="PD_b" />
+      <Text id="TI_V_D_Processdatab" value="Process data (b)" />
+      <Text id="TI_V_N_Hi" value="Hi" />
+      <Text id="TI_V_D_Peakvalue" value="Peak value" />
+      <Text id="TI_V_N_Lo" value="Lo" />
+      <Text id="TI_V_D_Bottomvalue" value="Bottom value" />
+      <Text id="TI_V_N_PD_AC" value="PD_AC" />
+      <Text id="TI_V_D_ProcessdataAccumulate" value="Process data (Accumulate)" />
+      <Text id="DT_RI_Name7235Mantissa" value="Mantissa" />
+      <Text id="DT_RI_Name3706Exponent" value="Exponent" />
+      <Text id="TI_V_N_Device_test2" value="Device_test2" />
+      <Text id="TI_V_D_testevent" value="test event" />
+      <Text id="PD_IN_f6cbefbe-e9eb-43c7-9b8d-f0e52d9d983e" value="Process Data Input" />
+      <Text id="DT_f342c364-e622-4cbd-8790-1ef74032a487" value="Flow" />
+      <Text id="DT_f4fb2d3a-7199-4ce0-9d13-70418945ac82" value="Error" />
+      <Text id="DT_fb59f057-65cf-46d4-834e-0593f64f67a5" value="Error" />
+      <Text id="DT_f42b38ac-0d1d-41ce-b727-4f009b20eea6" value="No Error" />
+      <Text id="DT_fcfd908b-2928-4c88-9bfa-e30080b5d87d" value="Fixed output" />
+      <Text id="DT_f8c47394-a623-47f9-8e0b-1bc757c1ebdc" value="Fixed" />
+      <Text id="DT_f4e68d2c-d62c-4162-a228-fd1aed42b4a7" value="Normal" />
+      <Text id="DT_fa3fb801-fc3a-47dd-a601-0770898e024b" value="HHH" />
+      <Text id="DT_f1a3d1cb-35b7-4cfb-9fb4-2f83dc4d1cca" value="HHH" />
+      <Text id="DT_f96863e6-6ae0-412e-8ce4-6a6854ec81c9" value="No Error" />
+      <Text id="DT_f254b95f-f867-4413-a091-cf8fc7a35b18" value="OUT2" />
+      <Text id="DT_f5584861-371b-4c3d-bb77-4715bf4d5921" value="OUT2_ON" />
+      <Text id="DT_f0c17ace-7780-43e5-9c27-cee4a41a8b3b" value="OUT2_OFF" />
+      <Text id="DT_f43a5add-e481-4838-952a-72ad03bc7b46" value="OUT1" />
+      <Text id="DT_f8a3be63-2467-4ea9-ba53-b67539d902af" value="OUT1_ON" />
+      <Text id="DT_f71f69b1-1956-4838-bab8-bc7be3a4e232" value="OUT1_OFF" />
+      <Text id="Event_Name_46007" value="Test event A" />
+      <Text id="Event_Name_25020" value="Test event B" />
+      <Text id="Event_Name_28587" value="Er10" />
+      <Text id="Event_Description_28587" value="System error" />
+      <Text id="Event_Name_60958" value="Er12" />
+      <Text id="Event_Description_60958" value="System error" />
+      <Text id="Event_Name_18561" value="Er6" />
+      <Text id="Event_Description_18561" value="System error" />
+      <Text id="Event_Name_68849" value="Er7" />
+      <Text id="Event_Description_68849" value="System error" />
+      <Text id="Event_Name_4437" value="Er0" />
+      <Text id="Event_Description_4437" value="System error" />
+      <Text id="Event_Name_15882" value="Er4" />
+      <Text id="Event_Description_15882" value="System error" />
+      <Text id="Event_Name_1684" value="Er40" />
+      <Text id="Event_Description_1684" value="System error" />
+      <Text id="Event_Name_38261" value="Er8" />
+      <Text id="Event_Description_38261" value="System error" />
+      <Text id="Event_Name_69531" value="Er16" />
+      <Text id="Event_Description_69531" value="System error" />
+      <Text id="Event_Name_66961" value="Accumulate over" />
+      <Text id="Error_Name_48098" value="Save error" />
+      <Text id="Error_Name_20619" value="Zero clear value out of range" />
+      <Text id="Error_Name_62368" value="Invalid factory command" />
+      <Text id="TI_M_Name_M_ALL_PeakBottom_1352" value="Peak/Bottom value (L/min)" />
+      <Text id="TI_M_Name_M_ALL_PeakBottom_1357" value="PeakBottom value (ft3/min)" />
+      <Text id="TI_M_Name_M_DeviceInfo" value="Device Infomation" />
+      <Text id="TI_M_Name_M_Diagnosis" value="diagnosis" />
+      <Text id="TI_M_Name_M_ME_SP_F0" value="F0 (Initial setting)" />
+      <Text id="TI_M_Name_M_ME_SP_F1" value="F1 (Output1 setting)" />
+      <Text id="TI_M_Name_M_ME_SP_F10" value="F10 (Sub display mode)" />
+      <Text id="TI_M_Name_M_ME_SP_F13" value="F13 (Reverse display mode)" />
+      <Text id="TI_M_Name_M_ME_SP_F14" value="F14 (Zero cut)" />
+      <Text id="TI_M_Name_M_ME_SP_F2" value="F2 (Output2 setting)" />
+      <Text id="TI_M_Name_M_ME_SP_F3" value="F3 (Digital filter)" />
+      <Text id="TI_M_Name_M_ME_SP_F30" value="F30 (Accumulated value hold)" />
+      <Text id="TI_M_Name_M_ME_SP_F5" value="F5 (FUNC setting)" />
+      <Text id="TI_M_Name_M_ME_SP_F80" value="F80 (Display OFF)" />
+      <Text id="TI_M_Name_M_ME_SP_F81" value="F81 (Security code)" />
+      <Text id="TI_M_Name_M_ME_SP_Free_range_value_1352" value="Free range value setting (L/min)" />
+      <Text id="TI_M_Name_M_ME_SP_Free_range_value_1357" value="Free range value setting (cfm)" />
+      <Text id="TI_M_Name_M_ME_SP_Ident" value="Identification" />
+      <Text id="TI_M_Name_M_ME_SP_OUT1" value="OUT1 setting" />
+      <Text id="TI_M_Name_M_ME_SP_OUT1_AC_1038" value="Accumulated1 setting (L)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT1_AC_1043" value="Accumulated1 setting (ft3)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT1_PLS_1038" value="Accumulate pulse conversion value (L)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT1_PLS_1043" value="Accumulate pulse conversion value (ft3)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT1_value_1352" value="OUT1 value setting (L/min)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT1_value_1357" value="OUT1 value setting (cfm)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT2" value="OUT2 setting" />
+      <Text id="TI_M_Name_M_ME_SP_OUT2_AC_1038" value="Accumulated2 setting (L)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT2_AC_1043" value="Accumulated2 setting (ft3)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT2_PLS_1038" value="Accumulate pulse conversion value (L)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT2_PLS_1043" value="Accumulate pulse conversion value (ft3)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT2_value_1352" value="OUT2 value setting (L/min)" />
+      <Text id="TI_M_Name_M_ME_SP_OUT2_value_1357" value="OUT2 value setting (cfm)" />
+      <Text id="TI_M_Name_M_ME_SP_Param" value="Parameter" />
+      <Text id="TI_M_Name_M_ME_SP_PeakBottom" value="PeakBottom value" />
+      <Text id="TI_M_Name_M_ME_SP_Setup" value="Setup" />
+      <Text id="TI_M_Name_M_Moniter" value="Moniter" />
+      <Text id="TI_M_Name_M_OB_F0" value="F0 (Initial setting)" />
+      <Text id="TI_M_Name_M_OB_F1" value="F1 (Output1 setting)" />
+      <Text id="TI_M_Name_M_OB_F10" value="F10 (Sub display mode)" />
+      <Text id="TI_M_Name_M_OB_F13" value="F13 (Reverse display mode)" />
+      <Text id="TI_M_Name_M_OB_F14" value="F14 (Zero cut)" />
+      <Text id="TI_M_Name_M_OB_F2" value="F2 (Output2 setting)" />
+      <Text id="TI_M_Name_M_OB_F3" value="F3 (Digital filter)" />
+      <Text id="TI_M_Name_M_OB_F30" value="F30 (Accumulated value hold)" />
+      <Text id="TI_M_Name_M_OB_F5" value="F5 (FUNC setting)" />
+      <Text id="TI_M_Name_M_OB_F80" value="F80 (Display OFF)" />
+      <Text id="Iffa033f4-f468-40d4-bdb1-0ad5ae13abcc" value="Free range value setting (L/min)" />
+      <Text id="TI_M_Name_M_OB_Free_range_value_1357" value="Free range value setting (cfm)" />
+      <Text id="TI_M_Name_M_OB_Ident" value="Identification" />
+      <Text id="TI_M_Name_M_OB_Moniter_1352" value="Process data input (L/min)" />
+      <Text id="TI_M_Name_M_OB_Monitor_1357" value="Process data input (cfm)" />
+      <Text id="TI_M_Name_M_OB_Monitor_AC_1038" value="Process data input (L)" />
+      <Text id="TI_M_Name_M_OB_Monitor_AC_1043" value="Process data input (ft3)" />
+      <Text id="TI_M_Name_M_OB_Monitor_AOUT_1240" value="Analog output value(V)" />
+      <Text id="TI_M_Name_M_OB_OUT1" value="OUT1 setting" />
+      <Text id="TI_M_Name_M_OB_OUT1_AC_1038" value="Accumulated1 setting (L)" />
+      <Text id="TI_M_Name_M_OB_OUT1_AC_1043" value="Accumulated1 setting (ft3)" />
+      <Text id="TI_M_Name_M_OB_OUT1_PLS_1038" value="Accumulate pulse conversion value (L)" />
+      <Text id="TI_M_Name_M_OB_OUT1_PLS_1043" value="Accumulate pulse conversion value (ft3)" />
+      <Text id="TI_M_Name_M_OB_OUT1_value_1352" value="OUT1 value setting (L/min)" />
+      <Text id="TI_M_Name_M_OB_OUT1_value_1357" value="OUT1 value setting (cfm)" />
+      <Text id="TI_M_Name_M_OB_OUT2" value="OUT2 setting" />
+      <Text id="TI_M_Name_M_OB_OUT2_AC_1038" value="Accumulated2 setting (L)" />
+      <Text id="TI_M_Name_M_OB_OUT2_AC_1043" value="Accumulated2 setting (ft3)" />
+      <Text id="TI_M_Name_M_OB_OUT2_PLS_1038" value="Accumulate pulse conversion value (L)" />
+      <Text id="TI_M_Name_M_OB_OUT2_PLS_1043" value="Accumulate pulse conversion value (ft3)" />
+      <Text id="TI_M_Name_M_OB_OUT2_value_1352" value="OUT2 value setting (L/min)" />
+      <Text id="TI_M_Name_M_OB_OUT2_value_1357" value="OUT2 value setting (cfm)" />
+      <Text id="TI_M_Name_M_OB_Param" value="Parameter" />
+      <Text id="TI_M_Name_M_OB_PeakBottom" value="PeakBottom value" />
+      <Text id="TI_M_Name_M_Output_check" value="Output_check" />
+      <Text id="BT_D_0_Normal" value="Normal" />
+      <Text id="BT_D_1_Fixed" value="Fixed" />
+      <Text id="BT_D_0_Flow" value="Flow" />
+      <Text id="BT_D_16_OUT1" value="OUT1" />
+      <Text id="BT_D_17_OUT2" value="OUT2" />
+      <Text id="BT_D_80_A_OUT" value="A_OUT" />
+      <Text id="BT_D_224_DIAG" value="DIAG" />
+      <Text id="BT_D_255_Err" value="Err" />
+    </PrimaryLanguage>
+  </ExternalTextCollection>
+  <Stamp crc="475958548"><Checker name="IODD-Checker V1.1.4" version="V1.1.4.0"/></Stamp>
+</IODevice>

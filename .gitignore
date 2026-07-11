@@ -1,0 +1,17 @@
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+*.pyo
+dist/
+build/
+*.spec.bak
+*.egg-info/
+.env
+venv/
+.venv/
+ams_data_*.db
+db/
+schedules.json
+config.json
+logs/
