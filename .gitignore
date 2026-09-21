@@ -14,4 +14,13 @@ ams_data_*.db
 db/
 schedules.json
 config.json
+config.json.bak
+runtime_state.json
+runtime_state.json.bak
+.ams-private/
+*.tmp
+*.json.bak
 logs/
+*.bak_*
+.claude/
+review-test-results.txt

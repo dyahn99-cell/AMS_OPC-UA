@@ -1,6 +1,43 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
+
+// Private Python-owned loopback protocol. Never print the token or put it in a URL.
+const WORKER_PROTOCOL = "ams-worker-owner-v1";
+function requiredOwnerValue(name, length) {
+  const value = process.env[name];
+  if (typeof value !== "string" || !new RegExp(`^[0-9a-f]{${length}}$`).test(value)) {
+    throw new Error("worker ownership credentials missing or invalid");
+  }
+  return value;
+}
+const OWNER_TOKEN = requiredOwnerValue("AMS_WORKER_OWNER_TOKEN", 64);
+const INSTANCE_ID = requiredOwnerValue("AMS_WORKER_INSTANCE_ID", 32);
+const EXPECTED_FINGERPRINT = requiredOwnerValue("AMS_WORKER_FINGERPRINT", 64);
+
+function sameSecret(actual, expected) {
+  if (typeof actual !== "string" || actual.length !== expected.length) return false;
+  const actualBytes = Buffer.from(actual, "utf8");
+  const expectedBytes = Buffer.from(expected, "utf8");
+  return actualBytes.length === expectedBytes.length && crypto.timingSafeEqual(actualBytes, expectedBytes);
+}
+
+// Match app.worker_owner.worker_fingerprint exactly, including byte lengths.
+function workerFingerprint(nodesBytes, endpoint, password) {
+  const endpointBytes = Buffer.from(endpoint, "utf8");
+  const framed = bytes => {
+    const length = Buffer.alloc(8);
+    length.writeBigUInt64BE(BigInt(bytes.length));
+    return [length, bytes];
+  };
+  return crypto.createHash("sha256").update(Buffer.concat([
+    Buffer.from(`${WORKER_PROTOCOL}\0`, "ascii"),
+    ...framed(nodesBytes),
+    ...framed(endpointBytes),
+    crypto.createHash("sha256").update(password, "utf8").digest(),
+  ])).digest("hex");
+}
 
 let OPCUAClient = null;
 let MessageSecurityMode = null;
@@ -27,17 +64,23 @@ function loadConfig() {
   const configPath = process.env.AMS_CONFIG_PATH || path.join(__dirname, "config.json");
   try {
     return JSON.parse(fs.readFileSync(configPath, "utf8"));
-  } catch (err) {
-    console.log(`[worker] config read failed (${configPath}): ${err.message}`);
-    return {};
+  } catch (_) {
+    throw new Error("worker config could not be loaded");
   }
 }
 
 const config = loadConfig();
 
-const PORT = parseInt(process.env.WORKER_PORT || "7100", 10);
-const ENDPOINT = process.env.OPCUA_ENDPOINT || config.opcua_endpoint || "opc.tcp://192.168.0.1:4840";
-const PASSWORD = process.env.AMS_PASSWORD || config.ams_password || "admin";
+const portText = process.env.WORKER_PORT || "7100";
+if (!/^[1-9][0-9]{0,4}$/.test(portText) || Number(portText) > 65535) {
+  throw new Error("worker port must be an integer 1..65535");
+}
+const PORT = Number(portText);
+const ENDPOINT = process.env.OPCUA_ENDPOINT ?? config.opcua_endpoint ?? "opc.tcp://192.168.0.1:4840";
+const PASSWORD = process.env.AMS_PASSWORD ?? config.ams_password ?? "admin";
+if (typeof ENDPOINT !== "string" || !ENDPOINT || typeof PASSWORD !== "string") {
+  throw new Error("worker endpoint or password invalid");
+}
 const READ_INTERVAL_MS = parseInt(process.env.OPCUA_READ_INTERVAL_MS || "5000", 10);
 const READ_TIMEOUT_MS = parseInt(process.env.OPCUA_READ_TIMEOUT_MS || "4000", 10);
 const READ_FAILURES_BEFORE_RECONNECT = parseInt(process.env.OPCUA_READ_FAILURES_BEFORE_RECONNECT || "3", 10);
@@ -45,6 +88,33 @@ const WRITE_TIMEOUT_MS = parseInt(process.env.OPCUA_WRITE_TIMEOUT_MS || "5000", 
 const WRITE_CONNECT_WAIT_MS = parseInt(process.env.OPCUA_WRITE_CONNECT_WAIT_MS || "4000", 10);
 const AUTO_CONNECT_DELAY_MS = parseInt(process.env.OPCUA_AUTO_CONNECT_DELAY_MS || "5000", 10);
 
+// ── Node maps (must match bridge.py) ──────────────────────
+function loadNodeMaps() {
+  const nodesPath = process.env.AMS_NODES_PATH || path.join(__dirname, "nodes.json");
+  try {
+    const nodesBytes = fs.readFileSync(nodesPath);
+    const nodeConfig = JSON.parse(nodesBytes.toString("utf8"));
+    if (!nodeConfig || typeof nodeConfig !== "object" || Array.isArray(nodeConfig)) {
+      throw new Error("invalid node map");
+    }
+    const fingerprint = workerFingerprint(nodesBytes, ENDPOINT, PASSWORD);
+    if (!sameSecret(fingerprint, EXPECTED_FINGERPRINT)) {
+      throw new Error("worker fingerprint mismatch");
+    }
+    const remotes = nodeConfig.remotes || {};
+    const maps = {};
+    for (const [remoteId, remoteConfig] of Object.entries(remotes)) {
+      maps[remoteId] = Object.assign({}, remoteConfig.read || {});
+    }
+    console.log(`[worker] loaded node maps from ${nodesPath}: ${Object.keys(maps).join(", ") || "none"}`);
+    return { maps, fingerprint };
+  } catch (_) {
+    // JSON parse errors may include source text; do not leak config/credentials.
+    throw new Error("worker node inputs invalid or fingerprint mismatch");
+  }
+}
+
+const { maps: REMOTE_NODE_MAPS, fingerprint: FINGERPRINT } = loadNodeMaps();
 console.log(`[worker] boot endpoint=${ENDPOINT} port=${PORT}`);
 
 process.on("uncaughtException", err => {
@@ -55,30 +125,12 @@ process.on("unhandledRejection", err => {
   console.log(`[worker] unhandledRejection: ${err && err.stack ? err.stack : err}`);
 });
 
-// ── Node maps (must match bridge.py) ──────────────────────
-function loadNodeMaps() {
-  const nodesPath = process.env.AMS_NODES_PATH || path.join(__dirname, "nodes.json");
-  try {
-    const nodeConfig = JSON.parse(fs.readFileSync(nodesPath, "utf8"));
-    const remotes = nodeConfig.remotes || {};
-    const maps = {};
-    for (const [remoteId, remoteConfig] of Object.entries(remotes)) {
-      maps[remoteId] = Object.assign({}, remoteConfig.read || {});
-    }
-    console.log(`[worker] loaded node maps from ${nodesPath}: ${Object.keys(maps).join(", ") || "none"}`);
-    return maps;
-  } catch (err) {
-    console.log(`[worker] nodes read failed (${nodesPath}): ${err.message}`);
-    return {};
-  }
-}
-
-const REMOTE_NODE_MAPS = loadNodeMaps();
-
 // ── Connection state ───────────────────────────────────────
 let client = null;
 let session = null;
 let connected = false;
+let connectionGeneration = 0;
+let sampleSequence = 0;
 let connecting = false;
 let connectionResetPromise = null;
 let lastError = null;
@@ -89,6 +141,10 @@ let writeCount = 0;
 let writeErrorCount = 0;
 let readLoopBusy = false;
 let writePending = 0;
+let refreshQueued = false;
+let serverListening = false;
+let shuttingDown = false;
+let startupTimer = null;
 
 async function closeCurrentClient() {
   stopReadLoop();
@@ -101,6 +157,11 @@ async function closeCurrentClient() {
   session = null;
   client = null;
   connected = false;
+  for (const cache of Object.values(readCache)) {
+    cache.connected = false;
+    cache.stale = true;
+    cache.last_error = "connection_closed";
+  }
   try { if (oldSession) await withTimeout(oldSession.close(), 2000, "session_close_timeout"); } catch (_) {}
   try { if (oldClient) await withTimeout(oldClient.disconnect(), 2000, "client_disconnect_timeout"); } catch (_) {}
 }
@@ -125,7 +186,7 @@ const readFailCount = {}; // remoteId → 연속 실패 횟수
 
 // ── Connection ─────────────────────────────────────────────
 async function connect() {
-  if (connecting || connected || connectionResetPromise) return;
+  if (!serverListening || shuttingDown || connecting || connected || connectionResetPromise) return;
   connecting = true;
   lastError = null;
   console.log(`[worker] connect start -> ${ENDPOINT}`);
@@ -165,6 +226,7 @@ async function connect() {
     }
 
     connected = true;
+    connectionGeneration++;
     lastConnectAt = new Date().toISOString();
     console.log(`[worker] connected to ${ENDPOINT}`);
     startReadLoop();
@@ -180,7 +242,7 @@ async function connect() {
 }
 
 function triggerConnect(reason) {
-  if (connected || connecting || connectionResetPromise) return;
+  if (!serverListening || shuttingDown || connected || connecting || connectionResetPromise) return;
   console.log(`[worker] connect trigger: ${reason}`);
   connect().catch(err => {
     console.log(`[worker] connect trigger failed (${reason}): ${err && err.stack ? err.stack : err}`);
@@ -188,7 +250,7 @@ function triggerConnect(reason) {
 }
 
 function scheduleReconnect(delay = 2000) {
-  if (reconnectTimer) return;
+  if (!serverListening || shuttingDown || reconnectTimer) return;
   reconnectTimer = setTimeout(() => {
     reconnectTimer = null;
     triggerConnect("reconnect");
@@ -216,6 +278,34 @@ function stopReadLoop() {
   }
 }
 
+// After a write succeeds, the physical value just changed but readCache
+// still holds the pre-write snapshot until the next periodic read cycle
+// (READ_INTERVAL_MS, default 5s) - and that cycle is itself skipped
+// entirely whenever writePending > 0. Callers (the Python hub, and the
+// dashboard's UI-pending guards) assume a fresh read shows up soon after
+// a write resolves, so ask for one right away instead of waiting on the
+// timer. Coalesced (refreshQueued) so back-to-back writes only queue one
+// extra read, and it waits for the normal readLoopBusy/writePending gate
+// to clear on its own rather than forcing a read concurrently with any
+// still-in-flight session I/O.
+async function requestImmediateRefresh(reason) {
+  if (refreshQueued) return;
+  refreshQueued = true;
+  try {
+    const waitStart = Date.now();
+    while ((readLoopBusy || writePending > 0) && Date.now() - waitStart < 3000) {
+      await sleep(25);
+    }
+    if (connected && session && !readLoopBusy) {
+      await runReadCycle();
+    }
+  } catch (err) {
+    console.log(`[worker] immediate refresh (${reason}) failed: ${err.message}`);
+  } finally {
+    refreshQueued = false;
+  }
+}
+
 function withTimeout(promise, timeoutMs, label) {
   let timer = null;
   const timeout = new Promise((_, reject) => {
@@ -239,6 +329,7 @@ async function readRemote(remoteId, nodeMap) {
 
   const values = {};
   const statuses = {};
+  const source_timestamps = {};
   let goodCount = 0;
   let badCount = 0;
   keys.forEach((key, i) => {
@@ -247,6 +338,9 @@ async function readRemote(remoteId, nodeMap) {
     const statusText = statusCode ? statusCode.toString() : "NoStatus";
     const isGood = !!(statusCode && typeof statusCode.isGood === "function" && statusCode.isGood());
     statuses[key] = statusText;
+    const sourceTime = dv && dv.sourceTimestamp;
+    const sourceMs = sourceTime == null ? NaN : new Date(sourceTime).getTime();
+    source_timestamps[key] = Number.isFinite(sourceMs) ? new Date(sourceMs).toISOString() : null;
     if (!isGood) {
       badCount++;
       values[key] = null;
@@ -259,25 +353,29 @@ async function readRemote(remoteId, nodeMap) {
   if (goodCount === 0) {
     const err = new Error(`all_nodes_bad:${Object.values(statuses).slice(0, 3).join(",")}`);
     err.statuses = statuses;
+    err.source_timestamps = source_timestamps;
     throw err;
   }
 
-  return { values, statuses, good_count: goodCount, bad_count: badCount, read_latency_ms: latency };
+  return { values, statuses, source_timestamps, good_count: goodCount, bad_count: badCount, read_latency_ms: latency };
 }
 
-async function readAllRemotes() {
+async function readAllRemotesSequential() {
   if (!connected || !session) return;
 
   for (const [remoteId, nodeMap] of Object.entries(REMOTE_NODE_MAPS)) {
     try {
-      const { values, statuses, good_count, bad_count, read_latency_ms } = await readRemote(remoteId, nodeMap);
+      const { values, statuses, source_timestamps, good_count, bad_count, read_latency_ms } = await readRemote(remoteId, nodeMap);
       readCache[remoteId] = {
         connected: true,
         values,
         node_status: statuses,
+        source_timestamps,
         good_count,
         bad_count,
         read_at: Date.now(),
+        sample_id: `${INSTANCE_ID}:${connectionGeneration}:${++sampleSequence}`,
+        connection_generation: connectionGeneration,
         read_latency_ms,
         last_error: null,
         stale: false,
@@ -288,7 +386,10 @@ async function readAllRemotes() {
       readFailCount[remoteId] = (readFailCount[remoteId] || 0) + 1;
       const withinGrace = existing && existing.read_at && (Date.now() - existing.read_at) < STALE_GRACE_MS;
       readCache[remoteId] = {
-        connected: withinGrace,   // grace 기간 중엔 connected 유지
+        ...existing,
+        node_status: err.statuses || (existing && existing.node_status) || {},
+        source_timestamps: err.source_timestamps || (existing && existing.source_timestamps) || {},
+        connected: false,
         values: existing ? existing.values : null,
         read_at: existing ? existing.read_at : null,
         read_latency_ms: null,
@@ -310,6 +411,67 @@ async function readAllRemotes() {
 }
 
 // ── Write ──────────────────────────────────────────────────
+async function readAllRemotes() {
+  if (!connected || !session) return;
+  const entries = Object.entries(REMOTE_NODE_MAPS);
+  const results = await Promise.all(entries.map(async ([remoteId, nodeMap]) => {
+    try {
+      return { remoteId, ok: true, data: await readRemote(remoteId, nodeMap) };
+    } catch (error) {
+      return { remoteId, ok: false, error };
+    }
+  }));
+
+  let reconnectReason = null;
+  for (const result of results) {
+    const { remoteId } = result;
+    if (result.ok) {
+      const { values, statuses, source_timestamps, good_count, bad_count, read_latency_ms } = result.data;
+      readCache[remoteId] = {
+        connected: true,
+        values,
+        node_status: statuses,
+        source_timestamps,
+        good_count,
+        bad_count,
+        read_at: Date.now(),
+        sample_id: `${INSTANCE_ID}:${connectionGeneration}:${++sampleSequence}`,
+        connection_generation: connectionGeneration,
+        read_latency_ms,
+        last_error: null,
+        stale: false,
+      };
+      readFailCount[remoteId] = 0;
+      continue;
+    }
+
+    const err = result.error;
+    const existing = readCache[remoteId];
+    readFailCount[remoteId] = (readFailCount[remoteId] || 0) + 1;
+    const withinGrace = existing && existing.read_at && (Date.now() - existing.read_at) < STALE_GRACE_MS;
+    readCache[remoteId] = {
+      ...existing,
+      node_status: err.statuses || (existing && existing.node_status) || {},
+      source_timestamps: err.source_timestamps || (existing && existing.source_timestamps) || {},
+      connected: false,
+      values: existing ? existing.values : null,
+      read_at: existing ? existing.read_at : null,
+      read_latency_ms: null,
+      last_error: err.message || String(err),
+      stale: true,
+    };
+    const msg = err.message || String(err);
+    if (/transport|connection|timeout|eof|reset|refused/i.test(msg)) {
+      const failures = readFailCount[remoteId];
+      console.log(`[worker] transport error on ${remoteId}: ${msg} (failure ${failures}/${READ_FAILURES_BEFORE_RECONNECT})`);
+      if (!reconnectReason && failures >= READ_FAILURES_BEFORE_RECONNECT) {
+        reconnectReason = `transport error on ${remoteId}: ${msg}`;
+      }
+    }
+  }
+  if (reconnectReason) await resetConnection(reconnectReason);
+}
+
 async function runReadCycle() {
   if (readLoopBusy || writePending > 0) return;
   readLoopBusy = true;
@@ -325,6 +487,7 @@ function sleep(ms) {
 }
 
 async function ensureConnectedForWrite() {
+  if (!serverListening || shuttingDown) throw new Error("worker_not_accepting_requests");
   if (connected && session) return;
   if (!connecting) {
     connect().catch(() => {});
@@ -338,7 +501,17 @@ async function ensureConnectedForWrite() {
   }
 }
 
+function invalidInput(message) {
+  return Object.assign(new Error(message), { statusCode: 400 });
+}
+
+function normalizeBoolean(value) {
+  if (typeof value !== "boolean") throw invalidInput("value must be a boolean");
+  return value;
+}
+
 async function writeNode(nodeId, value) {
+  normalizeBoolean(value);
   await ensureConnectedForWrite();
   writePending++;
   const waitStart = Date.now();
@@ -365,11 +538,10 @@ async function writeNode(nodeId, value) {
 }
 
 function normalizeByte(value) {
-  const byteValue = typeof value === "string" ? parseInt(value.replace(/^0x/i, ""), 16) : Number(value);
-  if (!Number.isInteger(byteValue) || byteValue < 0 || byteValue > 255) {
-    throw new Error("value must be a byte 0..255");
+  if (typeof value !== "number" || !Number.isInteger(value) || value < 0 || value > 255) {
+    throw invalidInput("value must be a numeric byte 0..255");
   }
-  return byteValue;
+  return value;
 }
 
 async function writeByte(nodeId, value) {
@@ -401,18 +573,12 @@ async function writeByte(nodeId, value) {
 
 function normalizeBytes(bytes) {
   if (!Array.isArray(bytes)) {
-    throw new Error("bytes must be an array");
+    throw invalidInput("bytes must be an array");
   }
   if (bytes.length < 1 || bytes.length > 16) {
-    throw new Error("bytes length must be 1..16");
+    throw invalidInput("bytes length must be 1..16");
   }
-  return bytes.map((item, index) => {
-    const value = typeof item === "string" ? parseInt(item.replace(/^0x/i, ""), 16) : Number(item);
-    if (!Number.isInteger(value) || value < 0 || value > 255) {
-      throw new Error(`invalid byte at index ${index}`);
-    }
-    return value;
-  });
+  return bytes.map(normalizeByte);
 }
 
 async function writeByteArray(nodeId, bytes) {
@@ -461,7 +627,11 @@ async function readSingleNode(nodeId) {
     throw new Error("not_connected");
   }
   const t0 = Date.now();
-  const [dv] = await session.read([{ nodeId, attributeId: AttributeIds.Value }]);
+  const [dv] = await withTimeout(
+    session.read([{ nodeId, attributeId: AttributeIds.Value }]),
+    READ_TIMEOUT_MS,
+    "read_timeout",
+  );
   const elapsed_ms = Date.now() - t0;
   const statusCode = dv && dv.statusCode;
   const statusText = statusCode ? statusCode.toString() : "NoStatus";
@@ -474,12 +644,58 @@ async function readSingleNode(nodeId) {
 }
 
 // ── HTTP helpers ───────────────────────────────────────────
+function authorizedRequest(req) {
+  const headers = req.headers || {};
+  if (Object.prototype.hasOwnProperty.call(headers, "origin")) return false;
+  if (headers.host !== `127.0.0.1:${PORT}`) return false;
+  // Reject duplicate identity/authority headers rather than relying on Node's
+  // joining/discarding rules. Browser preflights are never granted CORS access.
+  const singletonHeaders = new Set([
+    "host", "x-ams-worker-token", "x-ams-worker-instance", "x-ams-worker-fingerprint",
+  ]);
+  const seen = new Set();
+  for (let i = 0; i < (req.rawHeaders || []).length; i += 2) {
+    const name = req.rawHeaders[i].toLowerCase();
+    if (name === "origin") return false;
+    if (!singletonHeaders.has(name)) continue;
+    if (seen.has(name)) return false;
+    seen.add(name);
+  }
+  return sameSecret(headers["x-ams-worker-token"], OWNER_TOKEN)
+    && sameSecret(headers["x-ams-worker-instance"], INSTANCE_ID)
+    && sameSecret(headers["x-ams-worker-fingerprint"], FINGERPRINT);
+}
+
+function rejectRequest(res, status, error) {
+  res.statusCode = status;
+  res.setHeader("Connection", "close");
+  res.end(JSON.stringify({ ok: false, error }));
+}
+
+function validNodeId(nodeId) {
+  return typeof nodeId === "string" && nodeId.trim().length > 0;
+}
+
 function readBody(req) {
   return new Promise((resolve, reject) => {
     let buf = "";
-    req.on("data", chunk => { buf += chunk; });
+    req.on("data", chunk => {
+      buf += chunk;
+      if (buf.length > 65536) {
+        reject(new Error("request_body_too_large"));
+        req.destroy();
+      }
+    });
     req.on("end", () => {
-      try { resolve(JSON.parse(buf)); } catch (e) { reject(e); }
+      try {
+        const body = JSON.parse(buf);
+        if (!body || typeof body !== "object" || Array.isArray(body)) {
+          throw invalidInput("request body must be a JSON object");
+        }
+        resolve(body);
+      } catch (_) {
+        reject(invalidInput("invalid JSON object body"));
+      }
     });
     req.on("error", reject);
   });
@@ -488,14 +704,31 @@ function readBody(req) {
 // ── HTTP server ────────────────────────────────────────────
 const server = http.createServer(async (req, res) => {
   res.setHeader("Content-Type", "application/json");
-  const url = new URL(req.url, `http://localhost:${PORT}`);
-  const { pathname } = url;
+  res.setHeader("Cache-Control", "no-store");
+  // No route, body read, connection or shutdown may precede these checks.
+  if (!authorizedRequest(req)) {
+    rejectRequest(res, 403, "worker_request_forbidden");
+    return;
+  }
+  if (!serverListening || shuttingDown) {
+    rejectRequest(res, 503, "worker_not_accepting_requests");
+    return;
+  }
+  // The private client uses origin-form paths only; no query-token alternative.
+  if (typeof req.url !== "string" || !/^\/[A-Za-z0-9_/-]*$/.test(req.url)) {
+    rejectRequest(res, 400, "invalid_request_target");
+    return;
+  }
+  const pathname = req.url;
 
   try {
-    // GET /status
+    // GET /status is passive, including the first readiness probe after spawn.
     if (req.method === "GET" && pathname === "/status") {
-      triggerConnect("status");
       res.end(JSON.stringify({
+        worker_protocol: WORKER_PROTOCOL,
+        worker_instance_id: INSTANCE_ID,
+        worker_fingerprint: FINGERPRINT,
+        pid: process.pid,
         connected,
         connecting,
         endpoint: ENDPOINT,
@@ -550,17 +783,14 @@ const server = http.createServer(async (req, res) => {
       const body = await readBody(req);
       const { nodeId, value } = body;
 
-      if (!nodeId || value === undefined) {
+      if (!validNodeId(nodeId) || value === undefined) {
         res.statusCode = 400;
         res.end(JSON.stringify({ ok: false, error: "nodeId and value required" }));
         return;
       }
 
-      const boolValue =
-        typeof value === "boolean" ? value
-          : String(value).toLowerCase() === "true" || value === 1;
-
-      const result = await writeNode(nodeId, boolValue);
+      const result = await writeNode(nodeId, normalizeBoolean(value));
+      requestImmediateRefresh("write").catch(() => {});
       res.end(JSON.stringify(result));
       return;
     }
@@ -570,13 +800,14 @@ const server = http.createServer(async (req, res) => {
       const body = await readBody(req);
       const { nodeId, bytes } = body;
 
-      if (!nodeId || !Array.isArray(bytes)) {
+      if (!validNodeId(nodeId) || !Array.isArray(bytes)) {
         res.statusCode = 400;
         res.end(JSON.stringify({ ok: false, error: "nodeId and bytes[] required" }));
         return;
       }
 
       const result = await writeByteArray(nodeId, bytes);
+      requestImmediateRefresh("write-bytes").catch(() => {});
       res.end(JSON.stringify(result));
       return;
     }
@@ -587,13 +818,14 @@ const server = http.createServer(async (req, res) => {
       const body = await readBody(req);
       const { nodeId, value } = body;
 
-      if (!nodeId || value === undefined) {
+      if (!validNodeId(nodeId) || value === undefined) {
         res.statusCode = 400;
         res.end(JSON.stringify({ ok: false, error: "nodeId and value required" }));
         return;
       }
 
       const result = await writeByte(nodeId, value);
+      requestImmediateRefresh("write-byte").catch(() => {});
       res.end(JSON.stringify(result));
       return;
     }
@@ -601,7 +833,7 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "POST" && pathname === "/read") {
       const body = await readBody(req);
       const { nodeId } = body;
-      if (!nodeId) {
+      if (!validNodeId(nodeId)) {
         res.statusCode = 400;
         res.end(JSON.stringify({ ok: false, error: "nodeId required" }));
         return;
@@ -622,13 +854,18 @@ const server = http.createServer(async (req, res) => {
     res.end(JSON.stringify({ error: "not found" }));
   } catch (err) {
     if (pathname === "/write") writeErrorCount++;
-    res.statusCode = 500;
+    res.statusCode = err.statusCode === 400 ? 400 : 500;
     res.end(JSON.stringify({ ok: false, error: err.message || String(err) }));
   }
 });
 
 console.log("[worker] starting local HTTP server");
 server.on("error", err => {
+  serverListening = false;
+  shuttingDown = true;
+  if (startupTimer) clearTimeout(startupTimer);
+  if (reconnectTimer) clearTimeout(reconnectTimer);
+  stopReadLoop();
   if (err && err.code === "EADDRINUSE") {
     console.log(`[worker] port ${PORT} already in use; exiting`);
   } else {
@@ -638,12 +875,24 @@ server.on("error", err => {
 });
 
 server.listen(PORT, "127.0.0.1", () => {
+  if (shuttingDown) return;
+  serverListening = true;
   console.log(`[worker] listening on 127.0.0.1:${PORT}`);
-  setTimeout(() => triggerConnect("startup"), AUTO_CONNECT_DELAY_MS);
+  startupTimer = setTimeout(() => {
+    startupTimer = null;
+    triggerConnect("startup");
+  }, AUTO_CONNECT_DELAY_MS);
 });
 
 // ── Graceful shutdown ──────────────────────────────────────
 async function shutdown() {
+  shuttingDown = true;
+  serverListening = false;
+  if (startupTimer) {
+    clearTimeout(startupTimer);
+    startupTimer = null;
+  }
+  server.close();
   console.log("[worker] shutting down");
   await closeCurrentClient();
   process.exit(0);

@@ -62,6 +62,316 @@
         "p4_do": "ns=3;i=16852992",
         "p4_pdout": "ns=3;i=16853248"
       }
+    },
+    "AMS_01": {
+      "read": {
+        "temperature": "ns=3;i=16849152",
+        "ex_p4_pqi": "ns=3;i=16851200",
+        "pressure": "ns=3;i=16849408",
+        "itv_value": "ns=3;i=16850176",
+        "p4_pdout": "ns=3;i=16853248",
+        "ex_di": "ns=3;i=16851456",
+        "forced_standby": "ns=3;i=16852224",
+        "itv_diag_data": "ns=3;i=16850432",
+        "vp_itv_nc": "ns=3;i=16852480",
+        "accumulated": "ns=3;i=16848640",
+        "ex_pqi": "ns=3;i=16850688",
+        "flow": "ns=3;i=16848896",
+        "pf3a_error": "ns=3;i=16849664",
+        "vp_itv_no": "ns=3;i=16852736",
+        "ex_itv_pqi": "ns=3;i=16850944",
+        "ex_p4_pdin": "ns=3;i=16851712",
+        "pf3a_status": "ns=3;i=16849920",
+        "p4_do": "ns=3;i=16852992",
+        "standby": "ns=3;i=16851968"
+      },
+      "write": {
+        "standby": "ns=3;i=16851968",
+        "forced_standby": "ns=3;i=16852224",
+        "air_nc": "ns=3;i=16852480",
+        "air_no": "ns=3;i=16852736",
+        "p4_do": "ns=3;i=16852992",
+        "p4_pdout": "ns=3;i=16853248"
+      }
+    },
+    "AMS_02": {
+      "read": {
+        "temperature": "ns=3;i=16854016",
+        "ex_p4_pqi": "ns=3;i=16856064",
+        "pressure": "ns=3;i=16854272",
+        "itv_value": "ns=3;i=16855040",
+        "p4_pdout": "ns=3;i=16858112",
+        "ex_di": "ns=3;i=16856320",
+        "forced_standby": "ns=3;i=16857088",
+        "itv_diag_data": "ns=3;i=16855296",
+        "vp_itv_nc": "ns=3;i=16857344",
+        "accumulated": "ns=3;i=16853504",
+        "ex_pqi": "ns=3;i=16855552",
+        "flow": "ns=3;i=16853760",
+        "pf3a_error": "ns=3;i=16854528",
+        "vp_itv_no": "ns=3;i=16857600",
+        "ex_itv_pqi": "ns=3;i=16855808",
+        "ex_p4_pdin": "ns=3;i=16856576",
+        "pf3a_status": "ns=3;i=16854784",
+        "p4_do": "ns=3;i=16857856",
+        "standby": "ns=3;i=16856832"
+      },
+      "write": {
+        "standby": "ns=3;i=16856832",
+        "forced_standby": "ns=3;i=16857088",
+        "air_nc": "ns=3;i=16857344",
+        "air_no": "ns=3;i=16857600",
+        "p4_do": "ns=3;i=16857856",
+        "p4_pdout": "ns=3;i=16858112"
+      }
+    },
+    "AMS_03": {
+      "read": {
+        "temperature": "ns=3;i=16858880",
+        "ex_p4_pqi": "ns=3;i=16860928",
+        "pressure": "ns=3;i=16859136",
+        "itv_value": "ns=3;i=16859904",
+        "p4_pdout": "ns=3;i=16862976",
+        "ex_di": "ns=3;i=16861184",
+        "forced_standby": "ns=3;i=16861952",
+        "itv_diag_data": "ns=3;i=16860160",
+        "vp_itv_nc": "ns=3;i=16862208",
+        "accumulated": "ns=3;i=16858368",
+        "ex_pqi": "ns=3;i=16860416",
+        "flow": "ns=3;i=16858624",
+        "pf3a_error": "ns=3;i=16859392",
+        "vp_itv_no": "ns=3;i=16862464",
+        "ex_itv_pqi": "ns=3;i=16860672",
+        "ex_p4_pdin": "ns=3;i=16861440",
+        "pf3a_status": "ns=3;i=16859648",
+        "p4_do": "ns=3;i=16862720",
+        "standby": "ns=3;i=16861696"
+      },
+      "write": {
+        "standby": "ns=3;i=16861696",
+        "forced_standby": "ns=3;i=16861952",
+        "air_nc": "ns=3;i=16862208",
+        "air_no": "ns=3;i=16862464",
+        "p4_do": "ns=3;i=16862720",
+        "p4_pdout": "ns=3;i=16862976"
+      }
+    },
+    "AMS_04": {
+      "read": {
+        "temperature": "ns=3;i=16863744",
+        "ex_p4_pqi": "ns=3;i=16865792",
+        "pressure": "ns=3;i=16864000",
+        "itv_value": "ns=3;i=16864768",
+        "p4_pdout": "ns=3;i=16867840",
+        "ex_di": "ns=3;i=16866048",
+        "forced_standby": "ns=3;i=16866816",
+        "itv_diag_data": "ns=3;i=16865024",
+        "vp_itv_nc": "ns=3;i=16867072",
+        "accumulated": "ns=3;i=16863232",
+        "ex_pqi": "ns=3;i=16865280",
+        "flow": "ns=3;i=16863488",
+        "pf3a_error": "ns=3;i=16864256",
+        "vp_itv_no": "ns=3;i=16867328",
+        "ex_itv_pqi": "ns=3;i=16865536",
+        "ex_p4_pdin": "ns=3;i=16866304",
+        "pf3a_status": "ns=3;i=16864512",
+        "p4_do": "ns=3;i=16867584",
+        "standby": "ns=3;i=16866560"
+      },
+      "write": {
+        "standby": "ns=3;i=16866560",
+        "forced_standby": "ns=3;i=16866816",
+        "air_nc": "ns=3;i=16867072",
+        "air_no": "ns=3;i=16867328",
+        "p4_do": "ns=3;i=16867584",
+        "p4_pdout": "ns=3;i=16867840"
+      }
+    },
+    "AMS_05": {
+      "read": {
+        "temperature": "ns=3;i=16868608",
+        "ex_p4_pqi": "ns=3;i=16870656",
+        "pressure": "ns=3;i=16868864",
+        "itv_value": "ns=3;i=16869632",
+        "p4_pdout": "ns=3;i=16872704",
+        "ex_di": "ns=3;i=16870912",
+        "forced_standby": "ns=3;i=16871680",
+        "itv_diag_data": "ns=3;i=16869888",
+        "vp_itv_nc": "ns=3;i=16871936",
+        "accumulated": "ns=3;i=16868096",
+        "ex_pqi": "ns=3;i=16870144",
+        "flow": "ns=3;i=16868352",
+        "pf3a_error": "ns=3;i=16869120",
+        "vp_itv_no": "ns=3;i=16872192",
+        "ex_itv_pqi": "ns=3;i=16870400",
+        "ex_p4_pdin": "ns=3;i=16871168",
+        "pf3a_status": "ns=3;i=16869376",
+        "p4_do": "ns=3;i=16872448",
+        "standby": "ns=3;i=16871424"
+      },
+      "write": {
+        "standby": "ns=3;i=16871424",
+        "forced_standby": "ns=3;i=16871680",
+        "air_nc": "ns=3;i=16871936",
+        "air_no": "ns=3;i=16872192",
+        "p4_do": "ns=3;i=16872448",
+        "p4_pdout": "ns=3;i=16872704"
+      }
+    },
+    "AMS_06": {
+      "read": {
+        "temperature": "ns=3;i=16873472",
+        "ex_p4_pqi": "ns=3;i=16875520",
+        "pressure": "ns=3;i=16873728",
+        "itv_value": "ns=3;i=16874496",
+        "p4_pdout": "ns=3;i=16877568",
+        "ex_di": "ns=3;i=16875776",
+        "forced_standby": "ns=3;i=16876544",
+        "itv_diag_data": "ns=3;i=16874752",
+        "vp_itv_nc": "ns=3;i=16876800",
+        "accumulated": "ns=3;i=16872960",
+        "ex_pqi": "ns=3;i=16875008",
+        "flow": "ns=3;i=16873216",
+        "pf3a_error": "ns=3;i=16873984",
+        "vp_itv_no": "ns=3;i=16877056",
+        "ex_itv_pqi": "ns=3;i=16875264",
+        "ex_p4_pdin": "ns=3;i=16876032",
+        "pf3a_status": "ns=3;i=16874240",
+        "p4_do": "ns=3;i=16877312",
+        "standby": "ns=3;i=16876288"
+      },
+      "write": {
+        "standby": "ns=3;i=16876288",
+        "forced_standby": "ns=3;i=16876544",
+        "air_nc": "ns=3;i=16876800",
+        "air_no": "ns=3;i=16877056",
+        "p4_do": "ns=3;i=16877312",
+        "p4_pdout": "ns=3;i=16877568"
+      }
+    },
+    "AMS_07": {
+      "read": {
+        "temperature": "ns=3;i=16878336",
+        "ex_p4_pqi": "ns=3;i=16880384",
+        "pressure": "ns=3;i=16878592",
+        "itv_value": "ns=3;i=16879360",
+        "p4_pdout": "ns=3;i=16882432",
+        "ex_di": "ns=3;i=16880640",
+        "forced_standby": "ns=3;i=16881408",
+        "itv_diag_data": "ns=3;i=16879616",
+        "vp_itv_nc": "ns=3;i=16881664",
+        "accumulated": "ns=3;i=16877824",
+        "ex_pqi": "ns=3;i=16879872",
+        "flow": "ns=3;i=16878080",
+        "pf3a_error": "ns=3;i=16878848",
+        "vp_itv_no": "ns=3;i=16881920",
+        "ex_itv_pqi": "ns=3;i=16880128",
+        "ex_p4_pdin": "ns=3;i=16880896",
+        "pf3a_status": "ns=3;i=16879104",
+        "p4_do": "ns=3;i=16882176",
+        "standby": "ns=3;i=16881152"
+      },
+      "write": {
+        "standby": "ns=3;i=16881152",
+        "forced_standby": "ns=3;i=16881408",
+        "air_nc": "ns=3;i=16881664",
+        "air_no": "ns=3;i=16881920",
+        "p4_do": "ns=3;i=16882176",
+        "p4_pdout": "ns=3;i=16882432"
+      }
+    },
+    "AMS_08": {
+      "read": {
+        "temperature": "ns=3;i=16883200",
+        "ex_p4_pqi": "ns=3;i=16885248",
+        "pressure": "ns=3;i=16883456",
+        "itv_value": "ns=3;i=16884224",
+        "p4_pdout": "ns=3;i=16887296",
+        "ex_di": "ns=3;i=16885504",
+        "forced_standby": "ns=3;i=16886272",
+        "itv_diag_data": "ns=3;i=16884480",
+        "vp_itv_nc": "ns=3;i=16886528",
+        "accumulated": "ns=3;i=16882688",
+        "ex_pqi": "ns=3;i=16884736",
+        "flow": "ns=3;i=16882944",
+        "pf3a_error": "ns=3;i=16883712",
+        "vp_itv_no": "ns=3;i=16886784",
+        "ex_itv_pqi": "ns=3;i=16884992",
+        "ex_p4_pdin": "ns=3;i=16885760",
+        "pf3a_status": "ns=3;i=16883968",
+        "p4_do": "ns=3;i=16887040",
+        "standby": "ns=3;i=16886016"
+      },
+      "write": {
+        "standby": "ns=3;i=16886016",
+        "forced_standby": "ns=3;i=16886272",
+        "air_nc": "ns=3;i=16886528",
+        "air_no": "ns=3;i=16886784",
+        "p4_do": "ns=3;i=16887040",
+        "p4_pdout": "ns=3;i=16887296"
+      }
+    },
+    "AMS_09": {
+      "read": {
+        "temperature": "ns=3;i=16888064",
+        "ex_p4_pqi": "ns=3;i=16890112",
+        "pressure": "ns=3;i=16888320",
+        "itv_value": "ns=3;i=16889088",
+        "p4_pdout": "ns=3;i=16892160",
+        "ex_di": "ns=3;i=16890368",
+        "forced_standby": "ns=3;i=16891136",
+        "itv_diag_data": "ns=3;i=16889344",
+        "vp_itv_nc": "ns=3;i=16891392",
+        "accumulated": "ns=3;i=16887552",
+        "ex_pqi": "ns=3;i=16889600",
+        "flow": "ns=3;i=16887808",
+        "pf3a_error": "ns=3;i=16888576",
+        "vp_itv_no": "ns=3;i=16891648",
+        "ex_itv_pqi": "ns=3;i=16889856",
+        "ex_p4_pdin": "ns=3;i=16890624",
+        "pf3a_status": "ns=3;i=16888832",
+        "p4_do": "ns=3;i=16891904",
+        "standby": "ns=3;i=16890880"
+      },
+      "write": {
+        "standby": "ns=3;i=16890880",
+        "forced_standby": "ns=3;i=16891136",
+        "air_nc": "ns=3;i=16891392",
+        "air_no": "ns=3;i=16891648",
+        "p4_do": "ns=3;i=16891904",
+        "p4_pdout": "ns=3;i=16892160"
+      }
+    },
+    "AMS_10": {
+      "read": {
+        "temperature": "ns=3;i=16892928",
+        "ex_p4_pqi": "ns=3;i=16894976",
+        "pressure": "ns=3;i=16893184",
+        "itv_value": "ns=3;i=16893952",
+        "p4_pdout": "ns=3;i=16897024",
+        "ex_di": "ns=3;i=16895232",
+        "forced_standby": "ns=3;i=16896000",
+        "itv_diag_data": "ns=3;i=16894208",
+        "vp_itv_nc": "ns=3;i=16896256",
+        "accumulated": "ns=3;i=16892416",
+        "ex_pqi": "ns=3;i=16894464",
+        "flow": "ns=3;i=16892672",
+        "pf3a_error": "ns=3;i=16893440",
+        "vp_itv_no": "ns=3;i=16896512",
+        "ex_itv_pqi": "ns=3;i=16894720",
+        "ex_p4_pdin": "ns=3;i=16895488",
+        "pf3a_status": "ns=3;i=16893696",
+        "p4_do": "ns=3;i=16896768",
+        "standby": "ns=3;i=16895744"
+      },
+      "write": {
+        "standby": "ns=3;i=16895744",
+        "forced_standby": "ns=3;i=16896000",
+        "air_nc": "ns=3;i=16896256",
+        "air_no": "ns=3;i=16896512",
+        "p4_do": "ns=3;i=16896768",
+        "p4_pdout": "ns=3;i=16897024"
+      }
     }
   }
 }
