@@ -1,0 +1,661 @@
+[
+  {
+    "packages": [
+      "IODD for D-MH2.zip"
+    ],
+    "manual": "OM_D-MH2_DOC1094990EN-1.pdf",
+    "pages": [
+      38,
+      48,
+      49,
+      50,
+      64
+    ],
+    "note": "4-byte 입력의 위치 원시값과 스위치·진단을 분리. 2점/3점 형식과 SP/폭/히스테리시스 상호 제약을 보존. 위치값에 mm 단위를 임의 부여하지 않음.",
+    "open": [
+      "비주기 복합 설정 상호 제약 구현"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-D-MPx.zip"
+    ],
+    "manual": "OM_D-MP_OMU0002EN-B.pdf",
+    "pages": [
+      17,
+      18,
+      21,
+      22
+    ],
+    "note": "2-byte 입력. 상위 12-bit 위치와 하위 4개 BDC를 구분. 비주기 위치/qualifier와 PD는 별도 정의. 측정범위와 teaching 채널을 수동 구성.",
+    "open": [
+      "PD 위치 배율과 측정범위 선택 검증",
+      "비주기 30000 범위 밖 코드 처리"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-D-MPG-20240604-IODD1.1.zip"
+    ],
+    "manual": "OM_D-MPG_DOC1073785EN-3.pdf",
+    "pages": [
+      19,
+      21,
+      23,
+      24,
+      25
+    ],
+    "note": "4-byte 입력에 위치, MDC-Scale, 8개 SSC가 포함됨. D-MP의 2-byte 해석 재사용 금지. 스케일과 측정영역 설정을 별도로 보존.",
+    "open": [
+      "MDC-Scale 기반 해석",
+      "SSC 복합 설정과 teaching 처리"
+    ]
+  },
+  {
+    "packages": [
+      "PF2M_IO-Link_IODD.zip",
+      "PF2M_X731_IODD.zip"
+    ],
+    "manual": "OM_PF2M7_OMW0007EN-G.pdf",
+    "pages": [
+      14,
+      73,
+      74,
+      75,
+      77,
+      83
+    ],
+    "note": "signed 16-bit 유량, 고정출력과 측정진단 분리. 정격별 배율 사용. X731 혼합가스 설정은 본문에 있지만 Device ID 표는 일반형이므로 특수형 동일성 확인이 추가로 필요.",
+    "open": [
+      "200 L 정격이 범위표에는 있으나 계수표에는 없음",
+      "X731 Device ID 및 전용 사양 일치 확인",
+      "누적값 단위와 리셋 정책"
+    ]
+  },
+  {
+    "packages": [
+      "PF2MC7.zip"
+    ],
+    "manual": "OM_PF2MC7_OMZ0002EN-D.pdf",
+    "pages": [
+      78,
+      79,
+      80,
+      81
+    ],
+    "note": "4-byte 입력 유량 구조. 500/1000/2000 L 정격과 원시값 범위를 대조. 변환 계수표의 정격 표기 4/16/40 L는 앞쪽 범위표와 불일치.",
+    "open": [
+      "계수표 정격 오기 확인 전 자동 변환 보류"
+    ]
+  },
+  {
+    "packages": [
+      "PF3A7HM.zip",
+      "PF3A7_H-L-M_IODD.zip"
+    ],
+    "manual": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+    "pages": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      79
+    ],
+    "note": "500/1000/2000/4000/8000 L 정격별 유량 배율. 고정출력은 실제 측정 상태와 구분. 구버전에도 현재 매뉴얼 전체 기능을 일괄 적용하지 않음.",
+    "open": [
+      "구버전 비주기 변경 이력 대조",
+      "누적값·기준 상태 해석"
+    ]
+  },
+  {
+    "packages": [
+      "PF3A7H.zip",
+      "PF3A7H_IO-Link_IODD_V1.00.zip"
+    ],
+    "manual": "OM_PF3A7xH-L_OMX0002EN-G.pdf",
+    "pages": [
+      73,
+      74,
+      75,
+      76,
+      77,
+      78
+    ],
+    "note": "3000/6000/12000 L 정격별 배율. 현행 PD는 4-byte로 기재됨. 각 구버전 IODD의 길이와 필드는 별도로 보존.",
+    "open": [
+      "구버전 레이아웃·기능 차이",
+      "누적값·기준 상태 해석"
+    ]
+  },
+  {
+    "packages": [
+      "PF3W7-X445_IO-Link_IODD_V1.1.zip"
+    ],
+    "manual": "OM_PF3W7-X445_OMV0006EN-C.pdf",
+    "pages": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      84
+    ],
+    "note": "6-byte 입력 유량/온도, 정격별 유량과 0.1°C 변환. 현행 PF3W와 진단 비트 위치가 다름. 계산 예제의 부호/소수점 불일치 때문에 계수표를 근거로 사용.",
+    "open": [
+      "누적 지수 설정과 비주기 값 결합"
+    ]
+  },
+  {
+    "packages": [
+      "PF3W_IO-Link_IODD_V1.10.zip"
+    ],
+    "manual": "OM_PF3W7_OMW0010EN-I.pdf",
+    "pages": [
+      72,
+      73,
+      74,
+      76,
+      77
+    ],
+    "note": "유량 bit32, 온도 bit16. 온도 센서 없는 모델의 온도 영역은 미사용. X445 진단 비트표 재사용 금지.",
+    "open": [
+      "비주기 누적·피크값과 단위 조건"
+    ]
+  },
+  {
+    "packages": [
+      "PFCA_IODD.zip"
+    ],
+    "manual": "OM_PFCA7_OMA1002EN-A.pdf",
+    "pages": [
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      65
+    ],
+    "note": "순간 signed16와 누적 unsigned32, 출력 유량 명령 분리. 누적 배율은 정격/단위별로 다름. local/remote·자동 차단·고정출력 상태가 별도 필요.",
+    "open": [
+      "출력 명령 및 자동 차단 동작 연결",
+      "비주기 설정의 모드 의존성"
+    ]
+  },
+  {
+    "packages": [
+      "PFUW-Series-IODD-File.zip"
+    ],
+    "manual": "OM_PFUW7_DOC1066729EN-2.pdf",
+    "pages": [
+      84,
+      85,
+      87,
+      88,
+      89,
+      95
+    ],
+    "note": "8-byte 입력. 누적값은 bit32..63 전체 unsigned32로 IODD와 대조하며 16-bit 반쪽을 각각 32-bit로 해석하지 않음. 초음파 레벨/측정오류/단위 bit를 함께 표시.",
+    "open": [
+      "수신 PD 단위 bit와 수동 구성 불일치 처리",
+      "비주기 배관·유체 구성"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-ITV-IL.zip"
+    ],
+    "manual": "OM_ITV2_00145_EN-B.pdf",
+    "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "note": "입력4/출력2 byte. 4095가 100%인 관계는 F_1/F_2 조건을 전제로 함. 모델 정격과 설정을 모르면서 MPa로 고정 변환하면 안 됨.",
+    "open": [
+      "정격·F_1·F_2 기반 변환",
+      "hold/clear 통신 이상 동작"
+    ]
+  },
+  {
+    "packages": [
+      "IODD FILE.zip"
+    ],
+    "manual": "OM_PSH_DOC1060358EN-2.pdf",
+    "pages": [
+      75,
+      76,
+      77,
+      78
+    ],
+    "note": "습도와 온도 signed16 각각 0.1 SI 배율. 매뉴얼은 ID728/729, ZIP에는 ID650도 있어 구형에 자동 적용하지 않음. 화씨 offset26.24는 섭씨/화씨 범위표와 불일치.",
+    "open": [
+      "ID650 전용 매뉴얼",
+      "화씨 변환 불일치 확인"
+    ]
+  },
+  {
+    "packages": [
+      "FC3W_IODD.zip"
+    ],
+    "manual": "OM_FC3W5_OMA1018EN-C.pdf",
+    "pages": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "note": "입력6/출력6 byte. 유량 제어·밸브 개도·원점복귀를 구분. 원점 검출 전 개도 값은 정상 개도 측정값으로 취급하지 않음.",
+    "open": [
+      "원점/모드 의존 품질 처리",
+      "명령 범위 검증과 비주기 설정"
+    ]
+  },
+  {
+    "packages": [
+      "IN502.zip"
+    ],
+    "manual": "OM_IN502-44-45_OMZ1003EN-A.pdf",
+    "pages": [
+      53,
+      54,
+      55,
+      56,
+      57
+    ],
+    "note": "입력8/출력2 byte. 유량/압력/온도와 유량 명령 분리. 확보 문서는 ID575..578의 44/45를 명시하고 46은 누락. bit11은 진단과 예약에 중복 기재됨.",
+    "open": [
+      "IN502-46 통신 매뉴얼",
+      "bit11 표 불일치",
+      "온도는 참고값으로 표시"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-IZS51-L-20240920.zip"
+    ],
+    "manual": "OM_IZS51_doc1092338EN-1.pdf",
+    "pages": [
+      40,
+      43,
+      44
+    ],
+    "note": "입력3/출력2 byte. 10-bit signed 이온 밸런스와 이온/공기 공급 상태. 출력 유효 bit와 설정값을 분리. 이벤트별로 운전 지속/정지가 다름.",
+    "open": [
+      "밸런스 물리 단위와 비주기 운전 시간",
+      "정비/오류별 상태 표시"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-IZTC41-Lxx-x.zip"
+    ],
+    "manual": "OM_IZT-L_OMZ0045EN-A.pdf",
+    "pages": [
+      10,
+      11,
+      14,
+      16
+    ],
+    "note": "ID581, 4개 CH 이온 상태/초기 설정/밸런스. 출력 유효 bit71과 CH별 명령 구분. 초기 설정·리셋·운전시간 초기화는 일반 수치 설정과 다른 명령.",
+    "open": [
+      "입력 16-bit 영역과 10-bit signed 표기 대조",
+      "채널별 초기 설정 상태·명령 처리"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-EX260-MIL1.zip"
+    ],
+    "manual": "OM_EX260-MIL1_DOC1057882EN.pdf",
+    "pages": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "note": "입력1 byte, 매니폴드 규모에 따라 출력4/8/12/16 byte. 32..128개 출력과 단락·구성 변경·카운터·전원 상태를 분리.",
+    "open": [
+      "밸브 배치/인스턴스 연결",
+      "비주기 출력 카운터와 진단"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-EX260-PIL1.zip"
+    ],
+    "manual": "OM_EX260-PIL1_DOC1070047EN-2.pdf",
+    "pages": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "note": "입력4 또는14/출력3 byte. 5개 센서의 압력 포함 여부가 Device ID에 따름. p24와 p26에서 해당 ID 설명이 반대로 기재되어 충돌.",
+    "open": [
+      "압력 PD Device ID 표 충돌",
+      "압력 상하한은 포화 의미이며 정확값과 구분"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-EX260-SIL1.zip"
+    ],
+    "manual": "OM_EX260-IO-LINK_EN-C.pdf",
+    "pages": [
+      14,
+      15,
+      24,
+      27
+    ],
+    "note": "COM2/3와 입력0/2·출력4 byte 조합별 IODD 선택. byte-array 기반으로 센서형 전체 워드 스왑 가정 금지. PD 미포함 상태는 ISDU 상태 조회 후보.",
+    "open": [
+      "상위 통신별 바이트 매핑",
+      "DIP 설정 수동 일치 확인"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-EX430-SIL1.zip"
+    ],
+    "manual": "OM_EX430-SIL1_OMY0021EN-A.pdf",
+    "pages": [
+      15,
+      24,
+      27
+    ],
+    "note": "ID567..570에 COM2/3, 입력0/2·출력4 byte 조합. byte-array 기반. EX260과 기능 형태가 같아도 식별과 매핑은 별도.",
+    "open": [
+      "상위 통신별 바이트 매핑",
+      "DIP 설정 수동 일치 확인"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-EX260-VIL1.zip"
+    ],
+    "manual": "OM_EX260-VIL_OMZ0018EN-B.pdf",
+    "pages": [
+      12,
+      22,
+      23,
+      24
+    ],
+    "note": "4/8/12/16연에 입력4/5/6/7·출력2/3/4/5 byte. 압력은 출력에서 선택한 CH 한 개의 값. 0x8000은 이상이며 채널 전환과 수신 시점 일치가 필요.",
+    "open": [
+      "CH 전환 동기화",
+      "포화·미사용·이상 코드",
+      "비주기 채널별 설정"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-EX600-TDXx.zip"
+    ],
+    "manual": "OM_EX600-TDX_O-Link_DOC1113170EN-1.pdf",
+    "pages": [
+      15,
+      26,
+      27
+    ],
+    "note": "TDX1은32점/4 byte, TDX2는16점/2 byte 입력. 핀/채널 배치가 다름. 숫자 게이지 대신 입력 상태 격자에 연결할 대상.",
+    "open": [
+      "배열 하위 비트 디코더",
+      "비주기 전원/단락 진단"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-ISA3-F.zip",
+      "SMC-ISA3-G.zip",
+      "SMC-ISA3-H.zip"
+    ],
+    "manual": "OM_ISA3-L_OMW0009EN-E.pdf",
+    "pages": [
+      91,
+      92,
+      93,
+      94,
+      95
+    ],
+    "note": "거리 가이드 표시와 SUP/OUT 압력을 분리. F/G/H 거리 배율 .02/.1/.2. 압력 음수 범위가 있으나 p91의 부호 설명이 일관되지 않음.",
+    "open": [
+      "signed 설명 충돌과 IODD 대조",
+      "거리 가이드값의 단위 표현",
+      "비주기 임계값·압력 설정"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-ISE70_71-L2.zip"
+    ],
+    "manual": "OM_ISE7x-L2_OMV0004EN-J.pdf",
+    "pages": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      70
+    ],
+    "note": "unsigned13 압력과 상태 bit3개. ISE70/71 및 단위별 offset 포함 변환. 진단 bit는 F0 설정에 의존.",
+    "open": [
+      "비주기 peak/bottom 변환 및 진단 선택"
+    ]
+  },
+  {
+    "packages": [
+      "ISE7.zip"
+    ],
+    "manual": "OM_ISE70Gx-L2_OMV0009EN-I.pdf",
+    "pages": [
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "note": "70G/75G/76G/77G/78G 정격별 압력 계수를 개별 적용. 같은13-bit라고 동일 배율을 사용하지 않음.",
+    "open": [
+      "비주기 변환·진단 선택"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-ISE79G.zip"
+    ],
+    "manual": "OM_ISE79S-L2_MY0007EN-E.pdf",
+    "pages": [
+      63,
+      64,
+      65,
+      66,
+      67
+    ],
+    "note": "ZIP 이름은 ISE79G지만 IODD 모델은 ISE79S. ISE79S 매뉴얼의50 MPa 계수 사용. 패키지명으로 모델을 결정하지 않음.",
+    "open": [
+      "비주기 변환·진단 선택"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-ZSE20B_ISE20B-L.zip"
+    ],
+    "manual": "OM_ZSE20B-L_ISE20B-L_OMU0006EN-H.pdf",
+    "pages": [
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "note": "양압/진공/연성의 배율과 offset이 다름. 진공 음의 기울기 보존. L/L-P 각각의 조건부 IODD 정의 사용.",
+    "open": [
+      "비주기 임계값과 진단 선택"
+    ]
+  },
+  {
+    "packages": [
+      "ZSE20C-ISE20C-L_IODD.zip"
+    ],
+    "manual": "OM_ZSE20C-L_ISE20C-L_OMX0002EN-F.pdf",
+    "pages": [
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "note": "ISE20CH 2 MPa를 ISE20C 1 MPa와 구분. 진공/연성 및 단위별 변환을 별도 등록.",
+    "open": [
+      "비주기 임계값과 진단 선택"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-ZSE20B_ISE20B-X101.zip"
+    ],
+    "manual": "PSxx-PSV0007",
+    "url": "https://www.smcworld.com/upfiles/_manual/e/PSxx-PSV0007.pdf",
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "note": "X101 전용 문서의 ID304/305/306 및2-byte unsigned13 압력 확인. 일반 L형 문서를 대신 적용하지 않음.",
+    "open": [
+      "원본 PDF 로컬 다운로드403; 공식 웹 PDF 텍스트로 검토",
+      "비주기 설정 전체 적용"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-PSE202A.zip"
+    ],
+    "manual": "OM_PSE200A_OMW0012EN-F.pdf",
+    "pages": [
+      77,
+      78,
+      79,
+      81,
+      83,
+      84,
+      85
+    ],
+    "note": "4개 CH signed16 측정값. 각 CH 센서 정격·단위·사용자 범위가 별도이므로 전역 단위 하나로 해석 불가. 진공 계수도 다른 센서와 다름.",
+    "open": [
+      "CH별 수동 센서 정격·단위·사용자 범위 구성",
+      "계수표 inchHg와 다른 표의 불일치 확인"
+    ]
+  },
+  {
+    "packages": [
+      "IODD File for PSE54-L.zip"
+    ],
+    "manual": "OM_PSE54_DOC1056909EN-4.pdf",
+    "pages": [
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "note": "signed16 압력이고 offset0. PSE540/541/543 정격 및 진공의 음의 기울기를 구분. ISE unsigned13 변환 재사용 금지.",
+    "open": [
+      "단위 고정/선택 IODD별 표시 조건",
+      "비주기 설정 변환"
+    ]
+  },
+  {
+    "packages": [
+      "IODD File for PSE57-L.zip"
+    ],
+    "manual": "OM_PSE57_DOC1056914EN-4.pdf",
+    "pages": [
+      23,
+      24,
+      26,
+      27,
+      28
+    ],
+    "note": "signed16 압력과 정격별 offset0 변환.5 MPa 표시범위 표가 동일 페이지 정격/계수표와 불일치.",
+    "open": [
+      "5 MPa 표시범위 불일치 확인",
+      "단위 고정/선택 IODD별 조건",
+      "비주기 설정 변환"
+    ]
+  },
+  {
+    "packages": [
+      "ZSE10-X148_149.zip"
+    ],
+    "manual": "OM_ZK2-ZB1-ZL3-ZQ_DOC1051887EN-3.pdf",
+    "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zk2-zb1-zl3-zq_doc1051887en-3.pdf",
+    "pages": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "note": "입력4/출력2 byte의 진공 제어. 공급/파기 지령과 상태를 구분. p20 unsigned 설명과 음수 예제/표가 충돌하므로 부호 해석 확인 필요.",
+    "open": [
+      "signed/unsigned 표 충돌",
+      "에너지 절감·밸브 보호·자동 파기 설정"
+    ]
+  },
+  {
+    "packages": [
+      "SMC-JXCL.zip"
+    ],
+    "manual": "OM_JXCL1_IO-Link_OMV0005EN-D.pdf",
+    "pages": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      83
+    ],
+    "note": "출력22 byte의 단계/수치 지령. 위치0.01mm와 속도mm/s 등 항목별 단위. 시작 플래그와 데이터 갱신 순서 제약이 있어 일반 쓰기 버튼으로 취급 불가. 입력 14-byte: 현재/목표 위치 0.01 mm, 속도 1 mm/s, 힘 1%. BUSY=OFF라도 밀기 힘 유지 중일 수 있으며 INP 의미는 동작 모드에 따라 다름.",
+    "open": [
+      "연결 액추에이터별 스트로크/속도 한계",
+      "TriggerLV 단위 표 불일치",
+      "명령 시퀀스와 입력 모니터링"
+    ]
+  },
+  {
+    "packages": [
+      "EQ-BL_IODD_20250616.zip"
+    ],
+    "manual": "OM_EQ_DOC1138459EN-1.pdf",
+    "pages": [
+      20,
+      22,
+      36,
+      37,
+      40
+    ],
+    "note": "입력4/출력2 byte. 현재 위치0.1mm와 OUT폭0.01mm를 구분. JOG·알람리셋·위치 명령에 운전 조건이 있음.",
+    "open": [
+      "액추에이터별 한계와 명령 시퀀스",
+      "비주기 스텝/상태 모니터"
+    ]
+  }
+]

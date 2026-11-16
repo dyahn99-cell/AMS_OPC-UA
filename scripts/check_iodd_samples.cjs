@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict'),{Samples}=require('../assets/iodd-workspace.js');
+const s=new Samples();
+s.set('master1/P1/rev1','pressure',10,1000);
+s.set('master1/P2/rev1','pressure',20,1000);
+s.set('master2/P1/rev1','pressure',30,1000);
+assert.equal(s.get('master1/P1/rev1','pressure',1001).value,10);
+assert.equal(s.get('master1/P2/rev1','pressure',1001).value,20);
+assert.equal(s.get('master2/P1/rev1','pressure',1001).value,30);
+assert.equal(s.get('master1/P1/rev2','pressure',1001).quality,'unavailable');
+assert.equal(s.get('master1/P1/rev1','pressure',31001).quality,'stale');
+s.disconnect('master1/P1/rev1');
+assert.equal(s.get('master1/P1/rev1','pressure',1001).value,null);
+assert.equal(s.get('master1/P2/rev1','pressure',1001).value,20);
+console.log('PASS: cross-master, cross-port, revision isolation, stale samples and selective disconnect');

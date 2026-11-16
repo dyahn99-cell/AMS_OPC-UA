@@ -3246,7 +3246,7 @@ function syncScheduleTargets(devices=[]){
   const select=document.getElementById("sch_remote")
   if(!select) return
   const current=select.value || (viewScope==="device"?selectedRemoteId:"COMBINED")
-  const rows=[{id:"COMBINED",name:"ALL DEVICES"},...devices.filter(d=>String(d.device_kind||d.profile?.metadata?.device_kind||"").toLowerCase()!=="remote_io").map(d=>({id:d.device_id||d.remote_id||d.id,name:d.name||d.device_id||d.remote_id||d.id})).filter(d=>d.id)]
+  const rows=[{id:"COMBINED",name:"ALL DEVICES"},...devices.filter(d=>deviceSupportsAms(d)).map(d=>({id:d.device_id||d.remote_id||d.id,name:d.name||d.device_id||d.remote_id||d.id})).filter(d=>d.id)]
   if(current && !rows.some(d=>d.id===current)) rows.push({id:current,name:"Unavailable · selection retained"})
   select.innerHTML=rows.map(d=>`<option value="${escapeHtml(d.id)}">${escapeHtml(d.id==="COMBINED"?d.name:deviceDisplayLabel(d.id,devices))}</option>`).join("")
   select.value=rows.some(d=>d.id===current)?current:(viewScope==="device"&&rows.some(d=>d.id===selectedRemoteId)?selectedRemoteId:"COMBINED")
@@ -3255,7 +3255,7 @@ function syncHistDeviceSelect(devices=[]){
   const select=document.getElementById("hist_remote")
   if(!select) return
   const current=select.value||histRemoteId
-  const rows=[{id:"ALL",name:"ALL DEVICES"},...devices.filter(d=>String(d.device_kind||d.profile?.metadata?.device_kind||"").toLowerCase()!=="remote_io").map(d=>({id:d.device_id||d.remote_id||d.id,name:d.name||d.device_id||d.remote_id||d.id})).filter(d=>d.id)]
+  const rows=[{id:"ALL",name:"ALL DEVICES"},...devices.filter(d=>deviceSupportsAms(d)).map(d=>({id:d.device_id||d.remote_id||d.id,name:d.name||d.device_id||d.remote_id||d.id})).filter(d=>d.id)]
   select.innerHTML=rows.map(d=>`<option value="${escapeHtml(d.id)}">${escapeHtml(d.id==="ALL"?d.name:deviceDisplayLabel(d.id,devices))}</option>`).join("")
   select.value=rows.some(d=>d.id===current)?current:"ALL"
   histRemoteId=select.value
@@ -3313,7 +3313,7 @@ function renderMultiMonitor(payload={}){
   })
   const hiddenSet=new Set(gridLayout.hidden||[])
   const visibleCards=cards.filter(c=>remoteConnectionPresent(c) && (gridEditMode || !hiddenSet.has(c.id)))
-  const productionRemotes=remotes.filter(r=>!r.placeholder && String(r.device_kind||r.profile?.metadata?.device_kind||"").toLowerCase()!=="remote_io")
+  const productionRemotes=remotes.filter(r=>!r.placeholder && deviceSupportsAms(r))
   const online=Number(payload.combined?.online_count??productionRemotes.filter(r=>r.online).length)
   const warnings=Number(payload.combined?.warning_count??productionRemotes.filter(r=>r.online&&(r.forced_standby||r.standby_signal||(r.diagnostic&&r.diagnostic!=="No error"))).length)
   const totalFlow=measurementValue(payload.combined||payload.base,"instant_flow_l_min")
@@ -3405,7 +3405,13 @@ function deviceLocationLabel(device){
   const gateway=m.gateway_id||device.gateway_id||device.modbus_map?.gateway_id
   return channel!=null?`${gateway?gateway+' / ':''}CH${Number(channel)}`:'채널 미지정'
 }
+function deviceSupportsAms(device){
+  if(device.capabilities) return device.capabilities.mode===true
+  const kind=device.device_kind??device.profile?.metadata?.device_kind
+  return kind===undefined||kind==='exa1'
+}
 function deviceKindLabel(device){
+  if(device.model_definition) return device.model_definition.label
   const p=device.profile||device, kind=device.device_kind||p.metadata?.device_kind||device.modbus_map?.device_kind
   if(kind==='remote_io') return 'Remote I/O'
   if(kind==='iolink_master') return 'IO-Link 마스터'
@@ -5358,6 +5364,8 @@ async function hubCommand(target,command,payload={}){
   const row=(latestRemotePayload?.remotes||[]).find(r=>(r.id||r.device_id||r.remote_id)===target)
   if(!acquisitionActive) return {ok:false,error:"Disconnected · click Connect first"}
   if(target!=="COMBINED" && (!row?.online || row.quarantined || row.enabled===false || row.profile?.enabled===false)) return {ok:false,error:"Device offline, disabled or quarantined · repair connection settings"}
+  const capability={mode:"mode",standby:"signals",forced_standby:"signals",air_supply:"signals",port4_do:"port4",port4_pdout:"port4",flow_reset:"flow_reset"}[command]
+  if(target!=="COMBINED" && row?.capabilities && row.capabilities[capability]!==true) return {ok:false,error:"이 장비에서 지원하지 않는 제어입니다"}
   const res=await apiPost("/api/hub/command",{target,command,payload})
   if(res && res.ok===false && res.results){
     const failed=Object.entries(res.results).filter(([,v])=>!v?.ok).map(([id,v])=>`${id}: ${v?.error||"failed"}`)
@@ -5968,7 +5976,7 @@ function remoteConnectionPresent(device){
   return device.online===true
 }
 function syncBruDeviceTabs(devices=[]){
-  const rows=devices.filter(d=>remoteConnectionPresent(d) && String(d.device_kind||d.profile?.metadata?.device_kind||"").toLowerCase()!=="remote_io").map(d=>({id:d.device_id||d.remote_id||d.id,online:!!d.online})).filter(d=>d.id)
+  const rows=devices.filter(d=>remoteConnectionPresent(d) && deviceSupportsAms(d)).map(d=>({id:d.device_id||d.remote_id||d.id,online:!!d.online})).filter(d=>d.id)
   const draw=(el,cls)=>{
     if(!el) return
     el.innerHTML=rows.map(d=>{
@@ -6318,7 +6326,7 @@ function initDateInputsBeta(){
 function syncHistDeviceSelectBeta(devices=[]){
   const el=document.getElementById("histbDeviceTabs")
   if(!el) return
-  const rows=[{id:"ALL",name:"ALL DEVICES"},...devices.filter(d=>String(d.device_kind||d.profile?.metadata?.device_kind||"").toLowerCase()!=="remote_io").map(d=>({id:d.device_id||d.remote_id||d.id,name:d.name||d.device_id||d.remote_id||d.id})).filter(d=>d.id)]
+  const rows=[{id:"ALL",name:"ALL DEVICES"},...devices.filter(d=>deviceSupportsAms(d)).map(d=>({id:d.device_id||d.remote_id||d.id,name:d.name||d.device_id||d.remote_id||d.id})).filter(d=>d.id)]
   if(!rows.some(d=>d.id===histbRemoteId)) histbRemoteId="ALL"
   el.innerHTML=rows.map(d=>`<span class="hb-tab${d.id===histbRemoteId?" sel":""}" data-id="${escapeHtml(d.id)}" onclick="setHistRemoteBeta(this.dataset.id)" title="${escapeHtml(d.id==="ALL"?d.name:deviceDisplayLabel(d.id,devices))}">${escapeHtml(d.id==="ALL"?"ALL":d.id)}</span>`).join("")
   updateHistFieldAvailabilityBeta()
@@ -6464,6 +6472,7 @@ function renderHistBetaResult(field,unit,source){
 }
 
 </script>
+<a href="/device-workspace" style="position:fixed;right:20px;bottom:20px;z-index:1000;background:#173e4b;color:#fff;padding:12px 18px;border-radius:10px">장비 구성 · IO-Link</a>
 </body>
 <script src="/assets/diagnostics.js"></script>
 <script src="/assets/device-navigation.js"></script>

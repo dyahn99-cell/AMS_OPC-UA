@@ -6,6 +6,7 @@ from dataclasses import dataclass, field
 from typing import Any, Iterable, Mapping
 
 from .device_hub import canonical_device_id
+from .device_models import AMS
 
 
 VALID_SLOT_KINDS = {"exa1", "dummy", "remote_io", "empty"}
@@ -104,7 +105,7 @@ class Exw1Topology:
                 raise ValueError(f"enabled must be a boolean: CH{slot.channel}")
             if slot.kind not in VALID_SLOT_KINDS:
                 raise ValueError(f"unsupported EXW1 slot kind: {slot.kind}")
-            if slot.kind == "exa1" and (slot.input_bytes != 36 or slot.output_bytes != 18):
+            if slot.kind == "exa1" and (slot.input_bytes != AMS.input_bytes or slot.output_bytes != AMS.output_bytes):
                 raise ValueError(f"EXA1 process layout requires 36 input / 18 output bytes: CH{slot.channel}")
             if slot.model is not None and slot.model not in {20, 30, 40, 60}:
                 raise ValueError(f"unsupported EXA1 model: {slot.model}")

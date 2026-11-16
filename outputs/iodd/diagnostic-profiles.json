@@ -1,0 +1,5373 @@
+{
+  "9de73ae8c0796d8f3772580239e7812edc2a07993ebb6d429d3472e0b274f8e9": {
+    "model": "ISE20B-L",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20B-L_ISE20B-L_OMU0006EN-H.pdf",
+      "pdf_pages": [
+        76
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20b-l_ise20b-l_omu0006en-h.pdf",
+      "sha256": "58cbb9c124dfbcc91ed6a59fb99415428d4be2f11d2a18d827166c1c35e74ef6"
+    }
+  },
+  "03dd6d5f9fb16effbb2725cfd5623b3594f01e836e6c4c5599feb7a118ff582b": {
+    "model": "ISE20B-L-P",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20B-L_ISE20B-L_OMU0006EN-H.pdf",
+      "pdf_pages": [
+        76
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20b-l_ise20b-l_omu0006en-h.pdf",
+      "sha256": "58cbb9c124dfbcc91ed6a59fb99415428d4be2f11d2a18d827166c1c35e74ef6"
+    }
+  },
+  "b2fb7e3e5b9d7dc9d2ecf51a2f3e4b4381dc030ec4a9944eb9730fcf65d53d9c": {
+    "model": "ISE20C-L",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20C-L_ISE20C-L_OMX0002EN-F.pdf",
+      "pdf_pages": [
+        66
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20c-l_ise20c-l_omx0002en-f.pdf",
+      "sha256": "0ab5c8112557f5d9204f3c638d7498b346f3bb3de7a17e4a50f61847679028e6"
+    }
+  },
+  "87e93f65f1a6bec2a98212c3e25225b0179989f7df2c161a2705394e5bd11364": {
+    "model": "ISE20C-L-P",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20C-L_ISE20C-L_OMX0002EN-F.pdf",
+      "pdf_pages": [
+        66
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20c-l_ise20c-l_omx0002en-f.pdf",
+      "sha256": "0ab5c8112557f5d9204f3c638d7498b346f3bb3de7a17e4a50f61847679028e6"
+    }
+  },
+  "f0f8188e4c35809a78a06609abf24753b3260a6f865375e4eb23b23bc5aa9502": {
+    "model": "ISE20CH-L",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20C-L_ISE20C-L_OMX0002EN-F.pdf",
+      "pdf_pages": [
+        66
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20c-l_ise20c-l_omx0002en-f.pdf",
+      "sha256": "0ab5c8112557f5d9204f3c638d7498b346f3bb3de7a17e4a50f61847679028e6"
+    }
+  },
+  "8948fd5e07223a98759ef893d91e697231c3defd401c7565fc258c8843e8ea5f": {
+    "model": "ISE20CH-L-P",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20C-L_ISE20C-L_OMX0002EN-F.pdf",
+      "pdf_pages": [
+        66
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20c-l_ise20c-l_omx0002en-f.pdf",
+      "sha256": "0ab5c8112557f5d9204f3c638d7498b346f3bb3de7a17e4a50f61847679028e6"
+    }
+  },
+  "0d6af088b7f823c567a065305100a470526df762b64c59eb71796ee33a3c20e3": {
+    "model": "ISE70",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ISE7x-L2_OMV0004EN-J.pdf",
+      "pdf_pages": [
+        62
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise7x-l2_omv0004en-j.pdf",
+      "sha256": "50148fa05aff034d7b695ffbf2bbad9f113576b3dae6e2a2994ae57b38d86aba"
+    }
+  },
+  "64c14760a4cac33f87f3c6cb1af0ac610af96b7ba0e2fc668c971290f6b61cf7": {
+    "model": "ISE70G",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ISE70Gx-L2_OMV0009EN-I.pdf",
+      "pdf_pages": [
+        65
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise70gx-l2_omv0009en-i.pdf",
+      "sha256": "bd72ddbc253a71a39feccf96664d5a7dfb66a81eb24cd54ca9eeaa01ddc7e19a"
+    }
+  },
+  "2164398613e932bd24ae6fe8b45fe85401b086b431e7b4bf4fb9f571d61254bc": {
+    "model": "ISE71",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ISE7x-L2_OMV0004EN-J.pdf",
+      "pdf_pages": [
+        62
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise7x-l2_omv0004en-j.pdf",
+      "sha256": "50148fa05aff034d7b695ffbf2bbad9f113576b3dae6e2a2994ae57b38d86aba"
+    }
+  },
+  "d38c159fd2734176252228529df919b4d66c0182c44067255a55e1d06bc0b667": {
+    "model": "ISE75G",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ISE70Gx-L2_OMV0009EN-I.pdf",
+      "pdf_pages": [
+        65
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise70gx-l2_omv0009en-i.pdf",
+      "sha256": "bd72ddbc253a71a39feccf96664d5a7dfb66a81eb24cd54ca9eeaa01ddc7e19a"
+    }
+  },
+  "bd5f08b0b00a1798481423645edbba34cf40f108f5fa33480abfe926757aadb0": {
+    "model": "ISE76G",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ISE70Gx-L2_OMV0009EN-I.pdf",
+      "pdf_pages": [
+        65
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise70gx-l2_omv0009en-i.pdf",
+      "sha256": "bd72ddbc253a71a39feccf96664d5a7dfb66a81eb24cd54ca9eeaa01ddc7e19a"
+    }
+  },
+  "8d0d9f6adbaa88ebd3f2a026637e683614bfb7bb11061cd2f099c1937f06dce5": {
+    "model": "ISE77G",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ISE70Gx-L2_OMV0009EN-I.pdf",
+      "pdf_pages": [
+        65
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise70gx-l2_omv0009en-i.pdf",
+      "sha256": "bd72ddbc253a71a39feccf96664d5a7dfb66a81eb24cd54ca9eeaa01ddc7e19a"
+    }
+  },
+  "96d6aa9fe6d4c3d96c62d79e6c351cd1b114f846eea2bf0729c1a602767039e4": {
+    "model": "ISE78G",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ISE70Gx-L2_OMV0009EN-I.pdf",
+      "pdf_pages": [
+        65
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise70gx-l2_omv0009en-i.pdf",
+      "sha256": "bd72ddbc253a71a39feccf96664d5a7dfb66a81eb24cd54ca9eeaa01ddc7e19a"
+    }
+  },
+  "9e0caa1dc589a60aafe875c737845e5a55942e34bb769ca00f1d16bf3fdd003a": {
+    "model": "ISE79S",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ISE79S-L2_MY0007EN-E.pdf",
+      "pdf_pages": [
+        63
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise79s-l2_my0007en-e.pdf",
+      "sha256": "6fa011f5a082112c304071b550f8704f9c7a5c98653a26aa3f342823c16915ca"
+    }
+  },
+  "ad4d51b84350cf3cecd71eefe6961f82e3b0089bac70ffb23d5759b83bf94701": {
+    "model": "PF3W704-LT-X445",
+    "bits": [
+      8,
+      9,
+      10
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_PF3W7-X445_OMV0006EN-C.pdf",
+      "pdf_pages": [
+        74
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7-x445_omv0006en-c.pdf",
+      "sha256": "9e0874151e70cd63b334fca6e2e8b1608d766a283611912ee1062d717bfdf560"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          8,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          8,
+          10
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          8,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:1": {
+        "zero_bits": [
+          8,
+          10
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "03c5bc6e7eea8a6ed15186fc595ceb8a41e922eea86bea62ab58f168891d1e5d": {
+    "model": "PF3W704x-xx-LxT-xxx",
+    "bits": [
+      15,
+      8,
+      9
+    ],
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3W7_OMW0010EN-I.pdf",
+      "pdf_pages": [
+        72
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7_omw0010en-i.pdf",
+      "sha256": "45adfaaf35cdb71ae956162eb07fe62afb3bc3797a563996a5bad6515fe582ad"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "83389691ac73ab23c0489ea6369ee779772aac8709a46184700d1cf6a1096cfb": {
+    "model": "PF3W704x-xx-Lxx-xxx",
+    "bits": [
+      15,
+      8,
+      9
+    ],
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3W7_OMW0010EN-I.pdf",
+      "pdf_pages": [
+        72
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7_omw0010en-i.pdf",
+      "sha256": "45adfaaf35cdb71ae956162eb07fe62afb3bc3797a563996a5bad6515fe582ad"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "ad8ce64772ea498adc494a14262230595aece3b7bb6b37d4afc4d8e92780e4ed": {
+    "model": "PF3W711-LT",
+    "bits": [
+      8,
+      9,
+      10
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_PF3W7-X445_OMV0006EN-C.pdf",
+      "pdf_pages": [
+        74
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7-x445_omv0006en-c.pdf",
+      "sha256": "9e0874151e70cd63b334fca6e2e8b1608d766a283611912ee1062d717bfdf560"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          8,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          8,
+          10
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          8,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:1": {
+        "zero_bits": [
+          8,
+          10
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "f911ebabc03123eb642aa051f27e98c6bae61bea3f77beca7fa47f12bd32d37a": {
+    "model": "PF3W711x-xx-LxT-xxx",
+    "bits": [
+      15,
+      8,
+      9
+    ],
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3W7_OMW0010EN-I.pdf",
+      "pdf_pages": [
+        72
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7_omw0010en-i.pdf",
+      "sha256": "45adfaaf35cdb71ae956162eb07fe62afb3bc3797a563996a5bad6515fe582ad"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "438cd74b22dcf6e7fc974952fec838111f7763a22da9cd9b348104ab96126c48": {
+    "model": "PF3W711x-xx-Lxx-xxx",
+    "bits": [
+      15,
+      8,
+      9
+    ],
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3W7_OMW0010EN-I.pdf",
+      "pdf_pages": [
+        72
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7_omw0010en-i.pdf",
+      "sha256": "45adfaaf35cdb71ae956162eb07fe62afb3bc3797a563996a5bad6515fe582ad"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "6c5554e12bf9009a1ed78fea9d48cd75ad9796a858464520a42b0aaf46309c9e": {
+    "model": "PF3W720-LT-X445",
+    "bits": [
+      8,
+      9,
+      10
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_PF3W7-X445_OMV0006EN-C.pdf",
+      "pdf_pages": [
+        74
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7-x445_omv0006en-c.pdf",
+      "sha256": "9e0874151e70cd63b334fca6e2e8b1608d766a283611912ee1062d717bfdf560"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          8,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          8,
+          10
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          8,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:1": {
+        "zero_bits": [
+          8,
+          10
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "126e42e78c86c655be1ce696235af0795cc927eaf51eb2aa8e28af1d58a70637": {
+    "model": "PF3W720x-xx-LxT-xxx",
+    "bits": [
+      15,
+      8,
+      9
+    ],
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3W7_OMW0010EN-I.pdf",
+      "pdf_pages": [
+        72
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7_omw0010en-i.pdf",
+      "sha256": "45adfaaf35cdb71ae956162eb07fe62afb3bc3797a563996a5bad6515fe582ad"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "7f799d34cfb51115e002b2c18b0f06d80a947245b656aa99e581e0bf73858bd7": {
+    "model": "PF3W720x-xx-Lxx-xxx",
+    "bits": [
+      15,
+      8,
+      9
+    ],
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3W7_OMW0010EN-I.pdf",
+      "pdf_pages": [
+        72
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7_omw0010en-i.pdf",
+      "sha256": "45adfaaf35cdb71ae956162eb07fe62afb3bc3797a563996a5bad6515fe582ad"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "908dec980b95099a287cdd5a48b028f0c5fd3a7ac477b9090b6cb0fb7be7e6e7": {
+    "model": "PF3W721-LT",
+    "bits": [
+      8,
+      9,
+      10
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_PF3W7-X445_OMV0006EN-C.pdf",
+      "pdf_pages": [
+        74
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7-x445_omv0006en-c.pdf",
+      "sha256": "9e0874151e70cd63b334fca6e2e8b1608d766a283611912ee1062d717bfdf560"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          8,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          8,
+          10
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          8,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:1": {
+        "zero_bits": [
+          8,
+          10
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "6fe7664ac78554436e788d2e3d975fd816d331c302afbaff64afb17e5589d4fb": {
+    "model": "PF3W721x-xx-LxT-xxx",
+    "bits": [
+      15,
+      8,
+      9
+    ],
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3W7_OMW0010EN-I.pdf",
+      "pdf_pages": [
+        72
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7_omw0010en-i.pdf",
+      "sha256": "45adfaaf35cdb71ae956162eb07fe62afb3bc3797a563996a5bad6515fe582ad"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "36eb927fad179498ed2cc4dd5b67c0ed955defd1635e6de0c0d530e4a32c30f6": {
+    "model": "PF3W721x-xx-Lxx-xxx",
+    "bits": [
+      15,
+      8,
+      9
+    ],
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3W7_OMW0010EN-I.pdf",
+      "pdf_pages": [
+        72
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7_omw0010en-i.pdf",
+      "sha256": "45adfaaf35cdb71ae956162eb07fe62afb3bc3797a563996a5bad6515fe582ad"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "4289d151da4f59e6dfb3c958c06fe2b00a8de16fcf48d466438bdb2efb6bffa0": {
+    "model": "PF3W740-LT-X445",
+    "bits": [
+      8,
+      9,
+      10
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_PF3W7-X445_OMV0006EN-C.pdf",
+      "pdf_pages": [
+        74
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7-x445_omv0006en-c.pdf",
+      "sha256": "9e0874151e70cd63b334fca6e2e8b1608d766a283611912ee1062d717bfdf560"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          8,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          8,
+          10
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          8,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:1": {
+        "zero_bits": [
+          8,
+          10
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "2155f9a8b46e204e2dd363282200292519c0f1ea187ad84f757b2e187aeb8475": {
+    "model": "PF3W740x-xx-LxT-xxx",
+    "bits": [
+      15,
+      8,
+      9
+    ],
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3W7_OMW0010EN-I.pdf",
+      "pdf_pages": [
+        72
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7_omw0010en-i.pdf",
+      "sha256": "45adfaaf35cdb71ae956162eb07fe62afb3bc3797a563996a5bad6515fe582ad"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "3944850cc4802b6a4f21866f598a9b818e04f7e2327aa9de24e79c8e08310913": {
+    "model": "PF3W740x-xx-Lxx-xxx",
+    "bits": [
+      15,
+      8,
+      9
+    ],
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3W7_OMW0010EN-I.pdf",
+      "pdf_pages": [
+        72
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3w7_omw0010en-i.pdf",
+      "sha256": "45adfaaf35cdb71ae956162eb07fe62afb3bc3797a563996a5bad6515fe582ad"
+    },
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      }
+    }
+  },
+  "ce551eaa3e57dfb3ed569d457eee67593fda799e96744dae88607e4e02ee7f37": {
+    "model": "ZSE20B-L",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20B-L_ISE20B-L_OMU0006EN-H.pdf",
+      "pdf_pages": [
+        76
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20b-l_ise20b-l_omu0006en-h.pdf",
+      "sha256": "58cbb9c124dfbcc91ed6a59fb99415428d4be2f11d2a18d827166c1c35e74ef6"
+    }
+  },
+  "f9a1e46bc44c348d1afbfdb02352a81dbec71d72155ad7c1ea9bf1b0f2feb48b": {
+    "model": "ZSE20B-L-P",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20B-L_ISE20B-L_OMU0006EN-H.pdf",
+      "pdf_pages": [
+        76
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20b-l_ise20b-l_omu0006en-h.pdf",
+      "sha256": "58cbb9c124dfbcc91ed6a59fb99415428d4be2f11d2a18d827166c1c35e74ef6"
+    }
+  },
+  "2a069b09478e069da440533005fdad34de9f92b015ad79643676b89081e3034d": {
+    "model": "ZSE20BF-L",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20B-L_ISE20B-L_OMU0006EN-H.pdf",
+      "pdf_pages": [
+        76
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20b-l_ise20b-l_omu0006en-h.pdf",
+      "sha256": "58cbb9c124dfbcc91ed6a59fb99415428d4be2f11d2a18d827166c1c35e74ef6"
+    }
+  },
+  "02af7f3fe36e67213552f2ccbe1d7709f6c438b854e317450482aa5d72a662aa": {
+    "model": "ZSE20BF-L-P",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20B-L_ISE20B-L_OMU0006EN-H.pdf",
+      "pdf_pages": [
+        76
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20b-l_ise20b-l_omu0006en-h.pdf",
+      "sha256": "58cbb9c124dfbcc91ed6a59fb99415428d4be2f11d2a18d827166c1c35e74ef6"
+    }
+  },
+  "925d2ae2e041bf2bd08198ba3a96d6a0b2c5dc3ec31c82db97ed78ed40be1d59": {
+    "model": "ZSE20C-L",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20C-L_ISE20C-L_OMX0002EN-F.pdf",
+      "pdf_pages": [
+        66
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20c-l_ise20c-l_omx0002en-f.pdf",
+      "sha256": "0ab5c8112557f5d9204f3c638d7498b346f3bb3de7a17e4a50f61847679028e6"
+    }
+  },
+  "efdd1cf1813bab75ce46fd76789b77065230d23d4c7d6c185edcc22e0ff89c4f": {
+    "model": "ZSE20C-L-P",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20C-L_ISE20C-L_OMX0002EN-F.pdf",
+      "pdf_pages": [
+        66
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20c-l_ise20c-l_omx0002en-f.pdf",
+      "sha256": "0ab5c8112557f5d9204f3c638d7498b346f3bb3de7a17e4a50f61847679028e6"
+    }
+  },
+  "e7432c1a29a4a19396aec471c1114fda27f314a15dc01ab792759e51ba36eebd": {
+    "model": "ZSE20CF-L",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20C-L_ISE20C-L_OMX0002EN-F.pdf",
+      "pdf_pages": [
+        66
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20c-l_ise20c-l_omx0002en-f.pdf",
+      "sha256": "0ab5c8112557f5d9204f3c638d7498b346f3bb3de7a17e4a50f61847679028e6"
+    }
+  },
+  "0298007ee94882935446c9f92ac9654154a1f7099897825c340dc115ad01790c": {
+    "model": "ZSE20CF-L-P",
+    "bits": [
+      2
+    ],
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "OM_ZSE20C-L_ISE20C-L_OMX0002EN-F.pdf",
+      "pdf_pages": [
+        66
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_zse20c-l_ise20c-l_omx0002en-f.pdf",
+      "sha256": "0ab5c8112557f5d9204f3c638d7498b346f3bb3de7a17e4a50f61847679028e6"
+    }
+  },
+  "d9cc12e59ef93bc58a7fae28cec444a0fe86a68e495dea0f72f67be86e63616a": {
+    "model": "D-MH2C",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_D-MH2_DOC1094990EN-1.pdf",
+      "sha256": "2a5a812960952a1223785b28998e2314bbe8d05e48edcf4d75aaaea31bacc47c",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_d-mh2_doc1094990en-1.pdf",
+      "pdf_pages": [
+        48
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "fa58372c4393831c4f4da0dc4ab8dcd93f698069a8df7c5373c0fd5333f96341": {
+    "model": "D-MH2D",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_D-MH2_DOC1094990EN-1.pdf",
+      "sha256": "2a5a812960952a1223785b28998e2314bbe8d05e48edcf4d75aaaea31bacc47c",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_d-mh2_doc1094990en-1.pdf",
+      "pdf_pages": [
+        48
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "0a500db102bf1b16daccba6a38c0965088ac0d3f6f8831c227f46bc3e8d6fd5e": {
+    "model": "PF2M701x-xx-L2x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "e459d42f1d409b9b99869b4285e42ea0e1dc65b37870d26a35421ecdfc514d53": {
+    "model": "PF2M701x-xx-L2x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "715fe3dfc07da72b8fe143e9584bcbd71ce66fc84a33d445d9bad44d83944ca2": {
+    "model": "PF2M701x-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "a88ae682d73296a120a9a382825629149405ecda9e3ab276722ac0a11c1b5e79": {
+    "model": "PF2M701x-xx-L3x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "092eea2a6ab04440197d5a0bf567aa641c9ce4160c3add9c5dc9ccce3798b454": {
+    "model": "PF2M701x-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "e64a56057b52917f61271a9ad22da970cb6e47542d879228baaba4000abc3eea": {
+    "model": "PF2M701x-xx-L4x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "56deae1ae863f1d53de8daed6db088b5020780b8356298b016dae1d2a6abe0c8": {
+    "model": "PF2M701x-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "45bd7028155d2be6b67f7a627fb129d22b30510bb43e7eb036d1c91db8ff25cf": {
+    "model": "PF2M701x-xx-Lx-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "23201204dbdef5cf3bd6147a14894b9297b5d450f52c59ff57ac50285621e6b0": {
+    "model": "PF2M702x-xx-L2x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "c20e733f69d4e1eab17164080ba7e4396c76663e972487a933689aa2ab0a4316": {
+    "model": "PF2M702x-xx-L2x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "4936f9be8be0092fbf4dea14f545e914417f3f6c370767f30d30105fdf5ddd50": {
+    "model": "PF2M702x-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "df552451f3ff528b9adf8bad9147e50d00975cc2460fa62f942153a8f2e95961": {
+    "model": "PF2M702x-xx-L3x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "8ae835f00d4dd2355b90d26c2b8a55166e9cb7765e42fac5311214ed827522f4": {
+    "model": "PF2M702x-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "773bf5935474302103ce667ffda144aba2bccb0f6a87f6b56c95fe056a6c4473": {
+    "model": "PF2M702x-xx-L4x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "d8e8d08cf661b182bd7526be59ec73886fbc75f8ff58aea160c28ae9456c28a2": {
+    "model": "PF2M702x-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "e204048f35f4e4f3db8da105386ac45b97211a9299d37de67e13853a03a1f0d9": {
+    "model": "PF2M702x-xx-Lx-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "53287d69ddef1540d1e454b88ee9b5ac2b902fab7bc056627a0c194354095f42": {
+    "model": "PF2M705x-xx-L2x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "05866824ba64a31d9d1ba6865a65711c8c9c009426df169eed5075015a3d5d30": {
+    "model": "PF2M705x-xx-L2x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "c584b84cc5fcc502fbde3271ed83f46e23b37991ba0ff1fe02330e9498261902": {
+    "model": "PF2M705x-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "22dca9dde4e0743d8aba687b44e5ff1f064897d1853e3506ca658eafc7224fda": {
+    "model": "PF2M705x-xx-L3x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "408a2a2e866812417104d40937d633a50eeeb582064cfffcea44a88ff80194f8": {
+    "model": "PF2M705x-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "84f1381b82581ac23a779145130ebcfae724c29dc21d3b15c4d0f8a4011981dc": {
+    "model": "PF2M705x-xx-L4x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "1e951ef6ea37cbe39a915635b7c4f3b7e7104a3ea05591c43e63cff464faef65": {
+    "model": "PF2M705x-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "92596eb736588b54b01a36d79b96411144744ac1576b5c6abffdd51e1e8e5b45": {
+    "model": "PF2M705x-xx-Lx-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "8298b78311d163f8a451f6176509e0646973cbc8612596562a967012533b8838": {
+    "model": "PF2M710x-xx-L2x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "d3fb2b52ee0e473528057975e49679461e10c3d48fa9186de9801a111bb1e53e": {
+    "model": "PF2M710x-xx-L2x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "b46df00bfff31bbbecd23cc3beae2d5f337f47920fc2f88c2fd18aebb59d76fb": {
+    "model": "PF2M710x-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "9fe82577f26c8ad8e98d3e51354f25669707c0963d5cf8bb8d64b8982d6938db": {
+    "model": "PF2M710x-xx-L3x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "1a0370ccff76ec38836096aacfbaaf1869075080ab9b77eee5bf3c51b14c3149": {
+    "model": "PF2M710x-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "08ac92b868f9239cd6f63dfcaa26f6d0dbe5e2b5fc55e5c2a4c1bff1c94e56cf": {
+    "model": "PF2M710x-xx-L4x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "06a0b6dc0dff81e02d210cd6d06db4116b0f41bb3f7dada193cb2e3a2962e252": {
+    "model": "PF2M710x-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "f29142cf9ef11a3d5ddbbcadc0606c61dbfd1194e2727d57a335cf74b61e91c2": {
+    "model": "PF2M710x-xx-Lx-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "947c87650775f99ea2ca8e07d71bdfb2142c4b3775047d7a8c2a6ef774fe0abf": {
+    "model": "PF2M711x-xx-L2x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "b8133c9fa711b931c22d1abaa6bd14ba9d3636bc2bb81f79837130f6fd3bac2a": {
+    "model": "PF2M711x-xx-L2x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "21c5631f6d5a47219c7362a744fa3566b141228e8726b61253e6f3395ec4b0eb": {
+    "model": "PF2M711x-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "6308a7014e5aab8ca88a141106ccc6fdd17ac55c0f55e4c5444fd3e1e313852d": {
+    "model": "PF2M711x-xx-L3x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "87b4975d6bf398924e967c294545e0f16be914bbab48b915f5bb67c44eeb340c": {
+    "model": "PF2M711x-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "9bf46a7f19fc0f6fb32c520f927ad8399c9c3915561c40b3f9425f4940a75524": {
+    "model": "PF2M711x-xx-L4x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "da766c1b576b502955ac7af34f15658070a060f70041755ce3cb8494db30ebbe": {
+    "model": "PF2M711x-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "3cc86ed20343b1118f3a68874e4eb783fd8d80bb16ae9c9f45552f01ae984920": {
+    "model": "PF2M711x-xx-Lx-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "8ca95fc3c8b0658c849e5685321bc338786de92df63e3e9c5cfa815f997774e2": {
+    "model": "PF2M721x-xx-L2x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "b0f6b680a53447441671950f30e942bd794694cfb8859d07f0f2af01896aa83d": {
+    "model": "PF2M721x-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "982cfdb7c9d194f9ada5ea5ac1844d39e3c0fe4d224ae746fff64b4e7e0920cb": {
+    "model": "PF2M721x-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "33d1f7dfc724c2574947d0c8e2f1993477dab0d60a54d1c853d2718a989ccf10": {
+    "model": "PF2M721x-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "dc908bc798940ee124d1a760000ad33f622960504b05b4e1e39467a24d86261c": {
+    "model": "PF2M725x-xx-L2x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "9bb03c23baf6463672bd14400ecea086bc332eb8396396769d3df2604aa25a59": {
+    "model": "PF2M725x-xx-L2x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "475d60a60cf695ee568518cca22b37476e1be3a52e3e554c697dc9237eee96c0": {
+    "model": "PF2M725x-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "6c2a81d9e15a7867a92852d40cac515816fd6a5aa333f2b24687f0e3ec28f714": {
+    "model": "PF2M725x-xx-L3x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "24c3ed4b1842c81539f453518921200fc187b8b7a9f26c5c5bdd54576ce6e0dd": {
+    "model": "PF2M725x-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "9a03e97945da05407c31bb08e9ac0287368b503f95ca9c589ca35eb741ab82f2": {
+    "model": "PF2M725x-xx-L4x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "5baae99006ccf0f198a3de867b88751ffbfb669fc046d7d4b9a45d40093d5541": {
+    "model": "PF2M725x-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "28d9dea3c91469ddf4001aa6819a60c31115f2d2d104ac8ac5ea2a63249f33eb": {
+    "model": "PF2M725x-xx-Lx-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "56086fe4efccece1fb251926c60038b593ca43e911cb224ece08525875120a43": {
+    "model": "PF2M750x-xx-L2x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "655962b9882dcf4fc023c0130d060a1a142b11693df6c05885b4593048683262": {
+    "model": "PF2M750x-xx-L2x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "c03a918baee528aea999e44b50e7d9ee8d3e4c4057b53b403dd897aa52170962": {
+    "model": "PF2M750x-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "8958dcfa94809cd6235677fd0bd5dc60c2f85272b97704d1af009d6618b8b823": {
+    "model": "PF2M750x-xx-L3x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "4ecfeda4458869f3037a8cb27154c0b8b1819d47ab3554d6ac5ea5754bdadfa0": {
+    "model": "PF2M750x-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "b0a2ea1ebd45b4d1c4ebbf4480493325a1a20d99b11fec1d251f41873e6669e9": {
+    "model": "PF2M750x-xx-L4x-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "065065d552222b6bba76a3984dae3dca4c9a376e0042f45b54e55201b4a8ab9d": {
+    "model": "PF2M750x-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        73
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "1ff7e2f2579d6bd77c75f5c23965fa303a61f2864820296df88b988922ffd647": {
+    "model": "PF2M750x-xx-Lx-xxx-X731",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF2M7_OMW0007EN-G.pdf",
+      "sha256": "acdb8fc60a5878ac97236696ea1a9c501bc673e78b2d81fd8137276995840610",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf2m7_omw0007en-g.pdf",
+      "pdf_pages": [
+        15,
+        73,
+        81
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "1f829590d099dafeb3f748a510acc27b5273e7b802245f452379b007cfdc667d": {
+    "model": "PF3A704H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "deb22ed51d1e922f6ba4705c3dc2c3494166f92dc0794417f4a4a8acbe272823": {
+    "model": "PF3A704H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "3d55eb3aeca232705401f41527c3f5bdbf1af3f4b17e7af2827d9f196b6bf62e": {
+    "model": "PF3A704H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "2d51deb1110934cee6ef968db55e19cc5166c18faf78cdad9e1cfc026a3c5404": {
+    "model": "PF3A708H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "fbeb2b5e15b0d232bdbd680cd161afc263f142ddfec35c73f52215140c4bff33": {
+    "model": "PF3A708H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "5da9e3fb80886b8ae5c3937d000391bcb0130ce2569e89bbf6444b74e87aaf78": {
+    "model": "PF3A708H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "b6c222d6adef07c443a949402afc14525b72d5d476b00f186ae23b3fac2a5c7f": {
+    "model": "PF3A7R5H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "ac8c9c08091dd582755c12cc2fc7e8f0e22b52414bc27e2a1b4578f4c2a897cf": {
+    "model": "PF3A7R5H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "fe3eeb3cbe0e79f22a70368e7e4a5fd6912429bfef691c0eaacb03474fce0728": {
+    "model": "PF3A7R5H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "af19403c039637dcae995b298b4e04d4e19b6c63617ca2ea9bb97fa610965e5a": {
+    "model": "PFCA710-xx-1x-xxx",
+    "bits": [
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFCA7_OMA1002EN-A.pdf",
+      "sha256": "d34576519412a343b620dad28819dbdf9b3ba465666d67e84970193352625a8b",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfca7_oma1002en-a.pdf",
+      "pdf_pages": [
+        55
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "b92a44b43378309b46e40cceefb617ea68881e880b70074357580626b13863ef": {
+    "model": "PFCA710-xx-2x-xxx",
+    "bits": [
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFCA7_OMA1002EN-A.pdf",
+      "sha256": "d34576519412a343b620dad28819dbdf9b3ba465666d67e84970193352625a8b",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfca7_oma1002en-a.pdf",
+      "pdf_pages": [
+        55
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "f93f6db559bd5aaaf7c5a147571c5d1f315c425a200330abebda9847dd7287f6": {
+    "model": "PFCA711-xx-1x-xxx",
+    "bits": [
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFCA7_OMA1002EN-A.pdf",
+      "sha256": "d34576519412a343b620dad28819dbdf9b3ba465666d67e84970193352625a8b",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfca7_oma1002en-a.pdf",
+      "pdf_pages": [
+        55
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "a7ea52ff267cc51d8b7de06bc2b355d39a9d0edadbd1a57a0b88b21ac95dfa2c": {
+    "model": "PFCA711-xx-2x-xxx",
+    "bits": [
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFCA7_OMA1002EN-A.pdf",
+      "sha256": "d34576519412a343b620dad28819dbdf9b3ba465666d67e84970193352625a8b",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfca7_oma1002en-a.pdf",
+      "pdf_pages": [
+        55
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "9920db40ae09a0e820cf7a2c9f1e8f15885457362f0299c887cdb03bf2b97d52": {
+    "model": "PFCA725-xx-1x-xxx",
+    "bits": [
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFCA7_OMA1002EN-A.pdf",
+      "sha256": "d34576519412a343b620dad28819dbdf9b3ba465666d67e84970193352625a8b",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfca7_oma1002en-a.pdf",
+      "pdf_pages": [
+        55
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "176ae398bd40b0d81c37b58c130f587fa507246e335d09d01be69ce1130e2c24": {
+    "model": "PFCA725-xx-2x-xxx",
+    "bits": [
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFCA7_OMA1002EN-A.pdf",
+      "sha256": "d34576519412a343b620dad28819dbdf9b3ba465666d67e84970193352625a8b",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfca7_oma1002en-a.pdf",
+      "pdf_pages": [
+        55
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "1d1057f8c784ae44ad8ef8c145dcf76119005c5ac28887e4c76070a266fdf98c": {
+    "model": "PFCA750-xx-1x-xxx",
+    "bits": [
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFCA7_OMA1002EN-A.pdf",
+      "sha256": "d34576519412a343b620dad28819dbdf9b3ba465666d67e84970193352625a8b",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfca7_oma1002en-a.pdf",
+      "pdf_pages": [
+        55
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "0f4d691f02016a93c75150af1b3280b703771f8c8a76029fa923f53d84d7e84b": {
+    "model": "PFCA750-xx-2x-xxx",
+    "bits": [
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFCA7_OMA1002EN-A.pdf",
+      "sha256": "d34576519412a343b620dad28819dbdf9b3ba465666d67e84970193352625a8b",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfca7_oma1002en-a.pdf",
+      "pdf_pages": [
+        55
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "d7a3c930d150835a2702d43116ad2f0eaea717e57b97b315d7f1c7454c593cc7": {
+    "model": "PFUW711-L1x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "726dfe437de12a4d7f056e9a9edaf7ea1d799847dabdc79b894604445374a85f": {
+    "model": "PFUW711-L2x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "2b0ed6a58ea73987c7ec735566f49f4fe5f9c3cba1dbd74fb227714a030d4b03": {
+    "model": "PFUW711-L3x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "e1a522b109265ba74a625053fe0d642acc6a34e7bccb49c85b559a1f99e69401": {
+    "model": "PFUW711-L4x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "d346bff1c2ec4159f5d6388aa37eb6e300a26a6133c91f3c75a0de44032e5d5f": {
+    "model": "PFUW721-L1x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "40ce86941d8742222533d58839e7b24dfce79caa9dcec7fdfdd032294070dcbf": {
+    "model": "PFUW721-L2x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "2e3a9d0d1fdbb995181ac7f2d912b34b041a7d485ea15f6b388c4b47ace97aad": {
+    "model": "PFUW721-L3x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "d8ee16a984a5b523a85249d74ee2b6460435286ec3da67d7da2f7f41471e2c99": {
+    "model": "PFUW721-L4x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "b920ace7772c1d0982eaa99475e3d4df903b859a9b1ddc170640bbe24ecfe638": {
+    "model": "PFUW760-L1x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "76faa15a3861f81e571a30190567f94e5b56d34a8cad987ba1d978d57db7c7df": {
+    "model": "PFUW760-L2x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "2f6f0f711e6fc6cad0c1881c044030d0e4a6d183612c49e7cfdf84e71647527f": {
+    "model": "PFUW760-L3x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "4460b77df6ab174bff1192af796527573616aba99e44728375a9612111536927": {
+    "model": "PFUW760-L4x-xx",
+    "bits": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14,
+          13,
+          12,
+          9
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFUW7_DOC1066729EN-2.pdf",
+      "sha256": "1845989fd04351bcc4c87d0e1196b9db3b590ac8d33a1b5f870a5ed69ad17341",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/om_pfuw7_doc1066729en-2.pdf",
+      "pdf_pages": [
+        84
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "0ef600a92681013f88c0b3b40b258a0c055bbbe6c61981e46ca1ad2d6e51bb66": {
+    "model": "PF3A701H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "0a9c82d91e81c1d81810830366242b42b00fa91eb9436df4bade28ade076f687": {
+    "model": "PF3A701H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pfxx_omx0007en.pdf",
+      "sha256": "2d08ed22f65518750c75008d3c1da9772b2eb68ccdae2d408bd60925143812d7",
+      "pdf_pages": [
+        37,
+        40
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfxx_omx0007en.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "ee52767e93410ca0bb5ef6596d6d37844b44bc1dc08588389498363eb72455e1": {
+    "model": "PF3A701H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "abd5e145a4456d3399096125e68cc8ab0bc8f228282073e5a465fe3a93f1753e": {
+    "model": "PF3A701H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pfxx_omx0007en.pdf",
+      "sha256": "2d08ed22f65518750c75008d3c1da9772b2eb68ccdae2d408bd60925143812d7",
+      "pdf_pages": [
+        37,
+        40
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfxx_omx0007en.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "f72bf92b8c29e483184568ec8e7bdb41973a31f03cb22b37201ae73b48cf8ef6": {
+    "model": "PF3A701H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "ee77cc2ebc709fb7d5536dc2134959a67d29de8e0560ea260f186541bf54a31a": {
+    "model": "PF3A701H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pfxx_omx0007en.pdf",
+      "sha256": "2d08ed22f65518750c75008d3c1da9772b2eb68ccdae2d408bd60925143812d7",
+      "pdf_pages": [
+        37,
+        40
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfxx_omx0007en.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "c6874e494b88869a352efe9c3a85e228bdf6adf655a53bdc2ea0f1e1e9f208f6": {
+    "model": "PF3A702H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "40077091ca45156f50192d7452e0a7e03cc45ecdeb7c38273b3e44814c13968f": {
+    "model": "PF3A702H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pfxx_omx0007en.pdf",
+      "sha256": "2d08ed22f65518750c75008d3c1da9772b2eb68ccdae2d408bd60925143812d7",
+      "pdf_pages": [
+        37,
+        40
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfxx_omx0007en.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "74ea0af17377661255c2742eb7201e4f8fcc9f5d2df6bb9bfedf73adc3dbfbc1": {
+    "model": "PF3A702H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "99f22625b377c2354fadcad08374ab9ee140b0f1833d52e8d21edd8e06505ee4": {
+    "model": "PF3A702H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pfxx_omx0007en.pdf",
+      "sha256": "2d08ed22f65518750c75008d3c1da9772b2eb68ccdae2d408bd60925143812d7",
+      "pdf_pages": [
+        37,
+        40
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfxx_omx0007en.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "f9095bd1e7676ee19b529ff003cf62cbf067eb77d9fe492b86e16d6090984635": {
+    "model": "PF3A702H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PFA3A7xx_DOC1057506EN-2.pdf",
+      "sha256": "aaf4b1b63d02e73adac684efc739f3ecbcbcbaedfc8354199a797cda58baff37",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfa3a7xx_doc1057506en-2.pdf",
+      "pdf_pages": [
+        75
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "cfadd09c4d5097288fa74bc2a8da6d5d2c8212b6b87ca7b835655bd4c0479b75": {
+    "model": "PF3A702H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pfxx_omx0007en.pdf",
+      "sha256": "2d08ed22f65518750c75008d3c1da9772b2eb68ccdae2d408bd60925143812d7",
+      "pdf_pages": [
+        37,
+        40
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pfxx_omx0007en.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "a83d3be49cb693036cc9552be045925856cf68bb7fc481225596fe400e35d28e": {
+    "model": "PF3A703H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3A7xH-L_OMX0002EN-G.pdf",
+      "sha256": "124c194fcbd689abe72391272f8fa6a1a9de944b6a25b4d6fc7c203a10eea266",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-g.pdf",
+      "pdf_pages": [
+        74
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "7358068f054cfe61e0dddc94652b831e99bcb6bd09c4428c4eff6fefa04032b4": {
+    "model": "PF3A703H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pf3a7xh-l_omx0002en-e.pdf",
+      "sha256": "2bb5a92c8a0b8005cedf1b8db541ca5e2258041969fd5214367140059a07dbe9",
+      "pdf_pages": [
+        72,
+        75
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-e.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "a5e727d3c75df8b9676b9398c020dc9be995943dff7e83f967a0cf0ca57c70ce": {
+    "model": "PF3A703H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3A7xH-L_OMX0002EN-G.pdf",
+      "sha256": "124c194fcbd689abe72391272f8fa6a1a9de944b6a25b4d6fc7c203a10eea266",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-g.pdf",
+      "pdf_pages": [
+        74
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "6a7a7a5e32566540882d502960c69312712676ecc1aa5c1287ee48f08295bef2": {
+    "model": "PF3A703H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pf3a7xh-l_omx0002en-e.pdf",
+      "sha256": "2bb5a92c8a0b8005cedf1b8db541ca5e2258041969fd5214367140059a07dbe9",
+      "pdf_pages": [
+        72,
+        75
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-e.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "4656a4c73f218917b65f7447c2e367101af089b5aa10be229bf74a5e40765bd4": {
+    "model": "PF3A703H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3A7xH-L_OMX0002EN-G.pdf",
+      "sha256": "124c194fcbd689abe72391272f8fa6a1a9de944b6a25b4d6fc7c203a10eea266",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-g.pdf",
+      "pdf_pages": [
+        74
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "bda2fb5cdc5247a0c800d6dda9e01e8ae22781348a3d97dac55ec74a5b69d474": {
+    "model": "PF3A703H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pf3a7xh-l_omx0002en-e.pdf",
+      "sha256": "2bb5a92c8a0b8005cedf1b8db541ca5e2258041969fd5214367140059a07dbe9",
+      "pdf_pages": [
+        72,
+        75
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-e.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "3fdcad4914df1b72cd2b1beb15e042292105d23aad359be58d61ef4ab70d63ef": {
+    "model": "PF3A706H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3A7xH-L_OMX0002EN-G.pdf",
+      "sha256": "124c194fcbd689abe72391272f8fa6a1a9de944b6a25b4d6fc7c203a10eea266",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-g.pdf",
+      "pdf_pages": [
+        74
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "9c149df6e29c03ed2473917544523b0370494f7b2416034dd54e28ccbf3abdbb": {
+    "model": "PF3A706H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pf3a7xh-l_omx0002en-e.pdf",
+      "sha256": "2bb5a92c8a0b8005cedf1b8db541ca5e2258041969fd5214367140059a07dbe9",
+      "pdf_pages": [
+        72,
+        75
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-e.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "7d312afbba8e1f749c4b8397190d3f1314db8926fb4d58676eb38b4ac7e20e8f": {
+    "model": "PF3A706H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3A7xH-L_OMX0002EN-G.pdf",
+      "sha256": "124c194fcbd689abe72391272f8fa6a1a9de944b6a25b4d6fc7c203a10eea266",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-g.pdf",
+      "pdf_pages": [
+        74
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "dc75fab087abd309232dba44e02cdc285ec006eccbc64ede760b9d904948c74e": {
+    "model": "PF3A706H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pf3a7xh-l_omx0002en-e.pdf",
+      "sha256": "2bb5a92c8a0b8005cedf1b8db541ca5e2258041969fd5214367140059a07dbe9",
+      "pdf_pages": [
+        72,
+        75
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-e.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "bac6999054b9df33d86612e753e388bc78cec627f763176491d7d1f1c26307c9": {
+    "model": "PF3A706H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3A7xH-L_OMX0002EN-G.pdf",
+      "sha256": "124c194fcbd689abe72391272f8fa6a1a9de944b6a25b4d6fc7c203a10eea266",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-g.pdf",
+      "pdf_pages": [
+        74
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "9cb67c5d9d359a55d7f90d3a89cef880c6755198a656c011676371e1e3dcb205": {
+    "model": "PF3A706H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pf3a7xh-l_omx0002en-e.pdf",
+      "sha256": "2bb5a92c8a0b8005cedf1b8db541ca5e2258041969fd5214367140059a07dbe9",
+      "pdf_pages": [
+        72,
+        75
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-e.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "d5f60e5c35ab05dff0886672f63c6db09bee68d5f4f130cc3ad7da75cc199351": {
+    "model": "PF3A712H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3A7xH-L_OMX0002EN-G.pdf",
+      "sha256": "124c194fcbd689abe72391272f8fa6a1a9de944b6a25b4d6fc7c203a10eea266",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-g.pdf",
+      "pdf_pages": [
+        74
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "ab52e09f84c7c35dcae3a3d5a0b8654a02a1f9bd39b71f52a417ad7c06d310af": {
+    "model": "PF3A712H-xx-L3x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pf3a7xh-l_omx0002en-e.pdf",
+      "sha256": "2bb5a92c8a0b8005cedf1b8db541ca5e2258041969fd5214367140059a07dbe9",
+      "pdf_pages": [
+        72,
+        75
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-e.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "7de44204370baeacc2464717b2f52a016c2f14c40edcff05c6bfed35df41648c": {
+    "model": "PF3A712H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3A7xH-L_OMX0002EN-G.pdf",
+      "sha256": "124c194fcbd689abe72391272f8fa6a1a9de944b6a25b4d6fc7c203a10eea266",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-g.pdf",
+      "pdf_pages": [
+        74
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "a16acc4cdedc8f4a4004aee525cb9079640e55cf20a60b33d78b866d4d5db551": {
+    "model": "PF3A712H-xx-L4x-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pf3a7xh-l_omx0002en-e.pdf",
+      "sha256": "2bb5a92c8a0b8005cedf1b8db541ca5e2258041969fd5214367140059a07dbe9",
+      "pdf_pages": [
+        72,
+        75
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-e.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "f836f3eb4952229b740b1df7d9142a92bf9b32510fa6e727b37fad76071762ba": {
+    "model": "PF3A712H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PF3A7xH-L_OMX0002EN-G.pdf",
+      "sha256": "124c194fcbd689abe72391272f8fa6a1a9de944b6a25b4d6fc7c203a10eea266",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-g.pdf",
+      "pdf_pages": [
+        74
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "05a7884049942248aec6d71e31e9c1b3e5cb91f1e70f4fdf0002609638ffc2a8": {
+    "model": "PF3A712H-xx-Lx-xxx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "om_pf3a7xh-l_omx0002en-e.pdf",
+      "sha256": "2bb5a92c8a0b8005cedf1b8db541ca5e2258041969fd5214367140059a07dbe9",
+      "pdf_pages": [
+        72,
+        75
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pf3a7xh-l_omx0002en-e.pdf"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "53d0f4e44e3e80e38f69fe3764806c2f2c810b971649886fde2d697d1b58a52c": {
+    "model": "ITV-IL",
+    "bits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_ITV2_00145_EN-B.pdf",
+      "sha256": "b7b272121f4760c877523f7bf88b42226aa46e40f17c804c24def0b9767ec529",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_itv2_00145_en-b.pdf",
+      "pdf_pages": [
+        9
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "b6c16d6a19387dd2a16c40e16fd40453ce87d870b5e8aa5ac064acfe0227035d": {
+    "model": "FC3W504-xx-Lx-xx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14
+        ],
+        "one_bits": [
+          7
+        ]
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_FC3W5_OMA1018EN-C.pdf",
+      "sha256": "fde7d1b6d0869dc67cb7b99cec79669f975d2b18defd84ba9fd791c53b91f3ad",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_fc3w5_oma1018en-c.pdf",
+      "pdf_pages": [
+        28
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "45f574b7e29e095e3bca6a4b4881b7ca0a3a3a94621a9d5d6352f058e1ca2818": {
+    "model": "FC3W520-xx-Lx-xx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14
+        ],
+        "one_bits": [
+          7
+        ]
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_FC3W5_OMA1018EN-C.pdf",
+      "sha256": "fde7d1b6d0869dc67cb7b99cec79669f975d2b18defd84ba9fd791c53b91f3ad",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_fc3w5_oma1018en-c.pdf",
+      "pdf_pages": [
+        28
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "b05d883555428b3aafe5603d8ffc02d7d089f17eea8cd7231e41a2bcaf6345a7": {
+    "model": "FC3W540-xx-Lx-xx",
+    "bits": [
+      8,
+      14,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          14,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          14
+        ],
+        "one_bits": [
+          7
+        ]
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_FC3W5_OMA1018EN-C.pdf",
+      "sha256": "fde7d1b6d0869dc67cb7b99cec79669f975d2b18defd84ba9fd791c53b91f3ad",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_fc3w5_oma1018en-c.pdf",
+      "pdf_pages": [
+        28
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "60ebb9f20093c42ac845ea256b1cdcaa6be573a3b56ac066065710646b54478c": {
+    "model": "IZTC41-Lxx-x",
+    "bits": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "field_checks": {
+      "PD IN:0:8": {
+        "zero_bits": [
+          31,
+          30,
+          29,
+          28,
+          27,
+          23,
+          19,
+          15,
+          11,
+          7
+        ],
+        "one_bits": [
+          103,
+          99
+        ]
+      },
+      "PD IN:0:9": {
+        "zero_bits": [
+          31,
+          30,
+          29,
+          28,
+          27,
+          22,
+          18,
+          14,
+          10,
+          6
+        ],
+        "one_bits": [
+          102,
+          98
+        ]
+      },
+      "PD IN:0:10": {
+        "zero_bits": [
+          31,
+          30,
+          29,
+          28,
+          27,
+          21,
+          17,
+          13,
+          9,
+          5
+        ],
+        "one_bits": [
+          101,
+          97
+        ]
+      },
+      "PD IN:0:11": {
+        "zero_bits": [
+          31,
+          30,
+          29,
+          28,
+          27,
+          20,
+          16,
+          12,
+          8,
+          4
+        ],
+        "one_bits": [
+          100,
+          96
+        ]
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_IZT-L_OMZ0045EN-A.pdf",
+      "sha256": "535a90bb5afcb1121d8a0818257f6307391b681ef962ff152e7189f7a05eb0e1",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_izt-l_omz0045en-a.pdf",
+      "pdf_pages": [
+        14
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "0ecc5af1def051fe89bec52e4bd29507b8853c13c05d45e69ad56df557031142": {
+    "model": "EX260-MIL1",
+    "bits": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "field_checks": {},
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_EX260-MIL1_DOC1057882EN.pdf",
+      "sha256": "e79394200612302c677ff41aae56bfbb5aaadaf71153af3fe483589d38afa4bc",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ex260-mil1_doc1057882en.pdf",
+      "pdf_pages": [
+        21
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "3b2d99892621452d2e15594fe12b39e55caf7f0a1d8889d012750b76ae2b1959": {
+    "model": "EX260-MIL1",
+    "bits": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "field_checks": {},
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_EX260-MIL1_DOC1057882EN.pdf",
+      "sha256": "e79394200612302c677ff41aae56bfbb5aaadaf71153af3fe483589d38afa4bc",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ex260-mil1_doc1057882en.pdf",
+      "pdf_pages": [
+        21
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "68ca87b6a87aefd947a71259a8006c63bd354fa5867eb13522ca69ef882b9061": {
+    "model": "EX260-MIL1",
+    "bits": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "field_checks": {},
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_EX260-MIL1_DOC1057882EN.pdf",
+      "sha256": "e79394200612302c677ff41aae56bfbb5aaadaf71153af3fe483589d38afa4bc",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ex260-mil1_doc1057882en.pdf",
+      "pdf_pages": [
+        21
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "efb5d67295171da5abb80526ce7f47bdce4fd3c73fff179ef4d842357744ea75": {
+    "model": "EX260-MIL1",
+    "bits": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "field_checks": {},
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_EX260-MIL1_DOC1057882EN.pdf",
+      "sha256": "e79394200612302c677ff41aae56bfbb5aaadaf71153af3fe483589d38afa4bc",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ex260-mil1_doc1057882en.pdf",
+      "pdf_pages": [
+        21
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "b44abc7177266d44f689ce1f44e596533fc5d5982171e5829862a5c11917e7b1": {
+    "model": "ISE20B-T",
+    "bits": [
+      2
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:2:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:3:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:4:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "PSxx-PSV0007",
+      "sha256": null,
+      "url": "https://www.smcworld.com/upfiles/_manual/e/PSxx-PSV0007.pdf",
+      "pdf_pages": [
+        2,
+        6
+      ],
+      "source_kind": "official_pdf_web_extraction",
+      "verified_date": "2026-09-29",
+      "note": "공식 PDF의 웹 추출로 확인; 직접 다운로드 HTTP 403, 로컬 PDF 해시 없음"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "559ce454afe0f44f9172c969f1150ec8037c57841379ce2a885a968bf2e0625f": {
+    "model": "PSE202A",
+    "bits": [
+      8,
+      9,
+      10,
+      11,
+      15
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          15,
+          8
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:1": {
+        "zero_bits": [
+          15,
+          9
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:2": {
+        "zero_bits": [
+          15,
+          10
+        ],
+        "one_bits": []
+      },
+      "PD IN:0:3": {
+        "zero_bits": [
+          15,
+          11
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_PSE200A_OMW0012EN-F.pdf",
+      "sha256": "8189eb4be8e77ae6bd4f08e2f2bc72a409ab2bcd72ea068a6fd62774fb1e95b0",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_pse200a_omw0012en-f.pdf",
+      "pdf_pages": [
+        77
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "1e3fb3b420aa1018657c0435dcd7e6c8a0f387cef56438973c5b5f603bbcf228": {
+    "model": "ZSE20B-T",
+    "bits": [
+      2
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:2:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:3:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:4:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:5:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:6:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "PSxx-PSV0007",
+      "sha256": null,
+      "url": "https://www.smcworld.com/upfiles/_manual/e/PSxx-PSV0007.pdf",
+      "pdf_pages": [
+        2,
+        6
+      ],
+      "source_kind": "official_pdf_web_extraction",
+      "verified_date": "2026-09-29",
+      "note": "공식 PDF의 웹 추출로 확인; 직접 다운로드 HTTP 403, 로컬 PDF 해시 없음"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "5c5af966cb7849931a4211e51269026531f8db611ee4211fb91474e43dc4aad3": {
+    "model": "ZSE20BF-T",
+    "bits": [
+      2
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:1:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:2:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:3:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:4:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:5:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      },
+      "PD IN:6:0": {
+        "zero_bits": [
+          2
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {
+      "V_diAG": "1"
+    },
+    "evidence": {
+      "document": "PSxx-PSV0007",
+      "sha256": null,
+      "url": "https://www.smcworld.com/upfiles/_manual/e/PSxx-PSV0007.pdf",
+      "pdf_pages": [
+        2,
+        6
+      ],
+      "source_kind": "official_pdf_web_extraction",
+      "verified_date": "2026-09-29",
+      "note": "공식 PDF의 웹 추출로 확인; 직접 다운로드 HTTP 403, 로컬 PDF 해시 없음"
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  },
+  "71e77e8ab0f240603bb7c012db71db8e0cafd97fc9a7131af6ac07c1fefb1a8b": {
+    "model": "EQ-IOLINK",
+    "bits": [
+      30,
+      31
+    ],
+    "field_checks": {
+      "PD IN:0:0": {
+        "zero_bits": [
+          30,
+          31
+        ],
+        "one_bits": []
+      }
+    },
+    "required_configuration": {},
+    "evidence": {
+      "document": "OM_EQ_DOC1138459EN-1.pdf",
+      "sha256": "506445a562697d0ce9aa608766e22a228cd0c523753b9f9b8c441eac2ef3e7cb",
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_eq_doc1138459en-1.pdf",
+      "pdf_pages": [
+        36
+      ]
+    },
+    "scope": "raw measurement validity; engineering units require separate confirmation"
+  }
+}

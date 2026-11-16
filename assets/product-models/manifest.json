@@ -1,0 +1,32 @@
+{
+  "source": "user-provided SMC-representative-3D-GLB.zip",
+  "assets": [
+    {
+      "part": "EXW1-BMTAC",
+      "file": "EXW1-BMTAC.glb",
+      "sha256": "28ec22b2f727476335e1656ddeb23003ad69c215ce1abbd551d6242d831baad1",
+      "size": 1129524,
+      "nodes": 2,
+      "meshes": 1,
+      "materials": 3
+    },
+    {
+      "part": "EXW1-RLAPA8C",
+      "file": "EXW1-RLAPA8C.glb",
+      "sha256": "c25662440c72ce982af4a464e5546d4ea6b8195ad86b7b2eaf574c0387ca747c",
+      "size": 1229504,
+      "nodes": 2,
+      "meshes": 1,
+      "materials": 3
+    },
+    {
+      "part": "PFUW760-L1",
+      "file": "PFUW760-L1.glb",
+      "sha256": "4ecd601e6a5934446b9cf0d696d02591b46b37e18cea0f02608e25044affafbb",
+      "size": 2132308,
+      "nodes": 12,
+      "meshes": 4,
+      "materials": 13
+    }
+  ]
+}

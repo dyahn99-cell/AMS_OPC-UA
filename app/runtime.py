@@ -147,6 +147,9 @@ ASSETS_DIR = APP_DIR / "assets"
 # Filesystem discovery is deferred to the explicit bootstrap boundary.
 _assets_app = StaticFiles(directory=ASSETS_DIR, check_dir=False)
 app.mount("/assets", _assets_app, name="assets")
+from app.device_workspace import install_routes as install_device_workspace_routes
+install_device_workspace_routes(app, lambda: BASE_DIR, lambda: BUNDLE_DIR,
+                                lambda config: _read_iolink_workspace(config))
 
 @app.get("/", response_class=HTMLResponse)
 def serve_root():
@@ -3845,6 +3848,17 @@ def _modbus_request(function, payload, *, remote_id=None, gateway_id=None):
 def _modbus_read_registers(address, count, *, remote_id=None, gateway_id=None):
     with _modbus_endpoint_operation(remote_id, gateway_id):
         return _modbus_client_for(remote_id=remote_id, gateway_id=gateway_id).read_holding_registers(int(address), int(count))
+
+
+def _read_iolink_workspace(plan):
+    from app.iolink_read_binding import read
+    with _modbus_endpoint_operation(gateway_id=plan['base']):
+        admitted = _configuration_admission.current()['config']
+        if not admitted.get('modbus_gateways'):
+            raise ValueError('명시적으로 저장된 운영 게이트웨이가 필요합니다')
+        topology = load_exw1_topology(admitted, strict=True)
+        client = _modbus_client_for(gateway_id=plan['base'])
+        return read(plan, topology, client.read_holding_registers)
 
 
 def _modbus_write_registers(address, values, *, remote_id=None, gateway_id=None):

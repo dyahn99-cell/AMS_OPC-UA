@@ -76,11 +76,11 @@
     scopeHistory();
     context.textContent=isAll()?'전체 현황 · 전체 스케줄 / 합산 이력':deviceDisplayLabel(target)+' · '+String(selected?.transport||'연결 대기').toUpperCase()+' · '+(selected?.online?'연결됨':'오프라인 · 기존 제어 잠금 적용');
     document.querySelectorAll('.tabs .tab').forEach(t=>{t.style.display=(isAll()?['multi','schedule','history']:['live','port4','schedule','history']).includes(t.dataset.page)?'':'none';});
-    const key=JSON.stringify(rows.map(r=>[r.id||r.device_id||r.remote_id,r.name,r.profile?.name,r.profile?.channel,r.profile?.metadata?.gateway_id,r.online,r.placeholder,r.wireless_connected,r.health?.stale,r.stale,r.gateway_diagnostics?.error]));if(key===signature)return;signature=key;rail.replaceChildren();
+    const key=JSON.stringify(rows.map(r=>[r.id||r.device_id||r.remote_id,r.name,r.profile?.name,r.profile?.channel,r.profile?.metadata?.gateway_id,r.capabilities,r.online,r.placeholder,r.wireless_connected,r.health?.stale,r.stale,r.gateway_diagnostics?.error]));if(key===signature)return;signature=key;rail.replaceChildren();
     const label=document.createElement('small');label.textContent='WORKSPACE · DEVICE';rail.append(label);
     function button(id,text,disabled=false){const b=document.createElement('button');b.dataset.deviceId=id;b.textContent=text;b.classList.toggle('selected',id===target);b.disabled=disabled;b.onclick=()=>go(id);rail.append(b);}
     button('COMBINED','전체 현황');
-    for(const r of rows){const id=r.id||r.device_id||r.remote_id;if(!id||id==='COMBINED'||r.placeholder||!remoteConnectionPresent(r))continue;const io=(r.device_kind||r.profile?.metadata?.device_kind)==='remote_io';button(id,'● '+deviceDisplayLabel(id,rows)+(io?' · IO / 전체에서 확인':''),io);}
+    for(const r of rows){const id=r.id||r.device_id||r.remote_id;if(!id||id==='COMBINED'||r.placeholder||!remoteConnectionPresent(r))continue;const io=!deviceSupportsAms(r);button(id,'● '+deviceDisplayLabel(id,rows)+(io?' · IO / 전체에서 확인':''),io);}
     const note=document.createElement('small');note.textContent='연결된 장비만 표시합니다. 연결 설정은 주소 / 설정에서, IO는 전체 현황에서 확인하세요.';rail.append(note);
   }
   viewScope=isAll()?'overview':'device';if(!isAll())selectedRemoteId=target;

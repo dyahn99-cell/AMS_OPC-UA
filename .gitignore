@@ -24,3 +24,6 @@ logs/
 *.bak_*
 .claude/
 review-test-results.txt
+
+# Offline device workspace configuration
+device_workspace.sqlite3*

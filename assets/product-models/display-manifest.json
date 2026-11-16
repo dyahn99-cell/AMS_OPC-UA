@@ -1,0 +1,70 @@
+{
+  "preparation": "Representative product colours; original CAD files retained without alteration.",
+  "palette_srgb": {
+    "ivory-housing": "#e3e6de",
+    "blue-port-cover": "#0876b8",
+    "label-ivory": "#eef0e9",
+    "charcoal-label": "#384448",
+    "connector-steel": "#bbc3c7",
+    "connector-insulator": "#303638",
+    "contact-metal": "#c6b889",
+    "button-rubber": "#555b59",
+    "display-glass": "#141e25",
+    "display-blue": "#254c91",
+    "cable-polymer": "#7c8580",
+    "bracket-steel": "#c3c9ca"
+  },
+  "assets": [
+    {
+      "original": "EXW1-BMTAC.glb",
+      "original_sha256": "28ec22b2f727476335e1656ddeb23003ad69c215ce1abbd551d6242d831baad1",
+      "display": "EXW1-BMTAC.display.glb",
+      "display_sha256": "6fb7d96b701c370896803c0a855a540990843e413f2f15522bfb971b75c63cf7",
+      "hidden_line_primitives": 2,
+      "colour_triangles": {
+        "ivory-housing": 2858,
+        "label-ivory": 96,
+        "charcoal-label": 480,
+        "connector-steel": 1875,
+        "connector-insulator": 451,
+        "contact-metal": 575
+      },
+      "reference": "https://www.smcworld.com/newproducts/en-jp/22/exw1/"
+    },
+    {
+      "original": "EXW1-RLAPA8C.glb",
+      "original_sha256": "c25662440c72ce982af4a464e5546d4ea6b8195ad86b7b2eaf574c0387ca747c",
+      "display": "EXW1-RLAPA8C.display.glb",
+      "display_sha256": "80c5332731c0f5e9a57dab9d1bf491b34acfc45a2aee62e208cd97bfa887cd94",
+      "hidden_line_primitives": 2,
+      "colour_triangles": {
+        "ivory-housing": 3039,
+        "blue-port-cover": 401,
+        "charcoal-label": 424,
+        "connector-steel": 1861,
+        "connector-insulator": 530,
+        "contact-metal": 297,
+        "label-ivory": 62,
+        "button-rubber": 10
+      },
+      "reference": "https://www.smcworld.com/newproducts/en-jp/22/exw1/"
+    },
+    {
+      "original": "PFUW760-L1.glb",
+      "original_sha256": "4ecd601e6a5934446b9cf0d696d02591b46b37e18cea0f02608e25044affafbb",
+      "display": "PFUW760-L1.display.glb",
+      "display_sha256": "da8a539b7589b8ff936cafd809046e1475f00789fc3c78f6bcaf91d70c8da548",
+      "hidden_line_primitives": 8,
+      "colour_triangles": {
+        "ivory-housing": 3472,
+        "display-blue": 15,
+        "display-glass": 47,
+        "button-rubber": 311,
+        "cable-polymer": 635,
+        "connector-steel": 853,
+        "bracket-steel": 5938
+      },
+      "reference": "https://www.smcworld.com/newproducts/en-my/24/pfuw/"
+    }
+  ]
+}

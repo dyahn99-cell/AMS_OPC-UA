@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>디바이스 설정</title><link rel="stylesheet" href="/assets/iodd-ui.css"></head>
+<body class="settings-page">
+<header class="settings-brandbar"><img src="/assets/brand/smc-logo-white.svg" alt="SMC"><span>WIRELESS MANAGEMENT · 디바이스 설정</span></header>
+<main class="settings-main">
+<div class="settings-heading"><div><div class="eyebrow">DEVICE PARAMETERS</div><h1 id="title">디바이스 설정</h1><p>현재 값을 확인하고, 필요한 항목을 수정하세요. 변경한 값은 모아서 적용할 수 있습니다.</p></div><button id="close-settings" type="button">설정 닫기</button></div>
+<div class="toolbar settings-controls"><div class="settings-actions"><button id="load" type="button">설정값 모두 읽기</button><button id="apply" type="button" disabled>변경사항 적용 (0)</button></div><div class="settings-search"><input id="filter" type="search" aria-label="설정 검색" placeholder="설정 이름 검색"><label><input id="pins-only" type="checkbox">표시 선택한 항목만</label></div></div>
+<div class="settings-summary"><p id="selection-status" class="hint"></p><button id="clear-pins" type="button">대시보드 표시 모두 해제</button></div>
+<p id="status" role="status" aria-live="polite">현재 값은 조회 후 표시됩니다.</p>
+<details class="settings-help"><summary>설정값 조회와 적용 안내</summary><p>별표를 켜면 해당 채널·포트·제품의 대시보드에 항목을 추가합니다. 표시 선택은 즉시 저장되며 장비 설정을 변경하지 않습니다.</p><p>장비 설정은 현재 값을 읽은 뒤 변경할 수 있습니다. 변경값은 순서대로 전송하고 재조회하여 확인합니다. 실패하면 남은 적용을 중단합니다.</p><p>수치 범위는 IODD 원시 정수 기준입니다. 설정 간 조건은 장비가 추가로 검사하며, 현재 문자열·복합 전체 쓰기는 지원하지 않습니다.</p></details>
+<div class="settings-table"><table><thead><tr><th>메인 표시</th><th>설정 항목</th><th>현재 값</th><th>변경값</th><th>허용 범위 / 선택지</th><th>결과</th></tr></thead><tbody id="rows"></tbody></table></div>
+</main><script>window.readToken='__TOKEN__';</script><script src="/assets/iodd-presentation.js"></script><script src="/assets/iodd-settings.js"></script></body></html>

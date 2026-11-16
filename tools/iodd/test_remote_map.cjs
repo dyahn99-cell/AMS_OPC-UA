@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict');
+const {calculate}=require('../../assets/iodd-remote-map.js');
+const s={diagnostic:10,rows:[{model:'rdx',input:2,output:0},{model:'rdy',input:0,output:2},{model:'rla',input:64,output:64}]};
+let m=calculate(s);assert.deepEqual(m.map(r=>r.inputStart),[10,12,12]);assert.deepEqual(m.map(r=>r.outputStart),[0,0,2]);
+s.rows[0].model='';m=calculate(s);assert.equal(m[2].inputStart,10);
+s.rows[0]={model:'rdxgn',input:4,output:0};assert.equal(calculate(s)[2].inputStart,14);
+s.rows[0]={model:'rdm',input:1,output:2};assert.throws(()=>calculate(s));
+s.rows[0]={model:'rlb',input:68,output:64};assert.throws(()=>calculate(s));
+s.rows[0]={model:'rlb',input:65,output:64};assert.throws(()=>calculate(s));
+console.log('remote allocation tests passed');

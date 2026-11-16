@@ -1,0 +1,118 @@
+[
+  {
+    "model": "ISE70",
+    "definition_key": "0d6af088b7f823c567a065305100a470526df762b64c59eb71796ee33a3c20e3",
+    "item_id": "PD IN:1:0",
+    "unit": "kgf/cm²",
+    "manual_scale": 0.002549,
+    "manual_offset": -2.549,
+    "iodd_presentations": [
+      {
+        "variableId": "V_ProcessDataInput",
+        "subindex": "1",
+        "gradient": "0.00254925",
+        "offset": "-2.54925",
+        "unitCode": "1145",
+        "displayFormat": "Dec.2",
+        "accessRightRestriction": "ro"
+      }
+    ],
+    "evidence": {
+      "document": "OM_ISE7x-L2_OMV0004EN-J.pdf",
+      "pdf_pages": [
+        62,
+        63,
+        64
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise7x-l2_omv0004en-j.pdf",
+      "sha256": "50148fa05aff034d7b695ffbf2bbad9f113576b3dae6e2a2994ae57b38d86aba"
+    }
+  },
+  {
+    "model": "ISE70G",
+    "definition_key": "64c14760a4cac33f87f3c6cb1af0ac610af96b7ba0e2fc668c971290f6b61cf7",
+    "item_id": "PD IN:1:0",
+    "unit": "kgf/cm²",
+    "manual_scale": 0.002549,
+    "manual_offset": -2.549,
+    "iodd_presentations": [
+      {
+        "variableId": "V_ProcessDataInput",
+        "subindex": "1",
+        "gradient": "0.00254925",
+        "offset": "-2.54925",
+        "unitCode": "1145",
+        "displayFormat": "Dec.2",
+        "accessRightRestriction": "ro"
+      }
+    ],
+    "evidence": {
+      "document": "OM_ISE70Gx-L2_OMV0009EN-I.pdf",
+      "pdf_pages": [
+        65,
+        66,
+        67
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise70gx-l2_omv0009en-i.pdf",
+      "sha256": "bd72ddbc253a71a39feccf96664d5a7dfb66a81eb24cd54ca9eeaa01ddc7e19a"
+    }
+  },
+  {
+    "model": "ISE71",
+    "definition_key": "2164398613e932bd24ae6fe8b45fe85401b086b431e7b4bf4fb9f571d61254bc",
+    "item_id": "PD IN:1:0",
+    "unit": "kgf/cm²",
+    "manual_scale": 0.004079,
+    "manual_offset": -4.079,
+    "iodd_presentations": [
+      {
+        "variableId": "V_ProcessDataInput",
+        "subindex": "1",
+        "gradient": "0.00407875",
+        "offset": "-4.07875",
+        "unitCode": "1145",
+        "displayFormat": "Dec.2",
+        "accessRightRestriction": "ro"
+      }
+    ],
+    "evidence": {
+      "document": "OM_ISE7x-L2_OMV0004EN-J.pdf",
+      "pdf_pages": [
+        62,
+        63,
+        64
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise7x-l2_omv0004en-j.pdf",
+      "sha256": "50148fa05aff034d7b695ffbf2bbad9f113576b3dae6e2a2994ae57b38d86aba"
+    }
+  },
+  {
+    "model": "ISE71",
+    "definition_key": "2164398613e932bd24ae6fe8b45fe85401b086b431e7b4bf4fb9f571d61254bc",
+    "item_id": "PD IN:4:0",
+    "unit": "psi",
+    "manual_scale": 0.05802,
+    "manual_offset": -58.02,
+    "iodd_presentations": [
+      {
+        "variableId": "V_ProcessDataInput",
+        "subindex": "1",
+        "gradient": "0.058015",
+        "offset": "-58.015",
+        "unitCode": "1141",
+        "displayFormat": "Dec.1",
+        "accessRightRestriction": "ro"
+      }
+    ],
+    "evidence": {
+      "document": "OM_ISE7x-L2_OMV0004EN-J.pdf",
+      "pdf_pages": [
+        62,
+        63,
+        64
+      ],
+      "url": "https://static.smc.eu/binaries/content/assets/smc_global/product-documentation/operation-manuals/en/om_ise7x-l2_omv0004en-j.pdf",
+      "sha256": "50148fa05aff034d7b695ffbf2bbad9f113576b3dae6e2a2994ae57b38d86aba"
+    }
+  }
+]

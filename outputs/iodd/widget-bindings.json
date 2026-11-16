@@ -1,0 +1,254 @@
+[
+  {
+    "model": "PF3W704-LT-X445",
+    "definition_key": "ad4d51b84350cf3cecd71eefe6961f82e3b0089bac70ffb23d5759b83bf94701",
+    "source_files": [
+      "SMC_IO-Link_IODD_2026-09-28.zip!/current/PF3W7-X445_IO-Link_IODD_V1.1.zip!/SMC-PF3W704-LT-X445-27022018/SMC-PF3W704-LT-X445-20180227-IODD1.1.xml"
+    ],
+    "item": {
+      "source": "PD IN",
+      "layout": 0,
+      "condition": [
+        {
+          "tag": "Condition",
+          "attributes": {
+            "variableId": "V_Unit",
+            "value": "1"
+          },
+          "children": []
+        }
+      ],
+      "id": "PD IN:0:0",
+      "name": "Flow",
+      "subindex": "1",
+      "bitOffset": "32",
+      "accessRightRestriction": "ro",
+      "datatype": {
+        "type": "IntegerT",
+        "bitLength": "16",
+        "choices": [],
+        "ranges": [
+          {
+            "lowerValue": "0",
+            "upperValue": "1375"
+          }
+        ],
+        "items": []
+      },
+      "widget": "number"
+    },
+    "view": "numeric",
+    "sample": 687
+  },
+  {
+    "model": "ISE70",
+    "definition_key": "0d6af088b7f823c567a065305100a470526df762b64c59eb71796ee33a3c20e3",
+    "source_files": [
+      "SMC_IO-Link_IODD_2026-09-28.zip!/current/SMC-ISE70_71-L2.zip!/SMC-ISE70_71-L2/SMC-ISE70-20180222/SMC-ISE70-20180222/SMC-ISE70-20180222-IODD1.1.xml"
+    ],
+    "item": {
+      "source": "PD IN",
+      "layout": 0,
+      "condition": [
+        {
+          "tag": "Condition",
+          "attributes": {
+            "variableId": "V_Unit",
+            "value": "3"
+          },
+          "children": []
+        }
+      ],
+      "id": "PD IN:0:0",
+      "name": "Pressure Value",
+      "subindex": "1",
+      "bitOffset": "3",
+      "accessRightRestriction": "ro",
+      "datatype": {
+        "type": "UIntegerT",
+        "bitLength": "13",
+        "choices": [
+          {
+            "value": "00",
+            "label": ""
+          }
+        ],
+        "ranges": [
+          {
+            "lowerValue": "580",
+            "upperValue": "5200"
+          }
+        ],
+        "items": []
+      },
+      "widget": "number"
+    },
+    "view": "gauge",
+    "sample": 2890
+  },
+  {
+    "model": "PF3W704-LT-X445",
+    "definition_key": "ad4d51b84350cf3cecd71eefe6961f82e3b0089bac70ffb23d5759b83bf94701",
+    "source_files": [
+      "SMC_IO-Link_IODD_2026-09-28.zip!/current/PF3W7-X445_IO-Link_IODD_V1.1.zip!/SMC-PF3W704-LT-X445-27022018/SMC-PF3W704-LT-X445-20180227-IODD1.1.xml"
+    ],
+    "item": {
+      "source": "PD IN",
+      "layout": 0,
+      "condition": [
+        {
+          "tag": "Condition",
+          "attributes": {
+            "variableId": "V_Unit",
+            "value": "1"
+          },
+          "children": []
+        }
+      ],
+      "id": "PD IN:0:1",
+      "name": "Temp",
+      "subindex": "2",
+      "bitOffset": "16",
+      "accessRightRestriction": "ro",
+      "datatype": {
+        "type": "IntegerT",
+        "bitLength": "16",
+        "choices": [],
+        "ranges": [
+          {
+            "lowerValue": "-100",
+            "upperValue": "1100"
+          }
+        ],
+        "items": []
+      },
+      "widget": "number"
+    },
+    "view": "numeric",
+    "sample": 500
+  },
+  {
+    "model": "ISE70",
+    "definition_key": "0d6af088b7f823c567a065305100a470526df762b64c59eb71796ee33a3c20e3",
+    "source_files": [
+      "SMC_IO-Link_IODD_2026-09-28.zip!/current/SMC-ISE70_71-L2.zip!/SMC-ISE70_71-L2/SMC-ISE70-20180222/SMC-ISE70-20180222/SMC-ISE70-20180222-IODD1.1.xml"
+    ],
+    "item": {
+      "source": "PD IN",
+      "layout": 0,
+      "condition": [
+        {
+          "tag": "Condition",
+          "attributes": {
+            "variableId": "V_Unit",
+            "value": "3"
+          },
+          "children": []
+        }
+      ],
+      "id": "PD IN:0:3",
+      "name": "Switch State (OUT1)",
+      "subindex": "4",
+      "bitOffset": "0",
+      "accessRightRestriction": "ro",
+      "datatype": {
+        "type": "BooleanT",
+        "choices": [
+          {
+            "value": "true",
+            "label": "ON"
+          },
+          {
+            "value": "false",
+            "label": "OFF"
+          }
+        ],
+        "ranges": [],
+        "items": []
+      },
+      "widget": "enum"
+    },
+    "view": "state",
+    "sample": "true"
+  },
+  {
+    "model": "ISE70",
+    "definition_key": "0d6af088b7f823c567a065305100a470526df762b64c59eb71796ee33a3c20e3",
+    "source_files": [
+      "SMC_IO-Link_IODD_2026-09-28.zip!/current/SMC-ISE70_71-L2.zip!/SMC-ISE70_71-L2/SMC-ISE70-20180222/SMC-ISE70-20180222/SMC-ISE70-20180222-IODD1.1.xml"
+    ],
+    "item": {
+      "source": "ACYCLIC",
+      "id": "V_Unit",
+      "accessRights": "rw",
+      "index": "1000",
+      "excludedFromDataStorage": "false",
+      "defaultValue": "0",
+      "name": "Unit",
+      "description": "Selection of Display Unit",
+      "datatype": {
+        "type": "UIntegerT",
+        "bitLength": "8",
+        "choices": [
+          {
+            "value": "0",
+            "label": "MPa"
+          },
+          {
+            "value": "1",
+            "label": "kPa"
+          },
+          {
+            "value": "2",
+            "label": "kgf/cm^2"
+          },
+          {
+            "value": "3",
+            "label": "bar"
+          },
+          {
+            "value": "4",
+            "label": "psi"
+          }
+        ],
+        "ranges": [],
+        "items": []
+      },
+      "widget": "enum"
+    },
+    "view": "parameter-select",
+    "sample": "0"
+  },
+  {
+    "model": "ISE70",
+    "definition_key": "0d6af088b7f823c567a065305100a470526df762b64c59eb71796ee33a3c20e3",
+    "source_files": [
+      "SMC_IO-Link_IODD_2026-09-28.zip!/current/SMC-ISE70_71-L2.zip!/SMC-ISE70_71-L2/SMC-ISE70-20180222/SMC-ISE70-20180222/SMC-ISE70-20180222-IODD1.1.xml"
+    ],
+    "item": {
+      "source": "ACYCLIC",
+      "id": "V_P_1",
+      "accessRights": "rw",
+      "index": "1012",
+      "excludedFromDataStorage": "false",
+      "defaultValue": "3000",
+      "name": "P_1",
+      "description": "OUT1 Pressure setting (Hysteresis Mode)",
+      "datatype": {
+        "type": "UIntegerT",
+        "bitLength": "16",
+        "choices": [],
+        "ranges": [
+          {
+            "lowerValue": "580",
+            "upperValue": "5200"
+          }
+        ],
+        "items": []
+      },
+      "widget": "number"
+    },
+    "view": "parameter-number",
+    "sample": 2890
+  }
+]

@@ -14,6 +14,7 @@ from urllib.parse import urlsplit
 
 from .command_payload import validate_command_payload
 from .sample_quality import number, usable
+from .device_models import model_for
 
 
 TRANSPORTS = {"modbus", "opcua", "web", "simulator"}
@@ -415,6 +416,10 @@ class DeviceHub:
                 health=DeviceHealth(connected=False, stale=True, last_attempt_at=utc_now_iso(), error=message),
                 simulated=profile.transport == "simulator",
             ).to_dict()
+        snapshot["model_definition"] = {"key": model_for(profile).key, "label": model_for(profile).label}
+        capabilities = getattr(self._adapter(profile), "capabilities", None)
+        if callable(capabilities):
+            snapshot["capabilities"] = capabilities(profile)
         snapshot.update({"id": profile.device_id, "name": profile.name, "role": profile.role, "profile": profile.to_dict()})
         try:
             if guard and token is None:

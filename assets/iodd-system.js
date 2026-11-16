@@ -1,0 +1,61 @@
+/* System map and operator groupings consume the same channel/port instances. */
+(()=>{
+ const $=id=>document.getElementById(id),el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
+ let mode='map',models=[],contexts=new Map(),samples=new Map(),settings=new Map(),remoteSamples=new Map(),queued=false;
+ const profile=()=>window.connectionProfile||{host:'192.168.0.10',port:502,unit:1,timeout:4,refreshMs:1000},prefix=()=>window.connectionKey||'192.168.0.10',groupKey=()=> 'ams.plant.'+prefix()+'.v1';
+ const fromStore=key=>{try{return JSON.parse(localStorage.getItem(key)||'{}');}catch(e){return {};}};
+ const registered=()=>Array.from(document.querySelectorAll('#remote-rows tr')).filter(r=>r.querySelector('select')?.value).map(r=>({channel:Number(r.id.replace('remote-row-','')),model:r.querySelector('select').value,profile:RemoteMap.profiles[r.querySelector('select').value]}));
+ const assignment=(channel,port)=>contexts.get(channel)?.assignments?.find(a=>a.port===port)||(()=>{const s=fromStore('ams.live.'+prefix()+'.ch'+channel+'.port-settings.v1')[port]||{};return {...s,port,model:models.find(m=>m.sha256===s.definition),enabled:s.monitorEnabled!==false};})();
+ const key=(channel,port,definition)=>channel+':'+port+':'+(definition||'');
+ const fresh=d=>d&&!d.failed&&Date.now()-d.timestamp<30000;
+ function entries(){return registered().flatMap(r=>r.profile.kind==='iolink'?Array.from({length:r.model.startsWith('rlb')?2:4},(_,i)=>({id:r.channel+':'+(i+1),channel:r.channel,port:i+1,remote:r,...assignment(r.channel,i+1)})):[{id:r.channel+':0',channel:r.channel,port:0,remote:r,name:r.profile.name}]);}
+ function go(c,p=0){if($('channel').disabled)return;window.IoddWorkspace.selectChannel(c);if(p)window.IoddWorkspace.selectPort(p);}
+ function metric(e){
+  const d=e.port?samples.get(key(e.channel,e.port,e.definition)):remoteSamples.get(e.channel);if(!fresh(d))return d?.failed?'최근 조회 실패':d?'최근 수신 만료':'미조회 · 연결 미확인';
+  if(!e.port){if(d.kind==='output')return '출력 ON '+(d.snapshot?.words||[]).reduce((n,w)=>n+w.toString(2).replace(/0/g,'').length,0)+'점 · 출력 메모리';if(d.kind==='digital')return '입력 ON '+(d.bytes||[]).slice(0,2).reduce((n,b)=>n+b.toString(2).replace(/0/g,'').length,0)+'점';if(d.kind==='analog')return 'AI 1 · HEX '+(d.bytes||[]).slice(0,2).map(b=>b.toString(16).padStart(2,'0')).join(' ');return '최근 수신 '+new Date(d.timestamp).toLocaleTimeString();}
+  if(e.enabled===false)return 'PD 조회 사용 안 함';if(!d.connected)return '통신 없음';if(d.event)return '장치 이벤트 · 상세 확인';if(!d.valid)return 'PD 무효';if(!e.model)return '통신 수신 · 제품 지정 필요';
+  const plan=IoddPresentation.plan(e.model,e.layout),f=d.fields?.find(f=>f.item_id===plan.primary?.item.id);
+  if(!f||f.quality!=='good')return 'PD 수신 · 단위/조건 확인 필요';
+  const eng=f.engineering;return (plan.primary.binding.label||plan.primary.item.name)+' '+(eng?.quality==='good'?new Intl.NumberFormat('ko-KR',{maximumFractionDigits:3}).format(eng.value)+' '+eng.unit:new Intl.NumberFormat('ko-KR').format(f.value)+' raw');
+ }
+ function summarySettings(e){if(!e.model)return '';const keys=IoddPresentation.pins({channel:e.channel,port:e.port,model:e.model});return keys.slice(0,1).map(k=>{const r=IoddPresentation.resolve({model:e.model},k),d=settings.get(key(e.channel,e.port,e.definition)+':'+k);return r.binding.label+' · '+(d&&Date.now()-d.timestamp<60000&&!d.failed?d.text:'미조회');}).join('');}
+ function decorate(){
+  const p=profile();$('system-connection-label').textContent=p.host+' : '+p.port+' · Unit '+p.unit;document.querySelector('.base-identity small').textContent=p.host+' · Modbus TCP';
+  $('system-connection').disabled=$('system-base').disabled=$('system-group-edit').disabled=$('channel').disabled;
+  const list=entries();
+  for(const card of document.querySelectorAll('.channel-overview-card')){
+   const c=Number(card.dataset.channel),r=registered().find(r=>r.channel===c);card.dataset.remoteKind=r?.profile.kind||'';
+   let ports=card.querySelector('.system-port-strip');if(!ports){ports=el('div','system-port-strip');card.append(ports);}ports.replaceChildren();
+   for(const e of list.filter(e=>e.channel===c)){
+    const b=el('span','system-port-tile');b.dataset.instance=e.id;b.tabIndex=$('channel').disabled?-1:0;b.setAttribute('role','button');b.setAttribute('aria-label',e.port?'CH'+c+' P'+e.port+' 제품 상세':'CH'+c+' 리모트 상세');
+    b.append(el('small','',e.port?'P'+e.port:'REMOTE'),el('strong','',e.model?.name||e.name||'제품 미지정'),el('span','system-mini-value',metric(e)));
+    const pinned=summarySettings(e);if(pinned)b.append(el('small','system-mini-setting',pinned));b.onclick=event=>{event.stopPropagation();go(c,e.port);};b.onkeydown=event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();event.stopPropagation();go(c,e.port);}};ports.append(b);
+   }
+  }
+  renderPlant(list);
+ }
+ function renderPlant(list){const host=$('system-plant'),mapping=fromStore(groupKey()),groups=new Map();for(const e of list){const name=mapping[e.id]||'현장 설비';if(!groups.has(name))groups.set(name,[]);groups.get(name).push(e);}host.replaceChildren();
+  if(!list.length){host.append(el('p','empty-state','채널을 등록한 후 설비별로 묶어 보세요.'));return;}
+  for(const [name,items] of groups){const section=el('section','plant-group');const h=el('header','plant-group-head');h.append(el('h3','',name),el('span','',items.length+'개 연결 위치'));section.append(h);for(const e of items){const row=el('button','plant-device-row');row.dataset.instance=e.id;row.type='button';row.disabled=$('channel').disabled;row.onclick=()=>go(e.channel,e.port);const asset=e.model?ProductVisuals.product(e.model):ProductVisuals.remote({model:e.remote.model});if(asset){const image=el('img','');image.src='/assets/product-models/'+asset.poster;image.alt=asset.part;row.append(image);}const content=el('div','');content.append(el('small','','CH'+e.channel+(e.port?' / P'+e.port:'')),el('strong','',e.model?.name||e.name||'제품 미지정'),el('span','plant-metric',metric(e)));const pin=summarySettings(e);if(pin)content.append(el('small','plant-setting',pin));row.append(content,el('span','plant-open','→'));section.append(row);}host.append(section);}
+ }
+ function updateValues(){const list=entries();for(const tile of document.querySelectorAll('[data-instance]')){const e=list.find(e=>e.id===tile.dataset.instance);if(!e)continue;const value=tile.querySelector('.system-mini-value,.plant-metric'),pin=tile.querySelector('.system-mini-setting,.plant-setting');if(value){const text=metric(e);if(value.textContent!==text)value.textContent=text;}if(pin){const text=summarySettings(e);if(pin.textContent!==text)pin.textContent=text;}}}
+ function schedule(){if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;decorate();});}
+ function setMode(next){const changed=mode!==next;mode=next;$('system-path').hidden=mode!=='map';$('ui-channel-grid').hidden=mode!=='map';$('system-plant').hidden=mode!=='plant';$('system-map-tab').setAttribute('aria-pressed',String(mode==='map'));$('system-plant-tab').setAttribute('aria-pressed',String(mode==='plant'));schedule();if(changed&&!matchMedia('(prefers-reduced-motion: reduce)').matches)requestAnimationFrame(()=>{if(mode!==next)return;const panel=$(next==='map'?'ui-channel-grid':'system-plant');panel.getAnimations().forEach(a=>a.cancel());panel.animate([{opacity:.35,transform:'translateY(6px)'},{opacity:1,transform:'translateY(0)'}],{duration:220,easing:'ease-out'});});}
+ $('system-map-tab').onclick=()=>setMode('map');$('system-plant-tab').onclick=()=>setMode('plant');$('system-base').onclick=()=>window.IoddWorkspace.configure();
+ function dialog(title){const d=el('dialog','system-dialog'),head=el('header','system-dialog-head');head.append(el('h2','',title));const close=el('button','','닫기 ✕');close.type='button';close.onclick=()=>d.close();head.append(close);d.append(head);d.addEventListener('close',()=>d.remove());document.body.append(d);return d;}
+ $('system-connection').onclick=()=>{
+  if($('channel').disabled)return;const d=dialog('Modbus TCP 연결 설정'),form=el('form','system-connection-form');form.method='dialog';const inputs={};
+  form.append(el('p','', '대시보드의 접속 설정입니다. 장비 자체의 IP 주소나 Ethernet 설정은 변경하지 않습니다.'));
+  for(const [name,label,type,min,max,step] of [['host','장비 IP','text'],['port','TCP 포트','number',1,65535,1],['unit','Unit ID','number',1,247,1],['refreshMs','갱신 간격 (ms)','number',500,10000,100],['timeout','응답 제한시간 (초)','number',.5,10,.5]]){const l=el('label','',label),i=el('input','');i.name=name;i.type=type;i.required=true;i.value=profile()[name];if(min!==undefined){i.min=min;i.max=max;i.step=step;}if(name==='host')i.pattern='[0-9.]{7,15}';l.append(i);form.append(l);inputs[name]=i;}
+  const status=el('p','system-form-status','저장 후 다시 연결하세요. 연결 테스트는 저장된 설정으로 입력 레지스터만 읽습니다.'),actions=el('div','system-dialog-actions'),test=el('button','','저장된 설정 연결 테스트'),save=el('button','','저장 · 적용');test.type='button';save.type='submit';actions.append(test,save);form.append(status,actions);d.append(form);
+  async function request(path,q){const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json','X-Read-Token':window.readToken},body:JSON.stringify(q)}),data=await r.json();if(!r.ok)throw Error(data.error||'요청 실패');return data;}
+  function busy(value){test.disabled=save.disabled=value;for(const i of Object.values(inputs))i.disabled=value;}
+  test.onclick=async()=>{busy(true);$('stop').click();status.textContent='저장된 설정으로 응답 확인 중…';try{const r=await request('/connection-test',{});status.textContent='Modbus 응답 확인 · '+r.connection.host+':'+r.connection.port+' · '+new Date(r.timestamp).toLocaleTimeString();}catch(e){status.textContent='연결 실패: '+e.message;}finally{busy(false);}};
+  form.onsubmit=async event=>{event.preventDefault();if(!form.reportValidity())return;const q=Object.fromEntries(Object.entries(inputs).map(([k,i])=>[k,k==='host'?i.value.trim():Number(i.value)]));busy(true);$('stop').click();try{await request('/connection',q);status.textContent='저장 완료 · 새 연결 설정으로 화면 갱신';location.reload();}catch(e){status.textContent='저장 실패: '+e.message;busy(false);}};d.showModal();
+ };
+ $('system-group-edit').onclick=()=>{if($('channel').disabled)return;const d=dialog('설비 묶음 편집'),form=el('form','plant-group-form'),mapping=fromStore(groupKey()),rows=[];form.append(el('p','','같은 설비 이름을 입력한 채널·포트가 함께 표시됩니다. 통신 주소와 할당 맵은 그대로 유지됩니다.'));for(const e of entries()){const label=el('label','','CH'+e.channel+(e.port?' / P'+e.port:'')+' · '+(e.model?.name||e.name||'제품 미지정')),i=el('input','');i.maxLength=40;i.placeholder='예: 프레스 1호기';i.value=mapping[e.id]||'현장 설비';label.append(i);form.append(label);rows.push([e.id,i]);}const save=el('button','','설비 묶음 저장');save.type='submit';const status=el('p','system-form-status');form.append(status,save);form.onsubmit=event=>{event.preventDefault();try{localStorage.setItem(groupKey(),JSON.stringify(Object.fromEntries(rows.map(([k,i])=>[k,i.value.trim()||'미분류']))));d.close();setMode('plant');}catch(e){status.textContent='저장 실패: '+e.message;}};d.append(form);d.showModal();};
+ window.addEventListener('iodd-live-state',e=>{const d=e.detail;if(d.phase==='context')contexts.set(d.channel,d);if(d.phase==='sample'&&d.kind==='iolink')for(const p of d.ports||[])samples.set(key(d.channel,p.port,p.definition),{...p,timestamp:d.timestamp});if(d.phase==='output'||d.phase==='sample'&&d.kind!=='iolink')remoteSamples.set(d.channel,d);if(d.phase==='error'){for(const [k,s] of samples)if(k.startsWith(d.channel+':'))s.failed=true;const s=remoteSamples.get(d.channel);if(s)s.failed=true;}if(d.phase==='context')schedule();else updateValues();});
+ window.addEventListener('iodd-setting-sample',e=>{const d=e.detail;settings.set(key(d.channel,d.port,d.definition)+':'+d.key,d);updateValues();});window.addEventListener('iodd-connection-loaded',schedule);window.addEventListener('iodd-pins-changed',schedule);window.addEventListener('storage',e=>{if(e.key==='ams.settings.changed'){samples.clear();settings.clear();}schedule();});
+ new MutationObserver(schedule).observe($('ui-channel-grid'),{childList:true});new MutationObserver(schedule).observe($('channel'),{attributes:true,attributeFilter:['disabled']});setInterval(updateValues,1000);
+ fetch('/catalog').then(r=>r.json()).then(d=>{models=d.models;schedule();}).catch(()=>{});schedule();
+})();

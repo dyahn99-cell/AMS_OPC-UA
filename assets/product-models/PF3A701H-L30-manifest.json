@@ -1,0 +1,14 @@
+{
+  "source": "SMC_JP_PF3A701HL30.zip / PF3A701H-L3(0).stp",
+  "source_sha256": "51007023d2641ddb84cf4e4e823aaf4886a09cc2adbd3a401a46a11a8b0b2d24",
+  "unit": "meter",
+  "triangles": 87685,
+  "derived_feature_edges": 9018,
+  "representative_family": "PF3A701H-xx-L3x-xxx",
+  "line_rendering": {
+    "silhouette_shell_m": 0.0004,
+    "feature_radius_m": 0.00023999999999999998,
+    "hidden_edges": "opaque CAD surface occlusion"
+  },
+  "note": "CAD-derived shape, no invented physical colour or port coordinates"
+}

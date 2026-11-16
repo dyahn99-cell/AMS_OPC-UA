@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from .output_sequence import execute_output_sequence
+from .device_models import model_for, restrict_capabilities, operation_capability, COMMAND_CAPABILITY
 import copy
 from contextlib import nullcontext
 from datetime import datetime
@@ -42,10 +43,16 @@ class HubAdapterBase:
         return None if profile.enabled else "device is disabled"
 
     def capabilities(self, profile: DeviceProfile) -> dict:
-        return {"telemetry": True, "settings_read": True, "settings_write": True,
-                "mode": True, "signals": True, "port4": True, "flow_reset": True}
+        return restrict_capabilities(profile, {"telemetry": True, "settings_read": True, "settings_write": True,
+                "mode": True, "signals": True, "port4": True, "flow_reset": True})
+
+    def supports_command(self, profile: DeviceProfile, command: str) -> bool:
+        return bool(self.capabilities(profile).get(COMMAND_CAPABILITY.get(command)))
 
     def _run(self, profile: DeviceProfile, operation: str, callback: Callable[[], Any], *, telemetry: bool = False) -> Any:
+        capability = operation_capability(operation)
+        if not telemetry and (capability is None or not self.capabilities(profile).get(capability)):
+            return self._unsupported(profile, operation, "Model or transport does not support this operation")
         scope = self.services.get("operation_scope")
         # Admission precedes endpoint locking so a transition never drains an
         # operation that is waiting for a lock held by the publisher.
@@ -103,7 +110,7 @@ class ModbusHubAdapter(HubAdapterBase):
 
     @staticmethod
     def _kind(profile: DeviceProfile) -> str:
-        return str(profile.metadata.get("device_kind") or "exa1").lower()
+        return model_for(profile).key
 
     def routing_error(self, profile: DeviceProfile) -> str | None:
         error = super().routing_error(profile)
@@ -123,13 +130,13 @@ class ModbusHubAdapter(HubAdapterBase):
 
     def capabilities(self, profile: DeviceProfile) -> dict:
         if self._kind(profile) != "exa1":
-            return {"telemetry": True, "raw_io_read": True, "raw_io_write": False,
+            return restrict_capabilities(profile, {"telemetry": True, "raw_io_read": True, "raw_io_write": False,
                     "settings_read": False, "settings_write": False, "mode": False,
-                    "signals": False, "port4": False, "flow_reset": False}
+                    "signals": False, "port4": False, "flow_reset": False})
         return super().capabilities(profile)
 
     def supports_command(self, profile: DeviceProfile, command: str) -> bool:
-        return self._kind(profile) == "exa1"
+        return super().supports_command(profile, command)
 
     def read_telemetry(self, profile: DeviceProfile) -> DeviceSnapshot:
         def load() -> dict:
@@ -207,10 +214,10 @@ class OpcuaHubAdapter(HubAdapterBase):
         return None
 
     def capabilities(self, profile: DeviceProfile) -> dict:
-        return {"telemetry": True,
+        return restrict_capabilities(profile, {"telemetry": True,
                 "settings_read": self._settings_error(profile, "read_web_settings") is None,
                 "settings_write": self._settings_error(profile, "write_web_settings") is None,
-                "mode": True, "signals": True, "port4": True, "flow_reset": False}
+                "mode": True, "signals": True, "port4": True, "flow_reset": False})
 
     def read_telemetry(self, profile: DeviceProfile) -> DeviceSnapshot:
         def load() -> dict:

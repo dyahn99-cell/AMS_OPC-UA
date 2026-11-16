@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict');const fs=require('node:fs');const {interpret}=require('../assets/iodd-widgets.js');
+const b=JSON.parse(fs.readFileSync('outputs/iodd/widget-bindings.json','utf8'));
+const pressure=b.find(b=>b.view==='gauge').item;
+assert.equal(interpret(pressure,1000).number,1000);
+assert.equal(interpret(pressure,0).quality,'special');
+assert.equal(interpret(pressure,999999).quality,'invalid');
+assert.equal(interpret(pressure,null).quality,'unavailable');
+assert.equal(interpret(pressure,1.5).quality,'invalid');
+const unit=b.find(b=>b.view==='parameter-select').item;
+assert.equal(interpret(unit,0).text,'MPa');assert.equal(interpret(unit,999).quality,'invalid');
+assert.equal(b.length,6);assert(b.every(x=>x.definition_key.length===64));
+console.log('PASS: numeric, special code, out-of-range, unavailable, integer validation, enum and binding identity');

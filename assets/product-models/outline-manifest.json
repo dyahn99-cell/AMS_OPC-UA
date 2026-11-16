@@ -1,0 +1,26 @@
+[
+  {
+    "part": "EXW1-BMTAC",
+    "original_sha256": "28ec22b2f727476335e1656ddeb23003ad69c215ce1abbd551d6242d831baad1",
+    "outline_sha256": "91e6eb9a7eed5acb145fbfb68cbf45a0c65a976566fffbc537596b11d38cc2cd",
+    "geometric_edge_segments": 2233,
+    "shell_ratio": 0.004,
+    "edge_ratio": 0.0024
+  },
+  {
+    "part": "EXW1-RLAPA8C",
+    "original_sha256": "c25662440c72ce982af4a464e5546d4ea6b8195ad86b7b2eaf574c0387ca747c",
+    "outline_sha256": "6498148dccf9da09fe4037fa14ea4a3769b18fe2278dd4c118d6350af1f7a459",
+    "geometric_edge_segments": 2465,
+    "shell_ratio": 0.004,
+    "edge_ratio": 0.0024
+  },
+  {
+    "part": "PFUW760-L1",
+    "original_sha256": "4ecd601e6a5934446b9cf0d696d02591b46b37e18cea0f02608e25044affafbb",
+    "outline_sha256": "d865ebf3a14ec09558a40d47717a0e055c68d7a467bf3eafdc54580d99e2bb40",
+    "geometric_edge_segments": 5208,
+    "shell_ratio": 0.004,
+    "edge_ratio": 0.0024
+  }
+]

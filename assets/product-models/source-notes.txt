@@ -1,0 +1,25 @@
+SMC 대표 품번 3D 파일
+생성일: 2026-10-01
+출처: SMC 공식 PARTcommunity 3D 미리보기
+
+포함 파일
+1. EXW1-BMTAC.glb
+   - 선택 품번: EXW1-BMTAC
+   - 통신: Modbus TCP / SLMP
+   - 형식: GLB 2.0
+
+2. EXW1-RLAPA8C.glb
+   - 선택 품번: EXW1-RLAPA8C
+   - Class A, PNP, M12 4포트, 무선 어댑터 사양
+   - 형식: GLB 2.0
+
+3. PFUW760-L1.glb
+   - 선택 품번: PFUW760-L1
+   - 0~60 L/min, IO-Link/NPN/PNP
+   - 공식 미리보기의 본체, M12 리드선, 브래킷 2개를 조립 위치 행렬에 따라 하나의 GLB로 통합
+   - 형식: GLB 2.0
+
+참고
+- 위 GLB는 화면 표시, 회전, 확대용으로 사용할 수 있는 공식 미리보기 메시입니다.
+- STEP/STP 원본 생성은 CADENAS 로그인이 필요해 현재 묶음에는 포함하지 못했습니다.
+- 일반 입력, 일반 출력, 밸브는 보유한 정확한 대표 품번이 필요합니다.
